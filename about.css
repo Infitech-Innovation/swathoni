@@ -155,14 +155,10 @@
   display: grid;
   grid-template-columns: 1.1fr 0.75fr;
   gap: 8vw;
-  padding: 95px 0 80px;
+  padding: 20px 0 80px;
 }
 .intro-title {
   position: relative;
-}
-.small-star {
-  color: #bc8d57;
-  font-size: 32px;
 }
 .intro-title h2,
 .difference-heading h2,
@@ -1263,21 +1259,7 @@
   max-width: 780px;
   padding-right: 22px;
 }
-.landscape-kicker {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  color: #ead2ab;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  animation: landscapeReveal 0.9s 0.1s both;
-}
-.landscape-kicker-line {
-  width: 39px;
-  height: 1px;
-  background: #e5c89c;
-}
+
 .about-page .landscape-content h1 {
   font-size: clamp(48px, 5.6vw, 88px);
   font-weight: 400;
@@ -1342,61 +1324,20 @@
 .landscape-wave-front {
   transform: translateY(22px);
 }
-.landscape-shrubs {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  color: #6d7550;
-  opacity: 0.92;
-}
-.shrub {
-  position: absolute;
-  font-size: clamp(26px, 3.6vw, 60px);
-  line-height: 1;
-  text-shadow: 0 8px 1px #9a9b7355;
-  transform-origin: bottom center;
-  animation: shrubSway 5s ease-in-out infinite alternate;
-}
-.shrub-one {
-  left: 11%;
-  top: 46%;
-}
-.shrub-two {
-  left: 29%;
-  top: 50%;
-  font-size: 35px;
-  animation-delay: -2s;
-}
-.shrub-three {
-  left: 61%;
-  top: 39%;
-  font-size: 44px;
-  animation-delay: -1s;
-}
-.shrub-four {
-  left: 78%;
-  top: 48%;
-  font-size: 35px;
-  animation-delay: -3s;
-}
-.shrub-five {
-  left: 91%;
-  top: 33%;
-  font-size: 49px;
-  animation-delay: -1.7s;
-}
+
 .landscape-bottom-label {
   position: absolute;
   z-index: 6;
   bottom: 20px;
-  left: 8vw;
+  left: 40vw;
   color: #5b624b;
   letter-spacing: 0.18em;
   font-size: 10px;
   font-weight: 700;
   display: flex;
   gap: 25px;
-  align-items: center;
+  /* align-items: center; */
+  text-align: center;
 }
 .landscape-bottom-label span {
   font-size: 20px;
