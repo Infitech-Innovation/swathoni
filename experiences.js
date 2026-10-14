@@ -23,14 +23,17 @@
     reveal.forEach((el) => observer.observe(el));
   }
   let scene = 0;
+  const stageSide = $(".xp-stage-side");
   const setScene = (n) => {
     scene = (n + 3) % 3;
+    if (stageSide) stageSide.dataset.activeScene = String(scene);
     $$(".xp-stage-image,.xp-scene").forEach((el) =>
       el.classList.toggle("is-active", Number(el.dataset.scene) === scene),
     );
     $(".xp-scene-counter").textContent = `0${scene + 1} / 03`;
     $("#xpProgress").style.width = `${((scene + 1) / 3) * 100}%`;
   };
+  setScene(scene);
   $("#scenePrev")?.addEventListener("click", () => {
     setScene(scene - 1);
     manualUntil = Date.now() + 2200;
@@ -111,6 +114,21 @@
       behavior: "smooth",
     }),
   );
+  const galleryItems = $$(".xp-gallery-item");
+  const updateGalleryFilter = (category = "all") => {
+    let visibleIndex = 0;
+    galleryItems.forEach((item) => {
+      const isVisible = category === "all" || item.dataset.category === category;
+      item.hidden = !isVisible;
+      if (isVisible) {
+        item.dataset.gallerySlot = String(visibleIndex % 6);
+        visibleIndex += 1;
+      } else {
+        delete item.dataset.gallerySlot;
+      }
+    });
+  };
+  updateGalleryFilter();
   $$(".xp-filters button").forEach((button) =>
     button.addEventListener("click", () => {
       const category = button.dataset.filter;
@@ -131,13 +149,11 @@
         b.classList.toggle("active", active);
         b.setAttribute("aria-pressed", String(active));
       });
-      $$(".xp-gallery-item").forEach((item) => {
-        item.hidden = category !== "all" && item.dataset.category !== category;
-      });
+      updateGalleryFilter(category);
     }),
   );
   const modal = $("#lightbox"),
-    gallery = $$(".xp-gallery-item");
+    gallery = galleryItems;
   let galleryIndex = 0,
     lastFocus = null;
   const visibleGallery = () => gallery.filter((el) => !el.hidden);
@@ -199,31 +215,33 @@
   });
   const quotes = [
     {
-      text: "The kind of journey you find yourself talking about long after you're home.",
-      image:
-        "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1400&q=85",
+      text: "We came for the safari, but it was the feeling of the whole journey that stayed with us.",
+      guest: ["SOPHIE & MARK", "SAFARI + DIANI", "AMSTERDAM"],
     },
     {
       text: "Every turn brought a new view, a new moment, a new reason to fall in love with Kenya.",
-      image:
-        "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1400&q=85",
+      guest: ["AMINA & JAMES", "WILD + COAST", "NAIROBI"],
     },
     {
       text: "From the open plains to the ocean breeze, it felt like two beautiful holidays in one.",
-      image:
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=85",
+      guest: ["LENA FAMILY", "SAFARI + SEA", "LONDON"],
     },
   ];
   let quoteIndex = 0;
   function setQuote(n) {
+    const quoteText = $("#xpStoryQuote");
+    const quoteGuest = $("#xpStoryGuest");
+    const quoteCount = $("#xpStoryCount");
+    if (!quoteText || !quoteGuest || !quoteCount) return;
     quoteIndex = (n + quotes.length) % quotes.length;
     const q = quotes[quoteIndex];
-    $("#quoteText").textContent = q.text;
-    $("#quotePhoto").src = q.image;
-    $("#quoteCount").textContent = `0${quoteIndex + 1} / 03`;
+    quoteText.textContent = q.text;
+    quoteGuest.innerHTML = q.guest.map((item) => `<span>${item}</span>`).join("<i></i>");
+    quoteCount.textContent = `0${quoteIndex + 1} / 03`;
   }
-  $("#quotePrev").addEventListener("click", () => setQuote(quoteIndex - 1));
-  $("#quoteNext").addEventListener("click", () => setQuote(quoteIndex + 1));
+  $("#xpStoryPrev")?.addEventListener("click", () => setQuote(quoteIndex - 1));
+  $("#xpStoryNext")?.addEventListener("click", () => setQuote(quoteIndex + 1));
+  setQuote(quoteIndex);
   const form = $("#travelForm");
   form.addEventListener("submit", (e) => {
     e.preventDefault();

@@ -52,7 +52,7 @@
             <div class="xp-hero-art-front">
               <img src="images/coast.avif" alt="Tropical beach with white sand and clear sea" />
             </div>
-            <span class="xp-hero-stamp">WILD <i>✳</i> WONDERFUL <i>✳</i> KENYA</span>
+            <span class="xp-hero-stamp">WILD WONDERFUL KENYA</span>
           </div>
         </div>
         <div class="xp-hero-editorial-bottom">
@@ -133,7 +133,6 @@
           <div class="xp-stage-controls">
             <button id="scenePrev" aria-label="Previous experience">←</button><button id="sceneNext"
               aria-label="Next experience">→</button>
-              <!-- <span>SELECT A JOURNEY</span> -->
           </div>
         </div>
       </div>
@@ -251,15 +250,22 @@
       <div class="xp-testimonial-inner xp-reveal">
         <p class="eyebrow dark">TRAVELLER STORIES</p>
         <div class="xp-quote-mark">“</div>
-        <blockquote>
+        <blockquote id="xpStoryQuote">
           We came for the safari, but it was the feeling of the whole journey
           that stayed with us.
         </blockquote>
-        <div class="xp-guest">
+        <div class="xp-guest" id="xpStoryGuest">
           <span>SOPHIE & MARK</span><i></i><span>SAFARI + DIANI</span><i></i><span>AMSTERDAM</span>
         </div>
-        <small>Sample testimonial · replace with a real client review</small>
+        <div class="xp-testimonial-controls" aria-label="Traveller stories controls">
+          <button id="xpStoryPrev" aria-label="Previous traveller story">&larr;</button>
+          <span id="xpStoryCount">01 / 03</span>
+          <button id="xpStoryNext" aria-label="Next traveller story">&rarr;</button>
+        </div>
+        <button id="scenePrev" aria-label="Previous experience">←</button><button id="sceneNext"
+              aria-label="Next experience">→</button>
       </div>
+      
     </section>
    
     <section class="xp-booking xp-booking-new" id="booking">
@@ -301,13 +307,7 @@
               <input type="email" name="email" placeholder="you@example.com" autocomplete="email"
                 required /></label><label>Preferred travel date <input type="date" name="date" /></label><label>Number
               of travellers
-              <select name="travellers">
-                <option value="1">1 traveller</option>
-                <option value="2" selected>2 travellers</option>
-                <option value="3">3 travellers</option>
-                <option value="4">4 travellers</option>
-                <option value="5+">5+ travellers</option>
-              </select></label>
+              <input type="number" name="travellers" min="1" value="2" required /></label>
           </div>
           <label class="xp-notes">Tell us a little more
             <textarea name="notes" rows="3"
@@ -315,10 +315,6 @@
             class="xp-submit" type="submit">
             PREPARE MY ENQUIRY <span>↗</span>
           </button>
-          <p class="xp-form-notice" id="formNotice" role="status">
-            Demo form: this prepares an email in your mail app. Connect a
-            booking service before launch.
-          </p>
         </form>
       </div>
     </section>

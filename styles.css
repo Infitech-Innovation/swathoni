@@ -797,6 +797,39 @@ figcaption {
   height: 1px;
   background: #9e947f;
 }
+.testimonial-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 34px;
+}
+.testimonial-controls button {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(40, 62, 49, 0.34);
+  border-radius: 50%;
+  background: transparent;
+  color: #283e31;
+  font-size: 21px;
+  line-height: 1;
+  transition:
+    background 0.3s,
+    border-color 0.3s,
+    color 0.3s,
+    transform 0.3s;
+}
+.testimonial-controls button:hover {
+  background: #283e31;
+  border-color: #283e31;
+  color: #fff;
+  transform: translateY(-2px);
+}
+.testimonial-controls span {
+  min-width: 52px;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: #7d705e;
+}
 .testimonial-inner > small {
   display: block;
   margin-top: 22px;

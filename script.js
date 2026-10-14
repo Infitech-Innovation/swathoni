@@ -66,3 +66,37 @@ document.querySelectorAll(".step").forEach((step) =>
       : (preload.onload = () => setTimeout(swap, 180));
   }),
 );
+
+const storyQuotes = [
+  {
+    text: "We came for the safari, but it was the feeling of the whole journey that stayed with us.",
+    guest: ["SOPHIE & MARK", "SAFARI + DIANI", "AMSTERDAM"],
+  },
+  {
+    text: "Every detail felt considered, from the first game drive to the quiet coast days that followed.",
+    guest: ["AMINA & JAMES", "WILD + COAST", "NAIROBI"],
+  },
+  {
+    text: "Swathoni shaped the trip around how we wanted to feel, not just where we wanted to go.",
+    guest: ["LENA FAMILY", "KENYA ESCAPE", "LONDON"],
+  },
+];
+let storyIndex = 0;
+const storyQuote = document.getElementById("storyQuote");
+const storyGuest = document.getElementById("storyGuest");
+const storyCount = document.getElementById("storyCount");
+const storyPrev = document.getElementById("storyPrev");
+const storyNext = document.getElementById("storyNext");
+if (storyPrev) storyPrev.textContent = "\u2190";
+if (storyNext) storyNext.textContent = "\u2192";
+function setStory(n) {
+  if (!storyQuote || !storyGuest || !storyCount) return;
+  storyIndex = (n + storyQuotes.length) % storyQuotes.length;
+  const story = storyQuotes[storyIndex];
+  storyQuote.textContent = story.text;
+  storyGuest.innerHTML = story.guest.map((item) => `<span>${item}</span>`).join("<i></i>");
+  storyCount.textContent = `0${storyIndex + 1} / 03`;
+}
+storyPrev?.addEventListener("click", () => setStory(storyIndex - 1));
+storyNext?.addEventListener("click", () => setStory(storyIndex + 1));
+setStory(storyIndex);
