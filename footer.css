@@ -1,0 +1,105 @@
+/* Shared footer layout, based on the Experiences page. */
+body footer {
+  background: #12271e;
+  color: #fff;
+  padding: 80px 5.5vw 25px;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr));
+  gap: 50px;
+}
+
+body footer > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+body footer > div:first-child {
+  display: flex;
+  flex-direction: column;
+  grid-column: auto;
+  gap: 0;
+}
+
+body footer > div:first-child img {
+  width: min(210px, 100%);
+  height: auto;
+  object-fit: contain;
+}
+
+body footer > div:first-child p {
+  font-family: "DM Serif Display", serif;
+  font-size: 22px;
+  line-height: 1.3;
+  margin-top: 25px;
+  color: #d2c6ae;
+}
+
+body footer > div:not(:first-child):not(.copyright) {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+body footer a {
+  color: #fff;
+}
+
+body footer > div > a:not(.xp-footer-brand) {
+  font-size: 12px;
+}
+
+body footer > div > small,
+body footer > div > span:not(.footer-note) {
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: #b8b9a6;
+  margin: 0;
+}
+
+body footer .footer-note {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #b8b9a6;
+}
+
+body footer .copyright {
+  grid-column: 1 / -1;
+  border-top: 1px solid #ffffff30;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 25px;
+  margin-top: 40px;
+  font-size: 9px;
+  line-height: 1.6;
+  color: #b8b9a6;
+}
+
+body footer .copyright span {
+  display: inline;
+}
+
+@media (max-width: 720px) {
+  body footer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+  }
+
+  body footer > div:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  body footer .copyright {
+    display: block;
+    line-height: 2;
+  }
+
+  body footer .copyright span {
+    display: block;
+    margin-top: 8px;
+  }
+}
