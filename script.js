@@ -24,7 +24,9 @@ let heroSlideIndex = 0;
 function setHeroSlide(index) {
   if (!heroSlides.length) return;
   heroSlideIndex = (index + heroSlides.length) % heroSlides.length;
-  heroSlides.forEach((slide, i) => slide.classList.toggle("active", i === heroSlideIndex));
+  heroSlides.forEach((slide, i) =>
+    slide.classList.toggle("active", i === heroSlideIndex),
+  );
 }
 if (!reduce && heroSlides.length > 1) {
   setInterval(() => setHeroSlide(heroSlideIndex + 1), 5200);
@@ -104,7 +106,9 @@ function setStory(n) {
   storyIndex = (n + storyQuotes.length) % storyQuotes.length;
   const story = storyQuotes[storyIndex];
   storyQuote.textContent = story.text;
-  storyGuest.innerHTML = story.guest.map((item) => `<span>${item}</span>`).join("<i></i>");
+  storyGuest.innerHTML = story.guest
+    .map((item) => `<span>${item}</span>`)
+    .join("<i></i>");
   storyCount.textContent = `0${storyIndex + 1} / 03`;
 }
 storyPrev?.addEventListener("click", () => setStory(storyIndex - 1));

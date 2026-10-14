@@ -576,10 +576,11 @@ figcaption {
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
   background: #eee6d7;
-  min-height: 650px;
+  min-height: 620px;
 }
 .journey-photo {
   position: relative;
+  height: 620px;
   overflow: hidden;
 }
 .journey-photo img {
@@ -1061,9 +1062,10 @@ footer small {
   }
   .journey-visual {
     grid-template-columns: 1fr;
+    min-height: 0;
   }
   .journey-photo {
-    height: 58vh;
+    height: 520px;
   }
   .journey-note {
     grid-template-columns: 1fr;

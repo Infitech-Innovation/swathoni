@@ -759,8 +759,7 @@ body.xp-page .nav.scrolled {
   margin-top: 30px;
 } */
 
-
-  .xp-testimonial {
+.xp-testimonial {
   padding: 130px 5.5vw;
   background: #e8ddc8;
   text-align: center;
@@ -1312,7 +1311,7 @@ body.xp-page .nav.scrolled {
     font-size: 9px;
   }
 
-/*   
+  /*   
   .xp-testimonials {
     grid-template-columns: 1fr;
   }

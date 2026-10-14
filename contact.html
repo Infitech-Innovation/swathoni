@@ -1,132 +1,188 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Contact Swathoni Travels in Diani Beach, Kenya. Share your safari and beach holiday ideas."
+    />
+    <title>Contact Us | Swathoni Travels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <script src="contact.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description"
-    content="Contact Swathoni Travels in Diani Beach, Kenya. Share your safari and beach holiday ideas." />
-  <title>Contact Us | Swathoni Travels</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="contact.css" />
-  <script src="contact.js" defer></script>
-</head>
-
-<body class="contact-page">
-  <header class="nav" id="nav">
-    <a class="brand" href="index.html"><strong>SWATHONI</strong><span>TRAVELS · DIANI BEACH</span></a>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="experiences.html">Our Experiences</a>
-      <a href="about.html">Our Story</a>
-      <a href="contact.html" aria-current="page">Contact</a>
-    </nav>
-    <a class="nav-cta" href="#contact-form">Let's talk <span>↗</span></a>
-  </header>
-  <main>
-    <section class="find-us" id="location">
-      <div class="location-heading reveal">
-        <div>
-          <h2>Every great journey<br />begins with <em>hello.</em></h2>
-        </div>
-        <p>
-          A safari you've always dreamed of. A few slow days by the ocean. Or
-          both. Tell us what you're imagining, and let's take it from there.
-        </p>
-      </div>
-    </section>
-    <section class="form-section" id="contact-form">
-      <div class="form-shell">
-
-        <div class="form-card reveal">
-          <div class="form-card-top">
-            <span>YOUR JOURNEY ENQUIRY</span><span>01 — 04</span>
+  <body class="contact-page">
+    <header class="nav" id="nav">
+      <a class="brand" href="index.html"
+        ><strong>SWATHONI</strong><span>TRAVELS · DIANI BEACH</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="experiences.html">Our Experiences</a>
+        <a href="about.html">Our Story</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#contact-form">Let's talk <span>↗</span></a>
+    </header>
+    <main>
+      <section class="find-us" id="location">
+        <div class="location-heading reveal">
+          <div>
+            <h2>Every great journey<br />begins with <em>hello.</em></h2>
           </div>
-          <form id="enquiryForm" novalidate>
-            <div class="form-grid">
-              <label>YOUR NAME
-                <input name="name" autocomplete="name" placeholder="How should we call you?"
-                  required /></label><label>EMAIL ADDRESS
-                <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required /></label>
+          <p>
+            A safari you've always dreamed of. A few slow days by the ocean. Or
+            both. Tell us what you're imagining, and let's take it from there.
+          </p>
+        </div>
+      </section>
+      <section class="form-section" id="contact-form">
+        <div class="form-shell">
+          <div class="form-card reveal">
+            <div class="form-card-top">
+              <span>YOUR JOURNEY ENQUIRY</span><span>01 — 04</span>
             </div>
-            <fieldset>
-              <legend>WHAT ARE YOU DREAMING OF?</legend>
-              <div class="trip-choices">
-                <label><input type="radio" name="experience" value="Safari adventure" /><span>Safari adventure
-                    <b>↗</b></span></label><label><input type="radio" name="experience"
-                    value="Beach escape" /><span>Beach escape <b>↗</b></span></label><label><input type="radio"
-                    name="experience" value="Safari & beach" checked /><span>A little of both <b>↗</b></span></label>
+            <form id="enquiryForm" novalidate>
+              <div class="form-grid">
+                <label
+                  >YOUR NAME
+                  <input
+                    name="name"
+                    autocomplete="name"
+                    placeholder="How should we call you?"
+                    required /></label
+                ><label
+                  >EMAIL ADDRESS
+                  <input
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    required
+                /></label>
               </div>
-            </fieldset>
-            <div class="form-grid">
-              <label>WHEN WOULD YOU LIKE TO TRAVEL?
-                <input type="month" name="travelMonth" aria-label="Preferred travel month" /></label><label>HOW MANY
-                TRAVELLERS?
-                <select name="travellers">
-                  <option value="Not sure yet">Not sure yet</option>
-                  <option>1</option>
-                  <option selected>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5+</option>
-                </select></label>
+              <fieldset>
+                <legend>WHAT ARE YOU DREAMING OF?</legend>
+                <div class="trip-choices">
+                  <label
+                    ><input
+                      type="radio"
+                      name="experience"
+                      value="Safari adventure"
+                    /><span>Safari adventure <b>↗</b></span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="experience"
+                      value="Beach escape"
+                    /><span>Beach escape <b>↗</b></span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="experience"
+                      value="Safari & beach"
+                      checked
+                    /><span>A little of both <b>↗</b></span></label
+                  >
+                </div>
+              </fieldset>
+              <div class="form-grid">
+                <label
+                  >WHEN WOULD YOU LIKE TO TRAVEL?
+                  <input
+                    type="month"
+                    name="travelMonth"
+                    aria-label="Preferred travel month" /></label
+                ><label
+                  >HOW MANY TRAVELLERS?
+                  <select name="travellers">
+                    <option value="Not sure yet">Not sure yet</option>
+                    <option>1</option>
+                    <option selected>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5+</option>
+                  </select></label
+                >
+              </div>
+              <label
+                >ANYTHING ELSE WE SHOULD KNOW?
+                <textarea
+                  name="message"
+                  rows="3"
+                  placeholder="A special occasion, places on your wish list, or just a feeling you're chasing..."
+                ></textarea></label
+              ><button type="submit" class="send-button">
+                PREPARE MY ENQUIRY <span>↗</span>
+              </button>
+              <p
+                class="form-feedback"
+                id="formFeedback"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+          <div class="map-frame reveal">
+            <iframe
+              title="Map of Diani Beach, Kenya"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=39.540%2C-4.360%2C39.625%2C-4.255&amp;layer=mapnik&amp;marker=-4.300%2C39.580"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            ></iframe>
+            <div class="map-caption">
+              <div>
+                <span>OUR BASE</span><strong>Diani Beach, Kenya</strong
+                ><small
+                  >Approximate area shown · Office address to be
+                  confirmed</small
+                >
+              </div>
+              <a
+                href="https://www.openstreetmap.org/?mlat=-4.300&amp;mlon=39.580#map=12/-4.300/39.580"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OPEN MAP ↗</a
+              >
             </div>
-            <label>ANYTHING ELSE WE SHOULD KNOW?
-              <textarea name="message" rows="3"
-                placeholder="A special occasion, places on your wish list, or just a feeling you're chasing..."></textarea></label><button
-              type="submit" class="send-button">
-              PREPARE MY ENQUIRY <span>↗</span>
-            </button>
-            <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-        <div class="map-frame reveal">
-          <iframe title="Map of Diani Beach, Kenya"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=39.540%2C-4.360%2C39.625%2C-4.255&amp;layer=mapnik&amp;marker=-4.300%2C39.580"
-            loading="lazy" referrerpolicy="no-referrer"></iframe>
-          <div class="map-caption">
-            <div>
-              <span>OUR BASE</span><strong>Diani Beach, Kenya</strong><small>Approximate area shown · Office address to
-                be
-                confirmed</small>
-            </div>
-            <a href="https://www.openstreetmap.org/?mlat=-4.300&amp;mlon=39.580#map=12/-4.300/39.580" target="_blank"
-              rel="noopener noreferrer">OPEN MAP ↗</a>
           </div>
         </div>
+      </section>
+
+      <section class="last-word">
+        <span>FROM THE WILD TO THE WATER</span>
+        <h2>We'll see you <em>in Kenya.</em></h2>
+        <a href="experiences.html">EXPLORE OUR JOURNEYS ↗</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand">
+        <strong>SWATHONI</strong><span>TRAVELS · DIANI BEACH</span>
+        <p>Safari. Coast. Kenya.<br />Beautifully connected.</p>
       </div>
-    </section>
-
-    <section class="last-word">
-      <span>FROM THE WILD TO THE WATER</span>
-      <h2>We'll see you <em>in Kenya.</em></h2>
-      <a href="experiences.html">EXPLORE OUR JOURNEYS ↗</a>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-brand">
-      <strong>SWATHONI</strong><span>TRAVELS · DIANI BEACH</span>
-      <p>Safari. Coast. Kenya.<br />Beautifully connected.</p>
-    </div>
-    <div>
-      <small>EXPLORE</small><a href="experiences.html">Our Experiences</a><a href="experiences.html#signature">Safari +
-        Beach</a><a href="about.html">Our Story</a>
-    </div>
-    <div>
-      <small>CONTACT</small><a href="experiences.html#booking">Plan a journey</a><span class="footer-note">Contact
-        details to be added</span>
-    </div>
-    <div class="copyright">
-      © 2026 SWATHONI TRAVELS · DIANI BEACH, KENYA
-      <span>CRAFTED FOR THE JOURNEY</span>
-    </div>
-  </footer>
-</body>
-
+      <div>
+        <small>EXPLORE</small><a href="experiences.html">Our Experiences</a
+        ><a href="experiences.html#signature">Safari + Beach</a
+        ><a href="about.html">Our Story</a>
+      </div>
+      <div>
+        <small>CONTACT</small
+        ><a href="experiences.html#booking">Plan a journey</a
+        ><span class="footer-note">Contact details to be added</span>
+      </div>
+      <div class="copyright">
+        © 2026 SWATHONI TRAVELS · DIANI BEACH, KENYA
+        <span>CRAFTED FOR THE JOURNEY</span>
+      </div>
+    </footer>
+  </body>
 </html>

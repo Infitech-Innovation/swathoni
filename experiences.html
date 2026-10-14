@@ -1,352 +1,521 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Discover Swathoni Travels safari adventures, Diani beach escapes and safari-to-sea journeys in Kenya."
+    />
+    <title>Our Experiences | Swathoni Travels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="experiences.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="experiences.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description"
-    content="Discover Swathoni Travels safari adventures, Diani beach escapes and safari-to-sea journeys in Kenya." />
-  <title>Our Experiences | Swathoni Travels</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="experiences.css" />
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
-  <script src="experiences.js" defer></script>
-</head>
-
-<body class="xp-page">
-  <div class="grain" aria-hidden="true"></div>
-  <header class="nav" id="nav">
-    <a class="brand" href="index.html"><strong>SWATHONI</strong><span>TRAVELS · DIANI BEACH</span></a>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="experiences.html" aria-current="page">Our Experiences</a><a
-        href="experiences.html#portfolio">Portfolio</a><a href="about.html">Our Story</a><a
-        href="contact.html">Contact</a>
-    </nav>
-    <a class="nav-cta" href="contact.html#contact-form">Plan your journey <span>↗</span></a>
-  </header>
-  <main>
-    <section class="xp-hero xp-hero-new" id="top">
-      <div class="xp-hero-editorial">
-        <div class="xp-hero-editorial-main">
-          <div class="xp-hero-title">
-            <span class="xp-kicker">KENYA, YOUR WAY</span>
-            <h1>
-              Go where<br />you <em>feel</em><br />alive<span class="xp-period">.</span>
-            </h1>
-            <p>
-              Wild mornings. Ocean afternoons. A thousand moments in between.
-              Find the journey that feels like yours.
-            </p>
-            <a href="#signature" class="xp-editorial-cta">DISCOVER YOUR JOURNEY <b>↗</b></a>
-          </div>
-          <div class="xp-hero-art">
-            <div class="xp-hero-art-back">
-              <img src="images/elephant.avif" alt="Wildlife on an African safari" />
-            </div>
-            <div class="xp-hero-art-front">
-              <img src="images/coast.avif" alt="Tropical beach with white sand and clear sea" />
-            </div>
-            <span class="xp-hero-stamp">WILD WONDERFUL KENYA</span>
-          </div>
-        </div>
-        <div class="xp-hero-editorial-bottom">
-          <span>SAFARI / COAST / BEYOND</span><span>SCROLL TO EXPLORE ↓</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="xp-experience" aria-label="Choose your experience">
-      <div class="xp-stage">
-        <div class="xp-stage-media">
-          <div class="xp-stage-image is-active" data-scene="0">
-            <img src="images/elephant.avif" alt="Wildlife in the savannah" />
-          </div>
-          <div class="xp-stage-image" data-scene="1">
-            <img src="images/coast.avif" alt="White sand and turquoise ocean" />
-          </div>
-          <div class="xp-stage-image" data-scene="2">
-            <img src="images/safari.avif" alt="Safari journey across Kenya" />
-          </div>
-          <div class="xp-stage-shade"></div>
-          <div class="xp-stage-top">
-            <span>EXPLORE THE EXPERIENCES</span><span class="xp-scene-counter">01 / 03</span>
-          </div>
-          <div class="xp-stage-bottom">
-            <span>THE SWATHONI COLLECTION</span><span class="xp-stage-line"></span><span>KENYA</span>
-          </div>
-        </div>
-        <div class="xp-stage-side">
-          <div class="xp-stage-progress">
-            <span>01</span>
-            <div><i id="xpProgress"></i></div>
-            <span>03</span>
-          </div>
-          <div class="xp-scene-text">
-            <article class="xp-scene is-active" data-scene="0">
-              <span class="xp-overline">01 / THE WILD</span>
-              <h3>Safari<br /><em>Adventures.</em></h3>
+  <body class="xp-page">
+    <div class="grain" aria-hidden="true"></div>
+    <header class="nav" id="nav">
+      <a class="brand" href="index.html"
+        ><strong>SWATHONI</strong><span>TRAVELS · DIANI BEACH</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="experiences.html" aria-current="page">Our Experiences</a
+        ><a href="experiences.html#portfolio">Portfolio</a
+        ><a href="about.html">Our Story</a><a href="contact.html">Contact</a>
+      </nav>
+      <a class="nav-cta" href="contact.html#contact-form"
+        >Plan your journey <span>↗</span></a
+      >
+    </header>
+    <main>
+      <section class="xp-hero xp-hero-new" id="top">
+        <div class="xp-hero-editorial">
+          <div class="xp-hero-editorial-main">
+            <div class="xp-hero-title">
+              <span class="xp-kicker">KENYA, YOUR WAY</span>
+              <h1>
+                Go where<br />you <em>feel</em><br />alive<span
+                  class="xp-period"
+                  >.</span
+                >
+              </h1>
               <p>
-                Follow the first light across open plains. Discover the
-                extraordinary wildlife, landscapes and quiet moments that make
-                a safari unforgettable.
+                Wild mornings. Ocean afternoons. A thousand moments in between.
+                Find the journey that feels like yours.
               </p>
-              <div class="xp-tags">
-                <span>GAME DRIVES</span><span>WILDLIFE</span><span>NATIONAL PARKS</span>
+              <a href="#signature" class="xp-editorial-cta"
+                >DISCOVER YOUR JOURNEY <b>↗</b></a
+              >
+            </div>
+            <div class="xp-hero-art">
+              <div class="xp-hero-art-back">
+                <img
+                  src="images/maasai.jpeg"
+                  alt="Wildlife on an African safari"
+                />
               </div>
-              <a href="#booking" class="xp-inline-link" data-trip="Safari Adventure">ENQUIRE ABOUT A SAFARI
-                <span>↗</span></a>
-            </article>
-            <article class="xp-scene" data-scene="1">
-              <span class="xp-overline">02 / THE COAST</span>
-              <h3>Beach<br /><em>Escapes.</em></h3>
-              <p>
-                Slow mornings, warm sea breezes and powder-soft sand. Let the
-                beauty of Diani and the Kenyan coast set the pace.
-              </p>
-              <div class="xp-tags">
-                <span>DIANI BEACH</span><span>OCEAN DAYS</span><span>RELAXATION</span>
+              <div class="xp-hero-art-front">
+                <img
+                  src="images/diani.jpeg"
+                  alt="Tropical beach with white sand and clear sea"
+                />
               </div>
-              <a href="#booking" class="xp-inline-link" data-trip="Beach Escape">ENQUIRE ABOUT THE COAST
-                <span>↗</span></a>
-            </article>
-            <article class="xp-scene" data-scene="2">
-              <span class="xp-overline">03 / THE SIGNATURE</span>
-              <h3>Safari<br /><em>&amp; Sea.</em></h3>
-              <p>
-                One journey, two beautiful worlds. Experience the excitement
-                of Kenya's wilderness before unwinding beside the Indian
-                Ocean.
-              </p>
-              <div class="xp-tags">
-                <span>THE WILD</span><span>THE COAST</span><span>TAILORED TRAVEL</span>
-              </div>
-              <a href="#booking" class="xp-inline-link" data-trip="Safari & Beach">PLAN A COMBINED JOURNEY
-                <span>↗</span></a>
-            </article>
+              <span class="xp-hero-stamp">WILD WONDERFUL KENYA</span>
+            </div>
           </div>
-          <div class="xp-stage-controls">
-            <button id="scenePrev" aria-label="Previous experience">←</button><button id="sceneNext"
-              aria-label="Next experience">→</button>
+          <div class="xp-hero-editorial-bottom">
+            <span>SAFARI / COAST / BEYOND</span><span>SCROLL TO EXPLORE ↓</span>
           </div>
         </div>
-      </div>
-      <div class="xp-scroll-steps" aria-hidden="true">
-        <div data-step="0"></div>
-        <div data-step="1"></div>
-        <div data-step="2"></div>
-      </div>
-    </section>
-    <section class="xp-why" id="why">
-      <div class="xp-why-heading">
-        <span class="xp-overline xp-reveal">02 / THE SWATHONI DIFFERENCE</span>
-        <h2 class="xp-reveal">
-          Not just where you go.<br /><em>How you experience it.</em>
-        </h2>
-        <p class="xp-reveal">
-          The best journeys leave room for surprise, comfort and the little
-          details that make a place feel personal.
-        </p>
-      </div>
-      <div class="xp-why-grid">
-        <div class="xp-why-photo">
-          <img src="images/girrafe.avif" alt="Golden African landscape" /><span>MADE FOR THE MOMENTS THAT MATTER</span>
-        </div>
-        <div class="xp-why-list">
-          <article class="xp-why-item xp-reveal">
-            <span>01</span>
-            <div>
-              <h3>Local perspective.</h3>
-              <p>
-                Our connection to Kenya shapes the places, experiences and
-                stories we love sharing.
-              </p>
-            </div>
-            <b>↗</b>
-          </article>
-          <article class="xp-why-item xp-reveal">
-            <span>02</span>
-            <div>
-              <h3>Made around you.</h3>
-              <p>
-                From adventurous mornings to unhurried afternoons, tell us the
-                kind of journey you have in mind.
-              </p>
-            </div>
-            <b>↗</b>
-          </article>
-          <article class="xp-why-item xp-reveal">
-            <span>03</span>
-            <div>
-              <h3>Two worlds, one trip.</h3>
-              <p>
-                Discover the magic of the savannah and the ease of the coast
-                without choosing between them.
-              </p>
-            </div>
-            <b>↗</b>
-          </article>
-          <article class="xp-why-item xp-reveal">
-            <span>04</span>
-            <div>
-              <h3>Warm, personal planning.</h3>
-              <p>
-                Begin with a conversation and explore a journey shaped around
-                your travel wishes.
-              </p>
-            </div>
-            <b>↗</b>
-          </article>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="xp-breath">
-      <div class="xp-breath-photo"><img src="images/elephant2.avif" alt="Elephants moving through the wild"></div>
-      <div class="xp-breath-shade"></div>
-      <div class="xp-breath-content"><span>AN INVITATION TO EXPLORE</span>
-        <h2>Take the road<br><em>less ordinary.</em></h2>
-        <p>Let Kenya surprise you.</p>
-      </div>
-    </section>
-
-    <section class="xp-portfolio" id="portfolio">
-      <div class="xp-portfolio-head">
-        <div><span class="xp-overline xp-reveal">03 / THE SWATHONI JOURNAL</span>
-          <h2 class="xp-reveal">A glimpse of<br><em>what's waiting.</em></h2>
+      <section class="xp-experience" aria-label="Choose your experience">
+        <div class="xp-stage">
+          <div class="xp-stage-media">
+            <div class="xp-stage-image is-active" data-scene="0">
+              <img src="images/lion.jpeg" alt="Wildlife in the savannah" />
+            </div>
+            <div class="xp-stage-image" data-scene="1">
+              <img
+                src="images/privatebeach.jpeg"
+                alt="White sand and turquoise ocean"
+              />
+            </div>
+            <div class="xp-stage-image" data-scene="2">
+              <img
+                src="images/wildbeasts.jpeg"
+                alt="Safari journey across Kenya"
+              />
+            </div>
+            <div class="xp-stage-shade"></div>
+            <div class="xp-stage-top">
+              <span>EXPLORE THE EXPERIENCES</span
+              ><span class="xp-scene-counter">01 / 03</span>
+            </div>
+            <div class="xp-stage-bottom">
+              <span>THE SWATHONI COLLECTION</span
+              ><span class="xp-stage-line"></span><span>KENYA</span>
+            </div>
+          </div>
+          <div class="xp-stage-side">
+            <div class="xp-stage-progress">
+              <span>01</span>
+              <div><i id="xpProgress"></i></div>
+              <span>03</span>
+            </div>
+            <div class="xp-scene-text">
+              <article class="xp-scene is-active" data-scene="0">
+                <span class="xp-overline">01 / THE WILD</span>
+                <h3>Safari<br /><em>Adventures.</em></h3>
+                <p>
+                  Follow the first light across open plains. Discover the
+                  extraordinary wildlife, landscapes and quiet moments that make
+                  a safari unforgettable.
+                </p>
+                <div class="xp-tags">
+                  <span>GAME DRIVES</span><span>WILDLIFE</span
+                  ><span>NATIONAL PARKS</span>
+                </div>
+                <a
+                  href="#booking"
+                  class="xp-inline-link"
+                  data-trip="Safari Adventure"
+                  >ENQUIRE ABOUT A SAFARI <span>↗</span></a
+                >
+              </article>
+              <article class="xp-scene" data-scene="1">
+                <span class="xp-overline">02 / THE COAST</span>
+                <h3>Beach<br /><em>Escapes.</em></h3>
+                <p>
+                  Slow mornings, warm sea breezes and powder-soft sand. Let the
+                  beauty of Diani and the Kenyan coast set the pace.
+                </p>
+                <div class="xp-tags">
+                  <span>DIANI BEACH</span><span>OCEAN DAYS</span
+                  ><span>RELAXATION</span>
+                </div>
+                <a
+                  href="#booking"
+                  class="xp-inline-link"
+                  data-trip="Beach Escape"
+                  >ENQUIRE ABOUT THE COAST <span>↗</span></a
+                >
+              </article>
+              <article class="xp-scene" data-scene="2">
+                <span class="xp-overline">03 / THE SIGNATURE</span>
+                <h3>Safari<br /><em>&amp; Sea.</em></h3>
+                <p>
+                  One journey, two beautiful worlds. Experience the excitement
+                  of Kenya's wilderness before unwinding beside the Indian
+                  Ocean.
+                </p>
+                <div class="xp-tags">
+                  <span>THE WILD</span><span>THE COAST</span
+                  ><span>TAILORED TRAVEL</span>
+                </div>
+                <a
+                  href="#booking"
+                  class="xp-inline-link"
+                  data-trip="Safari & Beach"
+                  >PLAN A COMBINED JOURNEY <span>↗</span></a
+                >
+              </article>
+            </div>
+            <div class="xp-stage-controls">
+              <button id="scenePrev" aria-label="Previous experience">←</button
+              ><button id="sceneNext" aria-label="Next experience">→</button>
+            </div>
+          </div>
         </div>
-        <p class="xp-reveal">A visual journey through wildlife, wild landscapes, coastal moments and places to
-          pause.</p>
-      </div>
-      <div class="xp-filters" role="group" aria-label="Filter gallery"><button class="active" data-filter="all"
-          aria-pressed="true">ALL MOMENTS <span>06</span></button><button data-filter="safari" aria-pressed="false">THE
-          WILD</button><button data-filter="coast" aria-pressed="false">THE
-          COAST</button><button data-filter="stays" aria-pressed="false">PLACES TO STAY</button></div>
-      <div class="xp-gallery"><button class="xp-gallery-item xp-gallery-tall" data-category="safari"
-          data-caption="A moment in the wild"><img src="images/elephant.avif" alt="Wildlife in the savannah"><span><b>01
-              / THE WILD</b><i>↗</i></span></button><button class="xp-gallery-item xp-gallery-short"
-          data-category="coast" data-caption="A little closer to paradise"><img src="images/coast.avif"
-            alt="Palm-fringed white sand beach"><span><b>02 / THE COAST</b><i>↗</i></span></button><button
-          class="xp-gallery-item xp-gallery-medium" data-category="safari"
-          data-caption="The beauty of the open plains"><img src="images/safari.avif"
-            alt="Safari across the savannah"><span><b>03 / OPEN PLAINS</b><i>↗</i></span></button><button
-          class="xp-gallery-item xp-gallery-medium" data-category="stays" data-caption="A slower moment"><img
-            src="images/girrafe.avif" alt="Golden landscape and scenic views"><span><b>04 / QUIET
-              MOMENTS</b><i>↗</i></span></button><button class="xp-gallery-item xp-gallery-short" data-category="safari"
-          data-caption="In the company of giants"><img src="images/elephant2.avif" alt="Elephants in Kenya"><span><b>05
-              / WILDLIFE</b><i>↗</i></span></button><button class="xp-gallery-item xp-gallery-tall"
-          data-category="coast" data-caption="The ocean is calling"><img src="images/ocean.avif" alt="Tropical coastline"><span><b>06 /
-              OCEAN DAYS</b><i>↗</i></span></button></div>
-      <!-- <p class="xp-gallery-disclaimer">Photography shown for visual inspiration; replace with Swathoni's own
-        travel and guest imagery before publishing.</p> -->
-    </section>
-
-    <section class="xp-testimonial">
-      <div class="xp-testimonial-inner xp-reveal">
-        <p class="eyebrow dark">TRAVELLER STORIES</p>
-        <div class="xp-quote-mark">“</div>
-        <blockquote id="xpStoryQuote">
-          We came for the safari, but it was the feeling of the whole journey
-          that stayed with us.
-        </blockquote>
-        <div class="xp-guest" id="xpStoryGuest">
-          <span>SOPHIE & MARK</span><i></i><span>SAFARI + DIANI</span><i></i><span>AMSTERDAM</span>
+        <div class="xp-scroll-steps" aria-hidden="true">
+          <div data-step="0"></div>
+          <div data-step="1"></div>
+          <div data-step="2"></div>
         </div>
-        <div class="xp-testimonial-controls" aria-label="Traveller stories controls">
-          <button id="xpStoryPrev" aria-label="Previous traveller story">&larr;</button>
-          <span id="xpStoryCount">01 / 03</span>
-          <button id="xpStoryNext" aria-label="Next traveller story">&rarr;</button>
-        </div>
-        <button id="scenePrev" aria-label="Previous experience">←</button><button id="sceneNext"
-              aria-label="Next experience">→</button>
-      </div>
-      
-    </section>
-   
-    <section class="xp-booking xp-booking-new" id="booking">
-      <div class="xp-booking-background">
-        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2400&q=85"
-          alt="Golden safari landscape" />
-      </div>
-      <div class="xp-booking-shade"></div>
-      <div class="xp-booking-layout xp-booking-layout-new">
-        <div class="xp-booking-intro xp-booking-intro-new">
-          <span class="xp-overline">05 / YOUR NEXT CHAPTER</span>
-          <h2>Let's plan<br /><em>something</em><br />extraordinary.</h2>
-          <p>
-            Tell us a little about the journey you're dreaming of. Every
-            memorable trip begins with a conversation.
+      </section>
+      <section class="xp-why" id="why">
+        <div class="xp-why-heading">
+          <span class="xp-overline xp-reveal"
+            >02 / THE SWATHONI DIFFERENCE</span
+          >
+          <h2 class="xp-reveal">
+            Not just where you go.<br /><em>How you experience it.</em>
+          </h2>
+          <p class="xp-reveal">
+            The best journeys leave room for surprise, comfort and the little
+            details that make a place feel personal.
           </p>
-          <div class="xp-booking-mark">
-            SWATHONI TRAVELS <span>✳</span> DIANI BEACH
+        </div>
+        <div class="xp-why-grid">
+          <div class="xp-why-photo">
+            <img src="images/zebra2.jpeg" alt="Golden African landscape" /><span
+              >MADE FOR THE MOMENTS THAT MATTER</span
+            >
+          </div>
+          <div class="xp-why-list">
+            <article class="xp-why-item xp-reveal">
+              <span>01</span>
+              <div>
+                <h3>Local perspective.</h3>
+                <p>
+                  Our connection to Kenya shapes the places, experiences and
+                  stories we love sharing.
+                </p>
+              </div>
+              <b>↗</b>
+            </article>
+            <article class="xp-why-item xp-reveal">
+              <span>02</span>
+              <div>
+                <h3>Made around you.</h3>
+                <p>
+                  From adventurous mornings to unhurried afternoons, tell us the
+                  kind of journey you have in mind.
+                </p>
+              </div>
+              <b>↗</b>
+            </article>
+            <article class="xp-why-item xp-reveal">
+              <span>03</span>
+              <div>
+                <h3>Two worlds, one trip.</h3>
+                <p>
+                  Discover the magic of the savannah and the ease of the coast
+                  without choosing between them.
+                </p>
+              </div>
+              <b>↗</b>
+            </article>
+            <article class="xp-why-item xp-reveal">
+              <span>04</span>
+              <div>
+                <h3>Warm, personal planning.</h3>
+                <p>
+                  Begin with a conversation and explore a journey shaped around
+                  your travel wishes.
+                </p>
+              </div>
+              <b>↗</b>
+            </article>
           </div>
         </div>
-        <form class="xp-booking-form xp-booking-form-new" id="travelForm">
-          <div class="xp-form-top">
-            <span>YOUR JOURNEY STARTS HERE</span><span>ENQUIRY FORM · 01</span>
+      </section>
+
+      <section class="xp-breath">
+        <div class="xp-breath-photo">
+          <img
+            src="images/maaworias.jpeg"
+            alt="Elephants moving through the wild"
+          />
+        </div>
+        <div class="xp-breath-shade"></div>
+        <div class="xp-breath-content">
+          <span>AN INVITATION TO EXPLORE</span>
+          <h2>Take the road<br /><em>less ordinary.</em></h2>
+          <p>Let Kenya surprise you.</p>
+        </div>
+      </section>
+
+      <section class="xp-portfolio" id="portfolio">
+        <div class="xp-portfolio-head">
+          <div>
+            <span class="xp-overline xp-reveal">03 / THE SWATHONI JOURNAL</span>
+            <h2 class="xp-reveal">
+              A glimpse of<br /><em>what's waiting.</em>
+            </h2>
           </div>
-          <h3>Where shall we<br /><em>take you?</em></h3>
-          <fieldset>
-            <legend>WHAT WOULD YOU LOVE TO EXPERIENCE?</legend>
-            <div class="xp-trip-choices">
-              <label><input type="radio" name="trip" value="Safari Adventure" /><span>Safari<br />Adventure
-                  <b>↗</b></span></label><label><input type="radio" name="trip"
-                  value="Beach Escape" /><span>Beach<br />Escape <b>↗</b></span></label><label><input type="radio"
-                  name="trip" value="Safari & Beach" checked /><span>Safari<br />&amp; Beach <b>↗</b></span></label>
-            </div>
-          </fieldset>
-          <div class="xp-fields">
-            <label>Your name
-              <input type="text" name="name" placeholder="Full name" autocomplete="name" required /></label><label>Email
-              address
-              <input type="email" name="email" placeholder="you@example.com" autocomplete="email"
-                required /></label><label>Preferred travel date <input type="date" name="date" /></label><label>Number
-              of travellers
-              <input type="number" name="travellers" min="1" value="2" required /></label>
-          </div>
-          <label class="xp-notes">Tell us a little more
-            <textarea name="notes" rows="3"
-              placeholder="Dream destinations, a special occasion, or anything you'd love to experience..."></textarea></label><button
-            class="xp-submit" type="submit">
-            PREPARE MY ENQUIRY <span>↗</span>
+          <p class="xp-reveal">
+            A visual journey through wildlife, wild landscapes, coastal moments
+            and places to pause.
+          </p>
+        </div>
+        <div class="xp-filters" role="group" aria-label="Filter gallery">
+          <button class="active" data-filter="all" aria-pressed="true">
+            ALL MOMENTS <span>07</span></button
+          ><button data-filter="safari" aria-pressed="false">THE WILD</button
+          ><button data-filter="coast" aria-pressed="false">THE COAST</button
+          ><button data-filter="culture" aria-pressed="false">CULTURE</button
+          ><button data-filter="stays" aria-pressed="false">
+            PLACES TO STAY
           </button>
-        </form>
+        </div>
+        <div class="xp-gallery">
+          <button
+            class="xp-gallery-item xp-gallery-tall"
+            data-category="safari"
+            data-caption="A moment in the wild"
+            data-gallery-key="wild"
+          >
+            <img src="images/lion.jpeg" alt="Wildlife in the savannah" /><span
+              ><b>01 / THE WILD</b><i>↗</i></span
+            >
+          </button>
+          <button
+            class="xp-gallery-item xp-gallery-short"
+            data-category="coast"
+            data-caption="A little closer to paradise"
+            data-gallery-key="coast"
+          >
+            <img
+              src="images/diani.jpeg"
+              alt="Palm-fringed white sand beach"
+            /><span><b>02 / THE COAST</b><i>↗</i></span>
+          </button>
+          <button
+            class="xp-gallery-item xp-gallery-medium"
+            data-category="safari"
+            data-caption="The beauty of the open plains"
+            data-gallery-key="plains"
+          >
+            <img
+              src="images/thesafari.jpeg"
+              alt="Safari across the savannah"
+            /><span><b>03 / OPEN PLAINS</b><i>↗</i></span>
+          </button>
+
+          <button
+            class="xp-gallery-item xp-gallery-medium"
+            data-category="stays"
+            data-caption="A slower moment"
+            data-gallery-key="moments"
+          >
+            <img
+              src="images/girrafe.jpeg"
+              alt="Golden landscape and scenic views"
+            /><span><b>04 / QUIET MOMENTS</b><i>↗</i></span></button
+          ><button
+            class="xp-gallery-item xp-gallery-short"
+            data-category="safari"
+            data-caption="In the company of giants"
+            data-gallery-key="wildlife"
+          >
+            <img src="images/elephant3.jpeg" alt="Elephants in Kenya" /><span
+              ><b>05 / WILDLIFE</b><i>↗</i></span
+            >
+          </button>
+          <button
+            class="xp-gallery-item xp-gallery-medium"
+            data-category="culture"
+            data-caption="Maasai culture and connection"
+            data-gallery-key="culture"
+          >
+            <img src="images/maasai.jpeg" alt="Maasai culture in Kenya" /><span
+              ><b>07 / MAASAI CULTURE</b><i>&#8599;</i></span
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="xp-testimonial">
+        <div class="xp-testimonial-inner xp-reveal">
+          <p class="eyebrow dark">TRAVELLER STORIES</p>
+          <div class="xp-quote-mark">“</div>
+          <blockquote id="xpStoryQuote">
+            We came for the safari, but it was the feeling of the whole journey
+            that stayed with us.
+          </blockquote>
+          <div class="xp-guest" id="xpStoryGuest">
+            <span>SOPHIE & MARK</span><i></i><span>SAFARI + DIANI</span><i></i
+            ><span>AMSTERDAM</span>
+          </div>
+          <div
+            class="xp-testimonial-controls"
+            aria-label="Traveller stories controls"
+          >
+            <button id="xpStoryPrev" aria-label="Previous traveller story">
+              &larr;
+            </button>
+            <span id="xpStoryCount">01 / 03</span>
+            <button id="xpStoryNext" aria-label="Next traveller story">
+              &rarr;
+            </button>
+          </div>
+          <button id="scenePrev" aria-label="Previous experience">←</button
+          ><button id="sceneNext" aria-label="Next experience">→</button>
+        </div>
+      </section>
+
+      <section class="xp-booking xp-booking-new" id="booking">
+        <div class="xp-booking-background">
+          <img src="images/cheeter.jpeg" alt="Golden safari landscape" />
+        </div>
+        <div class="xp-booking-shade"></div>
+        <div class="xp-booking-layout xp-booking-layout-new">
+          <div class="xp-booking-intro xp-booking-intro-new">
+            <span class="xp-overline">05 / YOUR NEXT CHAPTER</span>
+            <h2>Let's plan<br /><em>something</em><br />extraordinary.</h2>
+            <p>
+              Tell us a little about the journey you're dreaming of. Every
+              memorable trip begins with a conversation.
+            </p>
+            <div class="xp-booking-mark">
+              SWATHONI TRAVELS <span>✳</span> DIANI BEACH
+            </div>
+          </div>
+          <form class="xp-booking-form xp-booking-form-new" id="travelForm">
+            <div class="xp-form-top">
+              <span>YOUR JOURNEY STARTS HERE</span
+              ><span>ENQUIRY FORM · 01</span>
+            </div>
+            <h3>Where shall we<br /><em>take you?</em></h3>
+            <fieldset>
+              <legend>WHAT WOULD YOU LOVE TO EXPERIENCE?</legend>
+              <div class="xp-trip-choices">
+                <label
+                  ><input
+                    type="radio"
+                    name="trip"
+                    value="Safari Adventure"
+                  /><span>Safari<br />Adventure <b>↗</b></span></label
+                ><label
+                  ><input type="radio" name="trip" value="Beach Escape" /><span
+                    >Beach<br />Escape <b>↗</b></span
+                  ></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="trip"
+                    value="Safari & Beach"
+                    checked
+                  /><span>Safari<br />&amp; Beach <b>↗</b></span></label
+                >
+              </div>
+            </fieldset>
+            <div class="xp-fields">
+              <label
+                >Your name
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full name"
+                  autocomplete="name"
+                  required /></label
+              ><label
+                >Email address
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required /></label
+              ><label
+                >Preferred travel date <input type="date" name="date" /></label
+              ><label
+                >Number of travellers
+                <input
+                  type="number"
+                  name="travellers"
+                  min="1"
+                  value="2"
+                  required
+              /></label>
+            </div>
+            <label class="xp-notes"
+              >Tell us a little more
+              <textarea
+                name="notes"
+                rows="3"
+                placeholder="Dream destinations, a special occasion, or anything you'd love to experience..."
+              ></textarea></label
+            ><button class="xp-submit" type="submit">
+              PREPARE MY ENQUIRY <span>↗</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="xp-footer">
+      <div>
+        <a class="xp-footer-brand" href="index.html"
+          >SWATHONI <small>TRAVELS · DIANI BEACH</small></a
+        >
+        <p>From the wild to the water.<br />Beautiful journeys begin here.</p>
       </div>
-    </section>
-  </main>
-  <footer class="xp-footer">
-    <div>
-      <a class="xp-footer-brand" href="index.html">SWATHONI <small>TRAVELS · DIANI BEACH</small></a>
-      <p>From the wild to the water.<br />Beautiful journeys begin here.</p>
-    </div>
-    <div>
-      <span>EXPLORE</span><a href="index.html">Home</a><a href="about.html">Our Story</a><a href="experiences.html">Our
-        Experiences</a>
-    </div>
-    <div>
-      <span>YOUR JOURNEY</span><a href="#booking">Plan a Journey</a><a href="#portfolio">Our Portfolio</a><a
-        href="#why">Why Swathoni</a>
-    </div>
-    <div class="copyright">
-      © 2026 SWATHONI TRAVELS <span>CRAFTED FOR THE LOVE OF KENYA</span>
-    </div>
-  </footer>
+      <div>
+        <span>EXPLORE</span><a href="index.html">Home</a
+        ><a href="about.html">Our Story</a
+        ><a href="experiences.html">Our Experiences</a>
+      </div>
+      <div>
+        <span>YOUR JOURNEY</span><a href="#booking">Plan a Journey</a
+        ><a href="#portfolio">Our Portfolio</a><a href="#why">Why Swathoni</a>
+      </div>
+      <div class="copyright">
+        © 2026 SWATHONI TRAVELS <span>CRAFTED FOR THE LOVE OF KENYA</span>
+      </div>
+    </footer>
 
-  <div class="xp-lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery" aria-hidden="true">
-    <button class="xp-lightbox-close" aria-label="Close gallery">×</button><button class="xp-lightbox-prev"
-      aria-label="Previous photo">←</button>
-    <figure>
-      <img id="lightboxImage" alt="" />
-      <figcaption id="lightboxCaption"></figcaption>
-    </figure>
-    <button class="xp-lightbox-next" aria-label="Next photo">→</button>
-  </div>
-</body>
-
+    <div
+      class="xp-lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Photo gallery"
+      aria-hidden="true"
+    >
+      <button class="xp-lightbox-close" aria-label="Close gallery">×</button
+      ><button class="xp-lightbox-prev" aria-label="Previous photo">←</button>
+      <figure>
+        <img id="lightboxImage" alt="" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+      <button class="xp-lightbox-next" aria-label="Next photo">→</button>
+    </div>
+  </body>
 </html>

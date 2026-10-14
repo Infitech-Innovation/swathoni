@@ -114,11 +114,174 @@
       behavior: "smooth",
     }),
   );
+  const galleryCollections = {
+    wild: [
+      {
+        src: "images/lion.jpeg",
+        alt: "Lion in the Kenyan wild",
+        caption: "A moment in the wild",
+      },
+      {
+        src: "images/thewild.jpeg",
+        alt: "Wild safari landscape",
+        caption: "The wild, wide open",
+      },
+      {
+        src: "images/cheetah.jpeg",
+        alt: "Cheetah on safari",
+        caption: "Quiet speed across the plains",
+      },
+      {
+        src: "images/zebra.jpeg",
+        alt: "Zebras in the savannah",
+        caption: "Pattern and movement",
+      },
+      {
+        src: "images/wildbeasts.jpeg",
+        alt: "Wildebeest in Kenya",
+        caption: "Life on the move",
+      },
+    ],
+    coast: [
+      {
+        src: "images/diani.jpeg",
+        alt: "Palm-fringed white sand beach",
+        caption: "A little closer to paradise",
+      },
+      {
+        src: "images/diani2.jpeg",
+        alt: "Diani beach shoreline",
+        caption: "Soft mornings by the sea",
+      },
+      {
+        src: "images/diani3.jpeg",
+        alt: "Diani beach escape",
+        caption: "Barefoot days in Diani",
+      },
+      {
+        src: "images/coastbeach.jpeg",
+        alt: "Kenyan coast beach",
+        caption: "Where the coast slows time",
+      },
+      {
+        src: "images/privatebeach.jpeg",
+        alt: "Private beach on the coast",
+        caption: "Room to breathe",
+      },
+    ],
+    plains: [
+      {
+        src: "images/thesafari.jpeg",
+        alt: "Safari across the savannah",
+        caption: "The beauty of the open plains",
+      },
+      {
+        src: "images/thesafari.jpeg",
+        alt: "Safari vehicle in Kenya",
+        caption: "Following the morning light",
+      },
+      {
+        src: "images/van.jpeg",
+        alt: "Safari van in the landscape",
+        caption: "On the road through Kenya",
+      },
+      {
+        src: "images/fmasai.jpeg",
+        alt: "Masai landscape and culture",
+        caption: "Stories along the way",
+      },
+    ],
+    moments: [
+      {
+        src: "images/girrafe.jpeg",
+        alt: "Golden landscape and scenic views",
+        caption: "A slower moment",
+      },
+      {
+        src: "images/girrafe.jpeg",
+        alt: "Giraffe in Kenya",
+        caption: "Golden hour in the wild",
+      },
+      {
+        src: "images/feel.jpeg",
+        alt: "Travel moment in Kenya",
+        caption: "The feeling of being here",
+      },
+      {
+        src: "images/feel1.jpeg",
+        alt: "Quiet travel moment",
+        caption: "A pause worth keeping",
+      },
+      {
+        src: "images/night.jpeg",
+        alt: "Night stay atmosphere",
+        caption: "Evenings made slow",
+      },
+    ],
+    wildlife: [
+      {
+        src: "images/elephant3.jpeg",
+        alt: "Elephants in Kenya",
+        caption: "In the company of giants",
+      },
+      {
+        src: "images/zebra1.jpeg",
+        alt: "Elephant on safari",
+        caption: "A quiet encounter",
+      },
+      {
+        src: "images/elephant3.jpeg",
+        alt: "Elephants in the wild",
+        caption: "Wildlife up close",
+      },
+      {
+        src: "images/zebra1.jpeg",
+        alt: "Zebras across the plains",
+        caption: "Lines across the landscape",
+      },
+      {
+        src: "images/cheeter.jpeg",
+        alt: "Cheetah in the grass",
+        caption: "Stillness before motion",
+      },
+    ],
+    culture: [
+      {
+        src: "images/maasai.jpeg",
+        alt: "Maasai culture in Kenya",
+        caption: "Maasai culture and connection",
+      },
+      {
+        src: "images/maasaiculture.jpeg",
+        alt: "Maasai cultural experience",
+        caption: "Traditions shared with care",
+      },
+      {
+        src: "images/maaworias.jpeg",
+        alt: "Maasai warriors",
+        caption: "The people and stories of Kenya",
+      },
+      {
+        src: "images/fmasai.jpeg",
+        alt: "Maasai landscape and culture",
+        caption: "A deeper sense of place",
+      },
+      {
+        src: "images/people.jpeg",
+        alt: "People and community in Kenya",
+        caption: "Human moments along the journey",
+      },
+    ],
+  };
   const galleryItems = $$(".xp-gallery-item");
+  const getGalleryPhotos = (item) =>
+    galleryCollections[item.dataset.galleryKey] || [];
   const updateGalleryFilter = (category = "all") => {
     let visibleIndex = 0;
     galleryItems.forEach((item) => {
-      const isVisible = category === "all" || item.dataset.category === category;
+      const hasPhotos = getGalleryPhotos(item).length > 0;
+      const isVisible =
+        hasPhotos && (category === "all" || item.dataset.category === category);
       item.hidden = !isVisible;
       if (isVisible) {
         item.dataset.gallerySlot = String(visibleIndex % 6);
@@ -155,21 +318,21 @@
   const modal = $("#lightbox"),
     gallery = galleryItems;
   let galleryIndex = 0,
+    activePhotos = [],
     lastFocus = null;
-  const visibleGallery = () => gallery.filter((el) => !el.hidden);
   function showPhoto(n) {
-    const visible = visibleGallery();
-    if (!visible.length) return;
-    galleryIndex = (n + visible.length) % visible.length;
-    const item = visible[galleryIndex];
-    $("#lightboxImage").src = $("img", item).src;
-    $("#lightboxImage").alt = $("img", item).alt;
-    $("#lightboxCaption").textContent = item.dataset.caption;
+    if (!activePhotos.length) return;
+    galleryIndex = (n + activePhotos.length) % activePhotos.length;
+    const photo = activePhotos[galleryIndex];
+    $("#lightboxImage").src = photo.src;
+    $("#lightboxImage").alt = photo.alt;
+    $("#lightboxCaption").textContent = photo.caption;
   }
   function openPhoto(item) {
+    activePhotos = getGalleryPhotos(item);
+    if (!activePhotos.length) return;
     lastFocus = document.activeElement;
-    galleryIndex = visibleGallery().indexOf(item);
-    showPhoto(galleryIndex);
+    showPhoto(0);
     modal.classList.add("open");
     modal.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
@@ -179,6 +342,7 @@
     modal.classList.remove("open");
     modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
+    activePhotos = [];
     lastFocus?.focus();
   }
   gallery.forEach((item) =>
@@ -236,7 +400,9 @@
     quoteIndex = (n + quotes.length) % quotes.length;
     const q = quotes[quoteIndex];
     quoteText.textContent = q.text;
-    quoteGuest.innerHTML = q.guest.map((item) => `<span>${item}</span>`).join("<i></i>");
+    quoteGuest.innerHTML = q.guest
+      .map((item) => `<span>${item}</span>`)
+      .join("<i></i>");
     quoteCount.textContent = `0${quoteIndex + 1} / 03`;
   }
   $("#xpStoryPrev")?.addEventListener("click", () => setQuote(quoteIndex - 1));

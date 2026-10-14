@@ -1268,7 +1268,7 @@
 .landscape-sky {
   position: absolute;
   inset: -3%;
-  background: url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2200&q=90")
+  background: url("images/van.jpeg")
     center 53% / cover no-repeat;
   animation: landscapeBreath 24s ease-in-out infinite alternate;
   will-change: transform;
