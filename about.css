@@ -487,11 +487,46 @@
   transform: none;
 }
 .difference-note {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: calc(100% - 128px);
   text-align: right;
   font-size: 10px;
   letter-spacing: 0.16em;
   margin-top: 18px;
+  margin-right: 18px;
   color: #8b785c;
+}
+.difference-section #scenePrev,
+.difference-section #sceneNext {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgba(40, 62, 49, 0.34);
+  border-radius: 50%;
+  background: transparent;
+  color: #283e31;
+  font-size: 21px;
+  line-height: 1;
+  vertical-align: middle;
+  transition:
+    background 0.3s,
+    border-color 0.3s,
+    color 0.3s,
+    transform 0.3s;
+}
+.difference-section #scenePrev {
+  margin-right: 10px;
+}
+.difference-section #scenePrev:hover,
+.difference-section #sceneNext:hover {
+  background: #283e31;
+  border-color: #283e31;
+  color: #fff;
+  transform: translateY(-2px);
 }
 .transition-section {
   height: 100svh;
@@ -1313,13 +1348,24 @@
   bottom: 0;
   left: 0;
 }
+.landscape-wave-back,
+.landscape-wave-mid {
+  filter: saturate(0.92) contrast(0.96);
+}
+.landscape-wave-back path,
+.landscape-wave-mid path {
+  stroke: rgba(245, 239, 228, 0.16);
+  stroke-width: 1.5;
+}
 .landscape-wave-back {
   transform: translateY(-15px);
   animation: duneDrift 11s ease-in-out infinite alternate;
+  opacity: 0.92;
 }
 .landscape-wave-mid {
   transform: translateY(0);
   animation: duneDriftTwo 13s ease-in-out infinite alternate;
+  opacity: 0.95;
 }
 .landscape-wave-front {
   transform: translateY(22px);

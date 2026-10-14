@@ -44,11 +44,21 @@
       </div>
       <div class="landscape-waves" aria-hidden="true">
         <svg class="landscape-wave landscape-wave-back" viewBox="0 0 1440 270" preserveAspectRatio="none">
-          <path d="M0 120 C175 52 315 125 474 108 S796 22 980 94 S1270 158 1440 65 L1440 270 L0 270 Z" fill="#c8b78e" />
+          <defs>
+            <pattern id="grassWaveImage" patternUnits="objectBoundingBox" width="1" height="1">
+              <image href="images/grass.jpg" width="1440" height="270" preserveAspectRatio="xMidYMid slice" />
+            </pattern>
+          </defs>
+          <path d="M0 120 C175 52 315 125 474 108 S796 22 980 94 S1270 158 1440 65 L1440 270 L0 270 Z" fill="url(#grassWaveImage)" />
         </svg>
         <svg class="landscape-wave landscape-wave-mid" viewBox="0 0 1440 270" preserveAspectRatio="none">
+          <defs>
+            <pattern id="sandWaveImage" patternUnits="objectBoundingBox" width="1" height="1">
+              <image href="images/sandybeaches.jpg" width="1440" height="270" preserveAspectRatio="xMidYMid slice" />
+            </pattern>
+          </defs>
           <path d="M0 150 C240 82 360 178 590 118 S960 80 1100 137 S1340 78 1440 104 L1440 270 L0 270 Z"
-            fill="#e5d6b6" />
+            fill="url(#sandWaveImage)" />
         </svg>
         <svg class="landscape-wave landscape-wave-front" viewBox="0 0 1440 270" preserveAspectRatio="none">
           <path d="M0 170 C210 118 340 220 535 169 S838 120 1030 164 S1300 220 1440 140 L1440 270 L0 270 Z"
@@ -202,6 +212,8 @@
           </article>
         </div>
         <p class="difference-note">EXPLORE EACH STORY <span>↗</span></p>
+        <button id="scenePrev" aria-label="Previous experience">←</button><button id="sceneNext"
+              aria-label="Next experience">→</button>
       </div>
     </section>
     <section class="transition-section">
@@ -244,6 +256,7 @@
           </div>
         </div>
       </div>
+      
     </section>
     <section class="about-ending">
       <img src="images/coast.avif" alt="Inviting Indian Ocean coastline" />

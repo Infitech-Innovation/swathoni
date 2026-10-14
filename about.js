@@ -16,17 +16,33 @@
   }
   setChapter(0);
   const gallery = [...document.querySelectorAll(".difference-item")];
-  gallery.forEach((el) => {
+  let differenceIndex = Math.max(0, gallery.findIndex((el) => el.classList.contains("active")));
+  function setDifference(index) {
+    if (!gallery.length) return;
+    differenceIndex = (index + gallery.length) % gallery.length;
+    gallery.forEach((g, i) => g.classList.toggle("active", i === differenceIndex));
+    gallery[differenceIndex].focus({ preventScroll: true });
+  }
+  gallery.forEach((el, index) => {
     el.addEventListener("mouseenter", () => {
+      differenceIndex = index;
       gallery.forEach((g) => g.classList.toggle("active", g === el));
     });
     el.addEventListener("focus", () => {
+      differenceIndex = index;
       gallery.forEach((g) => g.classList.toggle("active", g === el));
     });
     el.addEventListener("click", () => {
+      differenceIndex = index;
       gallery.forEach((g) => g.classList.toggle("active", g === el));
     });
   });
+  const scenePrev = document.getElementById("scenePrev");
+  const sceneNext = document.getElementById("sceneNext");
+  if (scenePrev) scenePrev.textContent = "\u2190";
+  if (sceneNext) sceneNext.textContent = "\u2192";
+  scenePrev?.addEventListener("click", () => setDifference(differenceIndex - 1));
+  sceneNext?.addEventListener("click", () => setDifference(differenceIndex + 1));
   if (reduce) {
     document.querySelector(".transition-sea").style.clipPath =
       "inset(0 0 0 50%)";
