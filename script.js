@@ -70,6 +70,9 @@ document.querySelectorAll(".step").forEach((step) =>
     preload.src = src;
     const swap = () => {
       journeyImage.src = src;
+      journeyImage.alt = step.dataset.alt || journeyImage.alt;
+      journeyImage.width = preload.naturalWidth;
+      journeyImage.height = preload.naturalHeight;
       journeyCaption.textContent = cap;
       setTimeout(() => journeyPhoto.classList.remove("changing"), 70);
     };
