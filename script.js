@@ -19,6 +19,16 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
 const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const heroSlides = [...document.querySelectorAll(".hero-slide")];
+let heroSlideIndex = 0;
+function setHeroSlide(index) {
+  if (!heroSlides.length) return;
+  heroSlideIndex = (index + heroSlides.length) % heroSlides.length;
+  heroSlides.forEach((slide, i) => slide.classList.toggle("active", i === heroSlideIndex));
+}
+if (!reduce && heroSlides.length > 1) {
+  setInterval(() => setHeroSlide(heroSlideIndex + 1), 5200);
+}
 if (!reduce) {
   let ticking = false;
   window.addEventListener(
