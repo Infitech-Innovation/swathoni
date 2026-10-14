@@ -23,8 +23,8 @@ body.xp-page button {
 }
 body.xp-page .nav {
   z-index: 80;
-  /* color: #253c31 !important;
-  box-shadow: 0 1px 0 #263d3020; */
+  color: #253c31 !important;
+  box-shadow: 0 1px 0 #263d3020;
 }
 .xp-page h1,
 .xp-page h2,
