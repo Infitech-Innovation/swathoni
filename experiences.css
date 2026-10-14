@@ -49,6 +49,18 @@ body.xp-page .nav.scrolled {
   height: 100%;
   object-fit: cover;
 }
+.xp-page .brand img,
+.xp-page .xp-footer-brand img {
+  object-fit: contain;
+}
+.xp-page .brand img {
+  width: auto;
+  height: 46px;
+}
+.xp-page .xp-footer-brand img {
+  width: min(210px, 100%);
+  height: auto;
+}
 .xp-overline {
   font-size: 10px;
   font-weight: 700;

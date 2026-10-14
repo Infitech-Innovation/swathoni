@@ -65,6 +65,12 @@ img {
   flex-direction: column;
   width: max-content;
 }
+.brand img {
+  display: block;
+  width: auto;
+  height: 46px;
+  object-fit: contain;
+}
 .brand strong {
   font-family: "DM Serif Display", serif;
   font-size: 24px;
@@ -954,6 +960,12 @@ footer {
 .footer-brand {
   display: flex;
   flex-direction: column;
+}
+.footer-brand img {
+  display: block;
+  width: min(210px, 100%);
+  height: auto;
+  object-fit: contain;
 }
 .footer-brand strong {
   font-family: "DM Serif Display", serif;

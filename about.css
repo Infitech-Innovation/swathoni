@@ -23,6 +23,18 @@
   object-fit: cover;
   display: block;
 }
+.about-page .brand img,
+.about-page .footer-brand img {
+  object-fit: contain;
+}
+.about-page .brand img {
+  width: auto;
+  height: 46px;
+}
+.about-page .footer-brand img {
+  width: min(210px, 100%);
+  height: auto;
+}
 .about-container {
   width: min(1380px, calc(100% - 11vw));
   margin: auto;
