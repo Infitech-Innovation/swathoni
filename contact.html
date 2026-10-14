@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="contact.css" />
     <script src="contact.js" defer></script>
+    <link rel="stylesheet" href="navigation.css" />
+    <script src="navigation.js" defer></script>
   </head>
 
   <body class="contact-page">
@@ -24,7 +26,10 @@
       <a class="brand" href="index.html">
         <img src="images/Swathonitravelslogo.svg" alt="Swathoni Travels" />
       </a>
-      <nav aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-navigation" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="experiences.html">Our Experiences</a>
         <a href="about.html">Our Story</a>
