@@ -118,45 +118,95 @@
     wild: [
       {
         src: "images/lion.jpeg",
-        alt: "Lion in the Kenyan wild",
+        alt: "Lion resting in Kenya",
         caption: "A moment in the wild",
       },
       {
+        src: "images/lion1.jpeg",
+        alt: "Male lion resting beneath a tree",
+        caption: "The king at rest",
+      },
+      {
+        src: "images/lion2.jpeg",
+        alt: "Lion lying in the grass",
+        caption: "Quiet on the savannah",
+      },
+      {
+        src: "images/lion3.jpeg",
+        alt: "Close-up of a lion",
+        caption: "An unforgettable gaze",
+      },
+      {
+        src: "images/lion4.jpeg",
+        alt: "Male lion in profile",
+        caption: "A regal moment",
+      },
+      {
         src: "images/thewild.jpeg",
-        alt: "Wild safari landscape",
+        alt: "Zebra in the wild",
         caption: "The wild, wide open",
       },
       {
         src: "images/cheetah.jpeg",
-        alt: "Cheetah on safari",
-        caption: "Quiet speed across the plains",
+        alt: "Leopard walking through the greenery",
+        caption: "A quiet trail through the wild",
+      },
+      {
+        src: "images/thecheeter.jpeg",
+        alt: "Cheetah sitting on the open plains",
+        caption: "Watching over the plains",
       },
       {
         src: "images/zebra.jpeg",
-        alt: "Zebras in the savannah",
+        alt: "Zebras grazing together",
         caption: "Pattern and movement",
       },
       {
         src: "images/wildbeasts.jpeg",
-        alt: "Wildebeest in Kenya",
+        alt: "Wildebeest on the plains",
         caption: "Life on the move",
+      },
+      {
+        src: "images/feel.jpeg",
+        alt: "Lion resting on a safari sign",
+        caption: "The feeling of being here",
+      },
+      {
+        src: "images/feel1.jpeg",
+        alt: "Lion stretched out on a safari sign",
+        caption: "A pause worth keeping",
       },
     ],
     coast: [
       {
         src: "images/diani.jpeg",
-        alt: "Palm-fringed white sand beach",
+        alt: "Boat on turquoise water in Diani",
         caption: "A little closer to paradise",
       },
       {
-        src: "images/diani2.jpeg",
-        alt: "Diani beach shoreline",
+        src: "images/diani1.jpeg",
+        alt: "Palm trees beside Diani beach",
         caption: "Soft mornings by the sea",
       },
       {
+        src: "images/diani2.jpeg",
+        alt: "Visitors walking along Diani beach",
+        caption: "A walk beside the ocean",
+      },
+      {
         src: "images/diani3.jpeg",
-        alt: "Diani beach escape",
+        alt: "Kitesurfing at Diani beach",
         caption: "Barefoot days in Diani",
+      },
+      {
+        src: "images/diani4.jpeg",
+        alt: "White sand and beach activities in Diani",
+        caption: "Days by the shore",
+      },
+      {
+        src: "images/dianimap.jpeg",
+        alt: "Colourful destination signs in Diani",
+        caption: "Finding your way along the coast",
       },
       {
         src: "images/coastbeach.jpeg",
@@ -165,91 +215,266 @@
       },
       {
         src: "images/privatebeach.jpeg",
-        alt: "Private beach on the coast",
+        alt: "Palm-fringed beach on the coast",
         caption: "Room to breathe",
+      },
+      {
+        src: "images/beach.jpeg",
+        alt: "Palm trees beside a sandy beach",
+        caption: "A place in the shade",
+      },
+      {
+        src: "images/sandybeaches.jpg",
+        alt: "Patterns in beach sand",
+        caption: "Small details by the sea",
+      },
+      {
+        src: "images/ocean.jpeg",
+        alt: "Clear turquoise ocean water",
+        caption: "Open water, endless blue",
+      },
+      {
+        src: "images/ocean2.jpeg",
+        alt: "Palm tree above a white sand beach",
+        caption: "A view of paradise",
+      },
+      {
+        src: "images/ocean3.jpeg",
+        alt: "Boat beneath the moon over the ocean",
+        caption: "Moonlight on the water",
+      },
+      {
+        src: "images/ocean4.jpeg",
+        alt: "Wide sandy shoreline",
+        caption: "Space to wander",
+      },
+      {
+        src: "images/map.jpeg",
+        alt: "Destination signs beside a coastal path",
+        caption: "Coastal paths and possibilities",
+      },
+      {
+        src: "images/sunrise.jpeg",
+        alt: "Golden sun reflected on the sea",
+        caption: "Golden light by the ocean",
       },
     ],
     plains: [
       {
         src: "images/thesafari.jpeg",
-        alt: "Safari across the savannah",
+        alt: "Safari vehicle beneath an acacia tree",
         caption: "The beauty of the open plains",
       },
       {
-        src: "images/thesafari.jpeg",
-        alt: "Safari vehicle in Kenya",
-        caption: "Following the morning light",
-      },
-      {
         src: "images/van.jpeg",
-        alt: "Safari van in the landscape",
+        alt: "Travellers inside a safari van",
         caption: "On the road through Kenya",
       },
       {
-        src: "images/fmasai.jpeg",
-        alt: "Masai landscape and culture",
-        caption: "Stories along the way",
+        src: "images/grass.jpg",
+        alt: "Green grass across the landscape",
+        caption: "The plains in green",
+      },
+      {
+        src: "images/hill.jpeg",
+        alt: "Rocky hills above the landscape",
+        caption: "Beyond the open plains",
       },
     ],
     moments: [
       {
-        src: "images/girrafe.jpeg",
-        alt: "Golden landscape and scenic views",
-        caption: "A slower moment",
-      },
-      {
-        src: "images/girrafe.jpeg",
-        alt: "Giraffe in Kenya",
-        caption: "Golden hour in the wild",
-      },
-      {
-        src: "images/feel.jpeg",
-        alt: "Travel moment in Kenya",
-        caption: "The feeling of being here",
-      },
-      {
-        src: "images/feel1.jpeg",
-        alt: "Quiet travel moment",
-        caption: "A pause worth keeping",
-      },
-      {
         src: "images/night.jpeg",
-        alt: "Night stay atmosphere",
+        alt: "Sunset over a quiet landscape",
         caption: "Evenings made slow",
+      },
+      {
+        src: "images/people.jpeg",
+        alt: "Travellers sharing a moment together",
+        caption: "Human moments along the journey",
+      },
+      {
+        src: "images/people2.jpeg",
+        alt: "Traveller enjoying a journey",
+        caption: "A smile worth keeping",
+      },
+      {
+        src: "images/people3.jpeg",
+        alt: "Traveller seated in a vehicle",
+        caption: "Stories from the road",
       },
     ],
     wildlife: [
       {
+        src: "images/elephant.jpeg",
+        alt: "Elephant walking along a red dirt road",
+        caption: "A path through the wild",
+      },
+      {
+        src: "images/elephant2.avif",
+        alt: "Elephant standing on the open plains",
+        caption: "Face to face with a giant",
+      },
+      {
         src: "images/elephant3.jpeg",
-        alt: "Elephants in Kenya",
+        alt: "Elephant in the grass",
         caption: "In the company of giants",
       },
       {
-        src: "images/zebra1.jpeg",
-        alt: "Elephant on safari",
-        caption: "A quiet encounter",
+        src: "images/elephant4.jpeg",
+        alt: "Elephant beneath the trees",
+        caption: "Shelter in the shade",
       },
       {
-        src: "images/elephant3.jpeg",
-        alt: "Elephants in the wild",
-        caption: "Wildlife up close",
+        src: "images/elephant5.jpeg",
+        alt: "Close-up of an elephant trunk and tusks",
+        caption: "The details of a giant",
+      },
+      {
+        src: "images/elephant6.jpeg",
+        alt: "Elephant seen up close",
+        caption: "A closer look",
+      },
+      {
+        src: "images/elephant7.jpeg",
+        alt: "Elephants gathered beside water",
+        caption: "Together at the water",
+      },
+      {
+        src: "images/elephant8.jpeg",
+        alt: "Elephant walking across the plains",
+        caption: "A gentle presence",
+      },
+      {
+        src: "images/elephant9.jpeg",
+        alt: "Elephant among trees in black and white",
+        caption: "Stillness among the trees",
       },
       {
         src: "images/zebra1.jpeg",
-        alt: "Zebras across the plains",
+        alt: "Zebras seen up close",
         caption: "Lines across the landscape",
       },
       {
+        src: "images/zebra2.jpeg",
+        alt: "Visitor beside a zebra",
+        caption: "A memorable encounter",
+      },
+      {
+        src: "images/zebra3.jpeg",
+        alt: "Zebra standing in green grass",
+        caption: "Stripes in the greenery",
+      },
+      {
+        src: "images/zebra4.jpeg",
+        alt: "Zebras in black and white",
+        caption: "Patterns of the wild",
+      },
+      {
+        src: "images/zebra5.jpeg",
+        alt: "Zebra beneath the trees",
+        caption: "A pause in the shade",
+      },
+      {
         src: "images/cheeter.jpeg",
-        alt: "Cheetah in the grass",
-        caption: "Stillness before motion",
+        alt: "Leopard resting on a tree branch",
+        caption: "Stillness above the ground",
+      },
+      {
+        src: "images/cheeter1.jpeg",
+        alt: "Leopard stretched out on a branch",
+        caption: "Resting in the treetops",
+      },
+      {
+        src: "images/cheeter2.jpeg",
+        alt: "Leopard resting in a tree",
+        caption: "A quiet lookout",
+      },
+      {
+        src: "images/cheeter3.jpeg",
+        alt: "Close-up of a leopard",
+        caption: "Spots and stillness",
+      },
+      {
+        src: "images/cheeter4.jpeg",
+        alt: "Leopard looking to the side",
+        caption: "An alert gaze",
+      },
+      {
+        src: "images/cheeter5.jpeg",
+        alt: "Leopard lying on a branch",
+        caption: "At ease in the wild",
+      },
+      {
+        src: "images/cheeter6.jpeg",
+        alt: "Leopard climbing through branches",
+        caption: "Moving through the trees",
+      },
+      {
+        src: "images/cheeter7.jpeg",
+        alt: "Leopard among dry branches",
+        caption: "Hidden in plain sight",
+      },
+      {
+        src: "images/girrafe.jpeg",
+        alt: "Giraffes standing together",
+        caption: "Above the savannah",
+      },
+      {
+        src: "images/girrafe4.jpeg",
+        alt: "Giraffes on the open plains",
+        caption: "A gathering on the plains",
+      },
+      {
+        src: "images/girrafe10.jpeg",
+        alt: "Giraffe among green trees",
+        caption: "A glimpse through the greenery",
+      },
+      {
+        src: "images/giffare5.jpeg",
+        alt: "Close-up of a giraffe",
+        caption: "A different perspective",
+      },
+      {
+        src: "images/bird.jpeg",
+        alt: "Bird beside a safari road",
+        caption: "Small encounters along the way",
+      },
+      {
+        src: "images/impala.jpeg",
+        alt: "Antelope standing together",
+        caption: "Life across the plains",
       },
     ],
     culture: [
       {
         src: "images/maasai.jpeg",
-        alt: "Maasai culture in Kenya",
+        alt: "Maasai people in traditional dress",
         caption: "Maasai culture and connection",
+      },
+      {
+        src: "images/maasai.svg",
+        alt: "Illustration of Maasai people in traditional dress",
+        caption: "A portrait of Maasai culture",
+      },
+      {
+        src: "images/maasai1.jpeg",
+        alt: "Maasai people walking together",
+        caption: "Stories shared along the way",
+      },
+      {
+        src: "images/maasai2.jpeg",
+        alt: "Visitors and Maasai hosts outside a home",
+        caption: "A warm welcome",
+      },
+      {
+        src: "images/maasai3.jpeg",
+        alt: "Maasai community gathering",
+        caption: "Traditions brought together",
+      },
+      {
+        src: "images/maasai4.jpeg",
+        alt: "Maasai people seated together",
+        caption: "A moment of connection",
       },
       {
         src: "images/maasaiculture.jpeg",
@@ -258,18 +483,18 @@
       },
       {
         src: "images/maaworias.jpeg",
-        alt: "Maasai warriors",
+        alt: "Maasai people in traditional dress",
         caption: "The people and stories of Kenya",
       },
       {
         src: "images/fmasai.jpeg",
-        alt: "Maasai landscape and culture",
+        alt: "Woman wearing traditional beaded jewellery",
         caption: "A deeper sense of place",
       },
       {
-        src: "images/people.jpeg",
-        alt: "People and community in Kenya",
-        caption: "Human moments along the journey",
+        src: "images/park.jpeg",
+        alt: "Visitors gathered outdoors",
+        caption: "Connections along the journey",
       },
     ],
   };
