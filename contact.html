@@ -208,16 +208,16 @@
             </div>
             <form id="enquiryForm" novalidate>
               <div class="form-grid">
-                <label data-i18n="contact.form.name"
-                  >YOUR NAME
+                <label>
+                  <span data-i18n="contact.form.name"> YOUR NAME </span>
                   <input
                     name="name"
                     autocomplete="name"
                     placeholder="How should we call you?"
                     data-i18n-placeholder="contact.form.namePlaceholder"
                     required /></label
-                ><label data-i18n="contact.form.email"
-                  >EMAIL ADDRESS
+                ><label>
+                  <span data-i18n="contact.form.email"> EMAIL ADDRESS </span>
                   <input
                     type="email"
                     name="email"
@@ -261,14 +261,18 @@
                 </div>
               </fieldset>
               <div class="form-grid">
-                <label data-i18n-text="contact.form.month"
-                  >WHEN WOULD YOU LIKE TO TRAVEL?
+                <label>
+                  <span data-i18n-text="contact.form.month">
+                    WHEN WOULD YOU LIKE TO TRAVEL?
+                  </span>
                   <input
                     type="month"
                     name="travelMonth"
                     aria-label="Preferred travel month" /></label
-                ><label data-i18n-text="contact.form.travellers"
-                  >HOW MANY TRAVELLERS?
+                ><label>
+                  <span data-i18n-text="contact.form.travellers">
+                    HOW MANY TRAVELLERS?
+                  </span>
                   <input
                     type="number"
                     name="travellers"
@@ -277,8 +281,10 @@
                     required
                 /></label>
               </div>
-              <label data-i18n="contact.form.message"
-                >ANYTHING ELSE WE SHOULD KNOW?
+              <label>
+                <span data-i18n="contact.form.message">
+                  ANYTHING ELSE WE SHOULD KNOW?
+                </span>
                 <textarea
                   name="message"
                   rows="3"

@@ -836,8 +836,10 @@
               </div>
             </fieldset>
             <div class="xp-fields">
-              <label data-i18n="experiences.booking.form.name"
-                >Your name
+              <label
+                ><span data-i18n="experiences.booking.form.name">
+                  Your name
+                </span>
                 <input
                   type="text"
                   name="name"
@@ -845,8 +847,10 @@
                   data-i18n-placeholder="experiences.booking.form.namePlaceholder"
                   autocomplete="name"
                   required /></label
-              ><label data-i18n="experiences.booking.form.email"
-                >Email address
+              ><label>
+                <span data-i18n="experiences.booking.form.email">
+                  Email address
+                </span>
                 <input
                   type="email"
                   name="email"
@@ -854,10 +858,16 @@
                   data-i18n-placeholder="experiences.booking.form.emailPlaceholder"
                   autocomplete="email"
                   required /></label
-              ><label data-i18n-text="experiences.booking.form.date"
-                >Preferred travel date <input type="date" name="date" /></label
-              ><label data-i18n-text="experiences.booking.form.travellers"
-                >Number of travellers
+              ><label>
+                <span data-i18n-text="experiences.booking.form.date">
+                  Preferred travel date
+                </span>
+                <input type="date" name="date" /></label
+              ><label>
+                <span data-i18n-text="experiences.booking.form.travellers">
+                  Number of travellers
+                </span>
+
                 <input
                   type="number"
                   name="travellers"
@@ -866,8 +876,10 @@
                   required
               /></label>
             </div>
-            <label class="xp-notes" data-i18n="experiences.booking.form.notes"
-              >Tell us a little more
+            <label class="xp-notes">
+              <span data-i18n="experiences.booking.form.notes">
+                Tell us a little more
+              </span>
               <textarea
                 name="notes"
                 rows="3"
