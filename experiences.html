@@ -3,8 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Explore Kenya safari adventures, Diani Beach escapes and safari-to-sea journeys with Swathoni Travels. Discover wildlife, coastal scenery and Maasai culture." />
-    <title>Experiences | Swathoni Travels</title>
+    <title data-i18n-title="meta.experiences.title">
+      Experiences | Swathoni Travels
+    </title>
+    <meta
+      name="description"
+      data-i18n-content="meta.experiences.description"
+      content="Explore Kenya safari adventures, Diani Beach escapes and safari-to-sea journeys with Swathoni Travels. Discover wildlife, coastal scenery and Maasai culture."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,90 +31,126 @@
     <link rel="stylesheet" href="navigation.css" />
     <link rel="stylesheet" href="footer.css" />
     <script src="navigation.js" defer></script>
+    <script src="translations.js"></script>
     <link rel="canonical" href="https://swathoni.vercel.app/experiences.html" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#12271e" />
-    <link rel="icon" type="image/svg+xml" href="images/Swathonitravelslogo.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="images/Swathonitravelslogo.svg"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Swathoni Travels" />
     <meta property="og:locale" content="en_KE" />
-    <meta property="og:title" content="Experiences | Swathoni Travels" />
-    <meta property="og:description" content="Explore Kenya safari adventures, Diani Beach escapes and safari-to-sea journeys with Swathoni Travels. Discover wildlife, coastal scenery and Maasai culture." />
-    <meta property="og:url" content="https://swathoni.vercel.app/experiences.html" />
-    <meta property="og:image" content="https://swathoni.vercel.app/images/beach.jpeg" />
+    <meta
+      property="og:title"
+      data-i18n-content="meta.experiences.title"
+      content="Experiences | Swathoni Travels"
+    />
+    <meta
+      property="og:description"
+      data-i18n-content="meta.experiences.description"
+      content="Explore Kenya safari adventures, Diani Beach escapes and safari-to-sea journeys with Swathoni Travels. Discover wildlife, coastal scenery and Maasai culture."
+    />
+    <meta
+      property="og:url"
+      content="https://swathoni.vercel.app/experiences.html"
+    />
+    <meta
+      property="og:image"
+      content="https://swathoni.vercel.app/images/beach.jpeg"
+    />
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="900" />
     <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:alt" content="Palm trees beside a sandy beach on the Kenyan coast" />
+    <meta
+      property="og:image:alt"
+      content="Palm trees beside a sandy beach on the Kenyan coast"
+    />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Experiences | Swathoni Travels" />
-    <meta name="twitter:description" content="Explore Kenya safari adventures, Diani Beach escapes and safari-to-sea journeys with Swathoni Travels. Discover wildlife, coastal scenery and Maasai culture." />
-    <meta name="twitter:image" content="https://swathoni.vercel.app/images/beach.jpeg" />
-    <meta name="twitter:image:alt" content="Palm trees beside a sandy beach on the Kenyan coast" />
+    <meta
+      name="twitter:title"
+      data-i18n-content="meta.experiences.title"
+      content="Experiences | Swathoni Travels"
+    />
+    <meta
+      name="twitter:description"
+      data-i18n-content="meta.experiences.description"
+      content="Explore Kenya safari adventures, Diani Beach escapes and safari-to-sea journeys with Swathoni Travels. Discover wildlife, coastal scenery and Maasai culture."
+    />
+    <meta
+      name="twitter:image"
+      content="https://swathoni.vercel.app/images/beach.jpeg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Palm trees beside a sandy beach on the Kenyan coast"
+    />
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://swathoni.vercel.app/#organization",
-      "name": "Swathoni Travels",
-      "url": "https://swathoni.vercel.app/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://swathoni.vercel.app/images/Swathonitravelslogo.png",
-        "width": 2645,
-        "height": 793
-      },
-      "description": "Kenya safari, Diani Beach and cultural travel journeys."
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://swathoni.vercel.app/#website",
-      "url": "https://swathoni.vercel.app/",
-      "name": "Swathoni Travels",
-      "inLanguage": "en",
-      "publisher": {
-        "@id": "https://swathoni.vercel.app/#organization"
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://swathoni.vercel.app/#organization",
+            "name": "Swathoni Travels",
+            "url": "https://swathoni.vercel.app/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://swathoni.vercel.app/images/Swathonitravelslogo.png",
+              "width": 2645,
+              "height": 793
+            },
+            "description": "Kenya safari, Diani Beach and cultural travel journeys."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://swathoni.vercel.app/#website",
+            "url": "https://swathoni.vercel.app/",
+            "name": "Swathoni Travels",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://swathoni.vercel.app/#organization"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://swathoni.vercel.app/experiences.html#webpage",
+            "url": "https://swathoni.vercel.app/experiences.html",
+            "name": "Experiences | Swathoni Travels",
+            "description": "Explore Kenya safari adventures, Diani Beach escapes and safari-to-sea journeys with Swathoni Travels. Discover wildlife, coastal scenery and Maasai culture.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://swathoni.vercel.app/#website"
+            },
+            "about": {
+              "@id": "https://swathoni.vercel.app/#organization"
+            },
+            "breadcrumb": {
+              "@id": "https://swathoni.vercel.app/experiences.html#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://swathoni.vercel.app/experiences.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://swathoni.vercel.app/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Our Experiences",
+                "item": "https://swathoni.vercel.app/experiences.html"
+              }
+            ]
+          }
+        ]
       }
-    },
-    {
-      "@type": "CollectionPage",
-      "@id": "https://swathoni.vercel.app/experiences.html#webpage",
-      "url": "https://swathoni.vercel.app/experiences.html",
-      "name": "Experiences | Swathoni Travels",
-      "description": "Explore Kenya safari adventures, Diani Beach escapes and safari-to-sea journeys with Swathoni Travels. Discover wildlife, coastal scenery and Maasai culture.",
-      "inLanguage": "en",
-      "isPartOf": {
-        "@id": "https://swathoni.vercel.app/#website"
-      },
-      "about": {
-        "@id": "https://swathoni.vercel.app/#organization"
-      },
-      "breadcrumb": {
-        "@id": "https://swathoni.vercel.app/experiences.html#breadcrumb"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://swathoni.vercel.app/experiences.html#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://swathoni.vercel.app/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Our Experiences",
-          "item": "https://swathoni.vercel.app/experiences.html"
-        }
-      ]
-    }
-  ]
-}
     </script>
   </head>
 
@@ -116,18 +158,42 @@
     <div class="grain" aria-hidden="true"></div>
     <header class="nav" id="nav">
       <a class="brand" href="index.html">
-        <img src="images/Swathonitravelslogo.svg" alt="Swathoni Travels" width="2645" height="793" />
+        <img
+          src="images/Swathonitravelslogo.svg"
+          alt="Swathoni Travels"
+          width="2645"
+          height="793"
+        />
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu">
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+        aria-label="Open navigation menu"
+        data-i18n-aria-label="nav.toggleOpen"
+      >
         <span></span><span></span><span></span>
       </button>
       <nav id="main-navigation" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="experiences.html" aria-current="page">Our Experiences</a
-        ><a href="experiences.html#portfolio">Portfolio</a
-        ><a href="about.html">Our Story</a><a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a
+          href="experiences.html"
+          data-i18n="nav.experiences"
+          aria-current="page"
+          >Our Experiences</a
+        ><a href="experiences.html#portfolio" data-i18n="nav.portfolio"
+          >Portfolio</a
+        ><a href="about.html" data-i18n="nav.about">Our Story</a
+        ><a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <button
+          class="lang-switch"
+          data-lang-btn="en"
+          aria-label="Switch language"
+          data-i18n-aria-label="lang.switch"
+        ></button>
       </nav>
-      <a class="nav-cta" href="contact.html#contact-form"
+      <a class="nav-cta" href="contact.html#contact-form" data-i18n="nav.cta"
         >Plan your journey <span>↗</span></a
       >
     </header>
@@ -136,18 +202,23 @@
         <div class="xp-hero-editorial">
           <div class="xp-hero-editorial-main">
             <div class="xp-hero-title">
-              <span class="xp-kicker">KENYA, YOUR WAY</span>
-              <h1>
+              <span class="xp-kicker" data-i18n-text="experiences.hero.kicker"
+                >KENYA, YOUR WAY</span
+              >
+              <h1 data-i18n="experiences.hero.title">
                 Go where<br />you <em>feel</em><br />alive<span
                   class="xp-period"
                   >.</span
                 >
               </h1>
-              <p>
+              <p data-i18n="experiences.hero.intro">
                 Wild mornings. Ocean afternoons. A thousand moments in between.
                 Find the journey that feels like yours.
               </p>
-              <a href="#signature" class="xp-editorial-cta"
+              <a
+                href="#signature"
+                class="xp-editorial-cta"
+                data-i18n="experiences.hero.cta"
                 >DISCOVER YOUR JOURNEY <b>↗</b></a
               >
             </div>
@@ -155,46 +226,87 @@
               <div class="xp-hero-art-back">
                 <img
                   src="images/maasai.jpeg"
-                  alt="Maasai people in traditional dress" width="1280" height="960" decoding="async" fetchpriority="high" />
+                  alt="Maasai people in traditional dress"
+                  width="1280"
+                  height="960"
+                  decoding="async"
+                  fetchpriority="high"
+                />
               </div>
               <div class="xp-hero-art-front">
                 <img
                   src="images/diani.jpeg"
-                  alt="Boat on turquoise water in Diani" width="1170" height="1907" decoding="async" />
+                  alt="Boat on turquoise water in Diani"
+                  width="1170"
+                  height="1907"
+                  decoding="async"
+                />
               </div>
-              <span class="xp-hero-stamp">WILD WONDERFUL KENYA</span>
+              <span
+                class="xp-hero-stamp"
+                data-i18n-text="experiences.hero.stamp"
+                >WILD WONDERFUL KENYA</span
+              >
             </div>
           </div>
           <div class="xp-hero-editorial-bottom">
-            <span>SAFARI / COAST / BEYOND</span><span>SCROLL TO EXPLORE ↓</span>
+            <span data-i18n-text="experiences.hero.bottom.0"
+              >SAFARI / COAST / BEYOND</span
+            ><span data-i18n-text="experiences.hero.bottom.1"
+              >SCROLL TO EXPLORE ↓</span
+            >
           </div>
         </div>
       </section>
 
-      <section class="xp-experience" id="signature" aria-label="Choose your experience">
+      <section
+        class="xp-experience"
+        id="signature"
+        aria-label="Choose your experience"
+      >
         <div class="xp-stage">
           <div class="xp-stage-media">
             <div class="xp-stage-image is-active" data-scene="0">
-              <img src="images/lion.jpeg" alt="Lion resting in Kenya" width="2048" height="1406" loading="lazy" decoding="async" />
+              <img
+                src="images/lion.jpeg"
+                alt="Lion resting in Kenya"
+                width="2048"
+                height="1406"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="xp-stage-image" data-scene="1">
               <img
                 src="images/privatebeach.jpeg"
-                alt="Palm-fringed beach on the coast" width="900" height="1600" loading="lazy" decoding="async" />
+                alt="Palm-fringed beach on the coast"
+                width="900"
+                height="1600"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="xp-stage-image" data-scene="2">
               <img
                 src="images/wildbeasts.jpeg"
-                alt="Wildebeest on the plains" width="2048" height="1782" loading="lazy" decoding="async" />
+                alt="Wildebeest on the plains"
+                width="2048"
+                height="1782"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="xp-stage-shade"></div>
             <div class="xp-stage-top">
-              <span>EXPLORE THE EXPERIENCES</span
+              <span data-i18n-text="experiences.stage.top.0"
+                >EXPLORE THE EXPERIENCES</span
               ><span class="xp-scene-counter">01 / 03</span>
             </div>
             <div class="xp-stage-bottom">
-              <span>THE SWATHONI COLLECTION</span
-              ><span class="xp-stage-line"></span><span>KENYA</span>
+              <span data-i18n-text="experiences.stage.bottom.0"
+                >THE SWATHONI COLLECTION</span
+              ><span class="xp-stage-line"></span
+              ><span data-i18n-text="experiences.stage.bottom.1">KENYA</span>
             </div>
           </div>
           <div class="xp-stage-side">
@@ -205,65 +317,112 @@
             </div>
             <div class="xp-scene-text">
               <article class="xp-scene is-active" data-scene="0">
-                <span class="xp-overline">01 / THE WILD</span>
-                <h3>Safari<br /><em>Adventures.</em></h3>
-                <p>
+                <span
+                  class="xp-overline"
+                  data-i18n-text="experiences.stage.scenes.0.overline"
+                  >01 / THE WILD</span
+                >
+                <h3 data-i18n="experiences.stage.scenes.0.title">
+                  Safari<br /><em>Adventures.</em>
+                </h3>
+                <p data-i18n="experiences.stage.scenes.0.intro">
                   Follow the first light across open plains. Discover the
                   extraordinary wildlife, landscapes and quiet moments that make
                   a safari unforgettable.
                 </p>
                 <div class="xp-tags">
-                  <span>GAME DRIVES</span><span>WILDLIFE</span
-                  ><span>NATIONAL PARKS</span>
+                  <span data-i18n-text="experiences.stage.scenes.0.tags.0"
+                    >GAME DRIVES</span
+                  ><span data-i18n-text="experiences.stage.scenes.0.tags.1"
+                    >WILDLIFE</span
+                  ><span data-i18n-text="experiences.stage.scenes.0.tags.2"
+                    >NATIONAL PARKS</span
+                  >
                 </div>
                 <a
                   href="#booking"
                   class="xp-inline-link"
                   data-trip="Safari Adventure"
+                  data-i18n="experiences.stage.scenes.0.cta"
                   >ENQUIRE ABOUT A SAFARI <span>↗</span></a
                 >
               </article>
               <article class="xp-scene" data-scene="1">
-                <span class="xp-overline">02 / THE COAST</span>
-                <h3>Beach<br /><em>Escapes.</em></h3>
-                <p>
+                <span
+                  class="xp-overline"
+                  data-i18n-text="experiences.stage.scenes.1.overline"
+                  >02 / THE COAST</span
+                >
+                <h3 data-i18n="experiences.stage.scenes.1.title">
+                  Beach<br /><em>Escapes.</em>
+                </h3>
+                <p data-i18n="experiences.stage.scenes.1.intro">
                   Slow mornings, warm sea breezes and powder-soft sand. Let the
                   beauty of Diani and the Kenyan coast set the pace.
                 </p>
                 <div class="xp-tags">
-                  <span>DIANI BEACH</span><span>OCEAN DAYS</span
-                  ><span>RELAXATION</span>
+                  <span data-i18n-text="experiences.stage.scenes.1.tags.0"
+                    >DIANI BEACH</span
+                  ><span data-i18n-text="experiences.stage.scenes.1.tags.1"
+                    >OCEAN DAYS</span
+                  ><span data-i18n-text="experiences.stage.scenes.1.tags.2"
+                    >RELAXATION</span
+                  >
                 </div>
                 <a
                   href="#booking"
                   class="xp-inline-link"
                   data-trip="Beach Escape"
+                  data-i18n="experiences.stage.scenes.1.cta"
                   >ENQUIRE ABOUT THE COAST <span>↗</span></a
                 >
               </article>
               <article class="xp-scene" data-scene="2">
-                <span class="xp-overline">03 / THE SIGNATURE</span>
-                <h3>Safari<br /><em>&amp; Sea.</em></h3>
-                <p>
+                <span
+                  class="xp-overline"
+                  data-i18n-text="experiences.stage.scenes.2.overline"
+                  >03 / THE SIGNATURE</span
+                >
+                <h3 data-i18n="experiences.stage.scenes.2.title">
+                  Safari<br /><em>&amp; Sea.</em>
+                </h3>
+                <p data-i18n="experiences.stage.scenes.2.intro">
                   One journey, two beautiful worlds. Experience the excitement
                   of Kenya's wilderness before unwinding beside the Indian
                   Ocean.
                 </p>
                 <div class="xp-tags">
-                  <span>THE WILD</span><span>THE COAST</span
-                  ><span>TAILORED TRAVEL</span>
+                  <span data-i18n-text="experiences.stage.scenes.2.tags.0"
+                    >THE WILD</span
+                  ><span data-i18n-text="experiences.stage.scenes.2.tags.1"
+                    >THE COAST</span
+                  ><span data-i18n-text="experiences.stage.scenes.2.tags.2"
+                    >TAILORED TRAVEL</span
+                  >
                 </div>
                 <a
                   href="#booking"
                   class="xp-inline-link"
                   data-trip="Safari & Beach"
+                  data-i18n="experiences.stage.scenes.2.cta"
                   >PLAN A COMBINED JOURNEY <span>↗</span></a
                 >
               </article>
             </div>
             <div class="xp-stage-controls">
-              <button id="scenePrev" aria-label="Previous experience">←</button
-              ><button id="sceneNext" aria-label="Next experience">→</button>
+              <button
+                id="scenePrev"
+                aria-label="Previous experience"
+                data-i18n-aria-label="experiences.aria.prev"
+              >
+                ←</button
+              ><button
+                id="sceneNext"
+                aria-label="Next experience"
+                data-i18n-aria-label="experiences.aria.next"
+              >
+                →
+              </button>
             </div>
           </div>
         </div>
@@ -275,20 +434,29 @@
       </section>
       <section class="xp-why" id="why">
         <div class="xp-why-heading">
-          <span class="xp-overline xp-reveal"
+          <span
+            class="xp-overline xp-reveal"
+            data-i18n-text="experiences.why.overline"
             >02 / THE SWATHONI DIFFERENCE</span
           >
-          <h2 class="xp-reveal">
+          <h2 class="xp-reveal" data-i18n="experiences.why.title">
             Not just where you go.<br /><em>How you experience it.</em>
           </h2>
-          <p class="xp-reveal">
+          <p class="xp-reveal" data-i18n="experiences.why.intro">
             The best journeys leave room for surprise, comfort and the little
             details that make a place feel personal.
           </p>
         </div>
         <div class="xp-why-grid">
           <div class="xp-why-photo">
-            <img src="images/zebra2.jpeg" alt="Visitor beside a zebra" width="1536" height="2048" loading="lazy" decoding="async" /><span
+            <img
+              src="images/zebra2.jpeg"
+              alt="Visitor beside a zebra"
+              width="1536"
+              height="2048"
+              loading="lazy"
+              decoding="async"
+            /><span data-i18n-text="experiences.why.photoCaption"
               >MADE FOR THE MOMENTS THAT MATTER</span
             >
           </div>
@@ -296,8 +464,10 @@
             <article class="xp-why-item xp-reveal">
               <span>01</span>
               <div>
-                <h3>Local perspective.</h3>
-                <p>
+                <h3 data-i18n="experiences.why.items.0.title">
+                  Local perspective.
+                </h3>
+                <p data-i18n="experiences.why.items.0.intro">
                   Our connection to Kenya shapes the places, experiences and
                   stories we love sharing.
                 </p>
@@ -307,8 +477,10 @@
             <article class="xp-why-item xp-reveal">
               <span>02</span>
               <div>
-                <h3>Made around you.</h3>
-                <p>
+                <h3 data-i18n="experiences.why.items.1.title">
+                  Made around you.
+                </h3>
+                <p data-i18n="experiences.why.items.1.intro">
                   From adventurous mornings to unhurried afternoons, tell us the
                   kind of journey you have in mind.
                 </p>
@@ -318,8 +490,10 @@
             <article class="xp-why-item xp-reveal">
               <span>03</span>
               <div>
-                <h3>Two worlds, one trip.</h3>
-                <p>
+                <h3 data-i18n="experiences.why.items.2.title">
+                  Two worlds, one trip.
+                </h3>
+                <p data-i18n="experiences.why.items.2.intro">
                   Discover the magic of the savannah and the ease of the coast
                   without choosing between them.
                 </p>
@@ -329,8 +503,10 @@
             <article class="xp-why-item xp-reveal">
               <span>04</span>
               <div>
-                <h3>Warm, personal planning.</h3>
-                <p>
+                <h3 data-i18n="experiences.why.items.3.title">
+                  Warm, personal planning.
+                </h3>
+                <p data-i18n="experiences.why.items.3.intro">
                   Begin with a conversation and explore a journey shaped around
                   your travel wishes.
                 </p>
@@ -345,13 +521,22 @@
         <div class="xp-breath-photo">
           <img
             src="images/maaworias.jpeg"
-            alt="Maasai people in traditional dress" width="1170" height="968" loading="lazy" decoding="async" />
+            alt="Maasai people in traditional dress"
+            width="1170"
+            height="968"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
         <div class="xp-breath-shade"></div>
         <div class="xp-breath-content">
-          <span>AN INVITATION TO EXPLORE</span>
-          <h2>Take the road<br /><em>less ordinary.</em></h2>
-          <p>Let Kenya surprise you.</p>
+          <span data-i18n-text="experiences.breath.label"
+            >AN INVITATION TO EXPLORE</span
+          >
+          <h2 data-i18n="experiences.breath.title">
+            Take the road<br /><em>less ordinary.</em>
+          </h2>
+          <p data-i18n="experiences.breath.intro">Let Kenya surprise you.</p>
         </div>
       </section>
 
@@ -368,13 +553,42 @@
             and places to pause.
           </p>
         </div>
-        <div class="xp-filters" role="group" aria-label="Filter gallery">
-          <button class="active" data-filter="all" aria-pressed="true">
+        <div
+          class="xp-filters"
+          role="group"
+          aria-label="Filter gallery"
+          data-i18n-aria-label="experiences.aria.filterGallery"
+        >
+          <button
+            class="active"
+            data-filter="all"
+            aria-pressed="true"
+            data-i18n-text="experiences.portfolio.filters.0"
+          >
             ALL MOMENTS <span>07</span></button
-          ><button data-filter="safari" aria-pressed="false">THE WILD</button
-          ><button data-filter="coast" aria-pressed="false">THE COAST</button
-          ><button data-filter="culture" aria-pressed="false">CULTURE</button
-          ><button data-filter="stays" aria-pressed="false">
+          ><button
+            data-filter="safari"
+            aria-pressed="false"
+            data-i18n-text="experiences.portfolio.filters.1"
+          >
+            THE WILD</button
+          ><button
+            data-filter="coast"
+            aria-pressed="false"
+            data-i18n-text="experiences.portfolio.filters.2"
+          >
+            THE COAST</button
+          ><button
+            data-filter="culture"
+            aria-pressed="false"
+            data-i18n-text="experiences.portfolio.filters.3"
+          >
+            CULTURE</button
+          ><button
+            data-filter="stays"
+            aria-pressed="false"
+            data-i18n-text="experiences.portfolio.filters.4"
+          >
             PLACES TO STAY
           </button>
         </div>
@@ -385,8 +599,17 @@
             data-caption="A moment in the wild"
             data-gallery-key="wild"
           >
-            <img src="images/lion.jpeg" alt="Lion resting in Kenya" width="2048" height="1406" loading="lazy" decoding="async" /><span
-              ><b>01 / THE WILD</b><i>↗</i></span
+            <img
+              src="images/lion.jpeg"
+              alt="Lion resting in Kenya"
+              width="2048"
+              height="1406"
+              loading="lazy"
+              decoding="async"
+            /><span
+              ><b data-i18n-text="experiences.portfolio.items.wild.label"
+                >01 / THE WILD</b
+              ><i>↗</i></span
             >
           </button>
           <button
@@ -397,7 +620,16 @@
           >
             <img
               src="images/diani.jpeg"
-              alt="Boat on turquoise water in Diani" width="1170" height="1907" loading="lazy" decoding="async" /><span><b>02 / THE COAST</b><i>↗</i></span>
+              alt="Boat on turquoise water in Diani"
+              width="1170"
+              height="1907"
+              loading="lazy"
+              decoding="async"
+            /><span
+              ><b data-i18n-text="experiences.portfolio.items.coast.label"
+                >02 / THE COAST</b
+              ><i>↗</i></span
+            >
           </button>
           <button
             class="xp-gallery-item xp-gallery-medium"
@@ -407,7 +639,16 @@
           >
             <img
               src="images/thesafari.jpeg"
-              alt="Safari vehicle beneath an acacia tree" width="1536" height="2048" loading="lazy" decoding="async" /><span><b>03 / OPEN PLAINS</b><i>↗</i></span>
+              alt="Safari vehicle beneath an acacia tree"
+              width="1536"
+              height="2048"
+              loading="lazy"
+              decoding="async"
+            /><span
+              ><b data-i18n-text="experiences.portfolio.items.plains.label"
+                >03 / OPEN PLAINS</b
+              ><i>↗</i></span
+            >
           </button>
 
           <button
@@ -418,15 +659,33 @@
           >
             <img
               src="images/girrafe.jpeg"
-              alt="Giraffes standing together" width="1066" height="1600" loading="lazy" decoding="async" /><span><b>04 / QUIET MOMENTS</b><i>↗</i></span></button
+              alt="Giraffes standing together"
+              width="1066"
+              height="1600"
+              loading="lazy"
+              decoding="async"
+            /><span
+              ><b data-i18n-text="experiences.portfolio.items.moments.label"
+                >04 / QUIET MOMENTS</b
+              ><i>↗</i></span
+            ></button
           ><button
             class="xp-gallery-item xp-gallery-short"
             data-category="safari"
             data-caption="In the company of giants"
             data-gallery-key="wildlife"
           >
-            <img src="images/elephant3.jpeg" alt="Elephant in the grass" width="1200" height="1600" loading="lazy" decoding="async" /><span
-              ><b>05 / WILDLIFE</b><i>↗</i></span
+            <img
+              src="images/elephant3.jpeg"
+              alt="Elephant in the grass"
+              width="1200"
+              height="1600"
+              loading="lazy"
+              decoding="async"
+            /><span
+              ><b data-i18n-text="experiences.portfolio.items.wildlife.label"
+                >05 / WILDLIFE</b
+              ><i>↗</i></span
             >
           </button>
           <button
@@ -435,8 +694,17 @@
             data-caption="Maasai culture and connection"
             data-gallery-key="culture"
           >
-            <img src="images/maasai.jpeg" alt="Maasai people in traditional dress" width="1280" height="960" loading="lazy" decoding="async" /><span
-              ><b>07 / MAASAI CULTURE</b><i>&#8599;</i></span
+            <img
+              src="images/maasai.jpeg"
+              alt="Maasai people in traditional dress"
+              width="1280"
+              height="960"
+              loading="lazy"
+              decoding="async"
+            /><span
+              ><b data-i18n-text="experiences.portfolio.items.culture.label"
+                >07 / MAASAI CULTURE</b
+              ><i>&#8599;</i></span
             >
           </button>
         </div>
@@ -444,7 +712,12 @@
 
       <section class="xp-testimonial">
         <div class="xp-testimonial-inner xp-reveal">
-          <p class="eyebrow dark">TRAVELLER STORIES</p>
+          <p
+            class="eyebrow dark"
+            data-i18n-text="experiences.testimonial.eyebrow"
+          >
+            TRAVELLER STORIES
+          </p>
           <div class="xp-quote-mark">“</div>
           <blockquote id="xpStoryQuote">
             We came for the safari, but it was the feeling of the whole journey
@@ -457,54 +730,97 @@
           <div
             class="xp-testimonial-controls"
             aria-label="Traveller stories controls"
+            data-i18n-aria-label="experiences.aria.testimonialControls"
           >
-            <button id="xpStoryPrev" aria-label="Previous traveller story">
+            <button
+              id="xpStoryPrev"
+              aria-label="Previous traveller story"
+              data-i18n-aria-label="experiences.aria.prevStory"
+            >
               &larr;
             </button>
             <span id="xpStoryCount">01 / 03</span>
-            <button id="xpStoryNext" aria-label="Next traveller story">
+            <button
+              id="xpStoryNext"
+              aria-label="Next traveller story"
+              data-i18n-aria-label="experiences.aria.nextStory"
+            >
               &rarr;
             </button>
           </div>
-          <button id="scenePrev" aria-label="Previous experience">←</button
-          ><button id="sceneNext" aria-label="Next experience">→</button>
+          <button
+            id="scenePrev"
+            aria-label="Previous experience"
+            data-i18n-aria-label="experiences.aria.prev"
+          >
+            ←</button
+          ><button
+            id="sceneNext"
+            aria-label="Next experience"
+            data-i18n-aria-label="experiences.aria.next"
+          >
+            →
+          </button>
         </div>
       </section>
 
       <section class="xp-booking xp-booking-new" id="booking">
         <div class="xp-booking-background">
-          <img src="images/cheeter.jpeg" alt="Leopard resting on a tree branch" width="1826" height="2048" loading="lazy" decoding="async" />
+          <img
+            src="images/cheeter.jpeg"
+            alt="Leopard resting on a tree branch"
+            width="1826"
+            height="2048"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
         <div class="xp-booking-shade"></div>
         <div class="xp-booking-layout xp-booking-layout-new">
           <div class="xp-booking-intro xp-booking-intro-new">
-            <span class="xp-overline">05 / YOUR NEXT CHAPTER</span>
-            <h2>Let's plan<br /><em>something</em><br />extraordinary.</h2>
-            <p>
+            <span
+              class="xp-overline"
+              data-i18n-text="experiences.booking.overline"
+              >05 / YOUR NEXT CHAPTER</span
+            >
+            <h2 data-i18n="experiences.booking.title">
+              Let's plan<br /><em>something</em><br />extraordinary.
+            </h2>
+            <p data-i18n="experiences.booking.intro">
               Tell us a little about the journey you're dreaming of. Every
               memorable trip begins with a conversation.
             </p>
-            <div class="xp-booking-mark">
+            <div class="xp-booking-mark" data-i18n="experiences.booking.mark">
               SWATHONI TRAVELS <span>✳</span> DIANI BEACH
             </div>
           </div>
           <form class="xp-booking-form xp-booking-form-new" id="travelForm">
             <div class="xp-form-top">
-              <span>YOUR JOURNEY STARTS HERE</span
-              ><span>ENQUIRY FORM · 01</span>
+              <span data-i18n-text="experiences.booking.form.top.0"
+                >YOUR JOURNEY STARTS HERE</span
+              ><span data-i18n-text="experiences.booking.form.top.1"
+                >ENQUIRY FORM · 01</span
+              >
             </div>
-            <h3>Where shall we<br /><em>take you?</em></h3>
+            <h3 data-i18n="experiences.booking.form.title">
+              Where shall we<br /><em>take you?</em>
+            </h3>
             <fieldset>
-              <legend>WHAT WOULD YOU LOVE TO EXPERIENCE?</legend>
+              <legend data-i18n-text="experiences.booking.form.legend">
+                WHAT WOULD YOU LOVE TO EXPERIENCE?
+              </legend>
               <div class="xp-trip-choices">
                 <label
                   ><input
                     type="radio"
                     name="trip"
                     value="Safari Adventure"
-                  /><span>Safari<br />Adventure <b>↗</b></span></label
+                  /><span data-i18n="experiences.booking.form.choices.0"
+                    >Safari<br />Adventure <b>↗</b></span
+                  ></label
                 ><label
                   ><input type="radio" name="trip" value="Beach Escape" /><span
+                    data-i18n="experiences.booking.form.choices.1"
                     >Beach<br />Escape <b>↗</b></span
                   ></label
                 ><label
@@ -513,30 +829,34 @@
                     name="trip"
                     value="Safari & Beach"
                     checked
-                  /><span>Safari<br />&amp; Beach <b>↗</b></span></label
+                  /><span data-i18n="experiences.booking.form.choices.2"
+                    >Safari<br />&amp; Beach <b>↗</b></span
+                  ></label
                 >
               </div>
             </fieldset>
             <div class="xp-fields">
-              <label
+              <label data-i18n="experiences.booking.form.name"
                 >Your name
                 <input
                   type="text"
                   name="name"
                   placeholder="Full name"
+                  data-i18n-placeholder="experiences.booking.form.namePlaceholder"
                   autocomplete="name"
                   required /></label
-              ><label
+              ><label data-i18n="experiences.booking.form.email"
                 >Email address
                 <input
                   type="email"
                   name="email"
                   placeholder="you@example.com"
+                  data-i18n-placeholder="experiences.booking.form.emailPlaceholder"
                   autocomplete="email"
                   required /></label
-              ><label
+              ><label data-i18n-text="experiences.booking.form.date"
                 >Preferred travel date <input type="date" name="date" /></label
-              ><label
+              ><label data-i18n-text="experiences.booking.form.travellers"
                 >Number of travellers
                 <input
                   type="number"
@@ -546,14 +866,19 @@
                   required
               /></label>
             </div>
-            <label class="xp-notes"
+            <label class="xp-notes" data-i18n="experiences.booking.form.notes"
               >Tell us a little more
               <textarea
                 name="notes"
                 rows="3"
                 placeholder="Dream destinations, a special occasion, or anything you'd love to experience..."
+                data-i18n-placeholder="experiences.booking.form.notesPlaceholder"
               ></textarea></label
-            ><button class="xp-submit" type="submit">
+            ><button
+              class="xp-submit"
+              type="submit"
+              data-i18n="experiences.booking.form.submit"
+            >
               PREPARE MY ENQUIRY <span>↗</span>
             </button>
           </form>
@@ -562,21 +887,40 @@
     </main>
     <footer class="xp-footer">
       <div>
-          <a class="xp-footer-brand" href="index.html">
-            <img src="images/Swathonitravelslogo.svg" alt="Swathoni Travels" width="2645" height="793" />
-          </a>
-        <p>From the wild to the water.<br />Beautiful journeys begin here.</p>
+        <a class="xp-footer-brand" href="index.html">
+          <img
+            src="images/Swathonitravelslogo.svg"
+            alt="Swathoni Travels"
+            width="2645"
+            height="793"
+          />
+        </a>
+        <p data-i18n="experiences.footer.brand">
+          From the wild to the water.<br />Beautiful journeys begin here.
+        </p>
       </div>
       <div>
-        <span>EXPLORE</span><a href="index.html">Home</a
-        ><a href="about.html">Our Story</a
-        ><a href="experiences.html">Our Experiences</a>
+        <span data-i18n-text="experiences.footer.explore">EXPLORE</span
+        ><a href="index.html" data-i18n="experiences.footer.exploreHome">Home</a
+        ><a href="about.html" data-i18n="experiences.footer.exploreOurStory"
+          >Our Story</a
+        ><a
+          href="experiences.html"
+          data-i18n="experiences.footer.exploreExperiences"
+          >Our Experiences</a
+        >
       </div>
       <div>
-        <span>YOUR JOURNEY</span><a href="#booking">Plan a Journey</a
-        ><a href="#portfolio">Our Portfolio</a><a href="#why">Why Swathoni</a>
+        <span data-i18n-text="experiences.footer.journey">YOUR JOURNEY</span
+        ><a href="#booking" data-i18n="experiences.footer.journeyPlan"
+          >Plan a Journey</a
+        ><a href="#portfolio" data-i18n="experiences.footer.journeyPortfolio"
+          >Our Portfolio</a
+        ><a href="#why" data-i18n="experiences.footer.journeyWhy"
+          >Why Swathoni</a
+        >
       </div>
-      <div class="copyright">
+      <div class="copyright" data-i18n-text="experiences.footer.copyright">
         © 2026 SWATHONI TRAVELS <span>CRAFTED FOR THE LOVE OF KENYA</span>
       </div>
     </footer>
@@ -587,16 +931,33 @@
       role="dialog"
       aria-modal="true"
       aria-label="Photo gallery"
+      data-i18n-aria-label="experiences.lightbox.label"
       aria-hidden="true"
     >
-      <button class="xp-lightbox-close" aria-label="Close gallery">×</button
-      ><button class="xp-lightbox-prev" aria-label="Previous photo">←</button>
+      <button
+        class="xp-lightbox-close"
+        aria-label="Close gallery"
+        data-i18n-aria-label="experiences.lightbox.close"
+      >
+        ×</button
+      ><button
+        class="xp-lightbox-prev"
+        aria-label="Previous photo"
+        data-i18n-aria-label="experiences.lightbox.prev"
+      >
+        ←
+      </button>
       <figure>
         <img id="lightboxImage" alt="" />
         <figcaption id="lightboxCaption"></figcaption>
       </figure>
-      <button class="xp-lightbox-next" aria-label="Next photo">→</button>
+      <button
+        class="xp-lightbox-next"
+        aria-label="Next photo"
+        data-i18n-aria-label="experiences.lightbox.next"
+      >
+        →
+      </button>
     </div>
   </body>
 </html>
-

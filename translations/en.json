@@ -1,0 +1,645 @@
+{
+  "lang": {
+    "switch": "Language",
+    "en": "EN",
+    "nl": "NL",
+    "switchToDutch": "Switch language to Dutch",
+    "switchToEnglish": "Switch language to English"
+  },
+  "nav": {
+    "home": "Home",
+    "experiences": "Our Experiences",
+    "about": "Our Story",
+    "contact": "Contact",
+    "portfolio": "Portfolio",
+    "cta": "Plan your journey <span>↗</span>",
+    "ctaContact": "Let's talk <span>↗</span>",
+    "toggleOpen": "Open navigation menu",
+    "toggleClose": "Close navigation menu"
+  },
+  "meta": {
+    "index": {
+      "title": "Swathoni Travels",
+      "description": "Discover Kenya with Swathoni Travels. Plan tailor-made safari adventures, Diani Beach escapes and journeys combining wildlife, coast and Maasai culture."
+    },
+    "experiences": {
+      "title": "Experiences | Swathoni Travels",
+      "description": "Explore Kenya safari adventures, Diani Beach escapes and safari-to-sea journeys with Swathoni Travels. Discover wildlife, coastal scenery and Maasai culture."
+    },
+    "about": {
+      "title": "About Swathoni Travels",
+      "description": "Meet Swathoni Travels, a Kenya travel brand rooted in Diani Beach. Discover our approach to personal safari adventures, coastal escapes and cultural journeys."
+    },
+    "contact": {
+      "title": "Contact Swathoni Travels",
+      "description": "Contact Swathoni Travels to plan your Kenya safari, Diani Beach holiday or safari-and-beach journey. Share your travel dates, interests and enquiry."
+    }
+  },
+  "index": {
+    "safariCta": "Plan my safari <span>↗</span>",
+    "hero": {
+      "eyebrow": "PRIVATE JOURNEYS · KENYA",
+      "title": "Discover Kenya,<br /><em>beautifully.</em>",
+      "intro": "From unforgettable days in the wild to barefoot mornings on Diani Beach, we create journeys that let you experience the very best of Kenya.",
+      "cta": "Explore journeys",
+      "location": "DIANI BEACH · 04°17′S",
+      "scroll": "SCROLL TO EXPLORE"
+    },
+    "welcome": {
+      "label": "WELCOME TO KENYA",
+      "number": "01",
+      "title": "Come for the wild.<br /><em>Stay for the feeling.</em>",
+      "intro": "There is a side of Kenya you can only understand by being here. The hush before sunrise. A herd crossing the plains. Lunch beneath an acacia tree. Salt in the air when you finally reach the coast.",
+      "cta": "Experience both worlds <span>→</span>"
+    },
+    "welcomeCaptions": {
+      "savannah": ["THE SAVANNAH", "KENYA"],
+      "goldenHour": ["GOLDEN HOUR", "18:24"]
+    },
+    "experiences": {
+      "eyebrow": "EXPERIENCE KENYA",
+      "title": "How do you want<br />to <em>feel?</em>",
+      "intro": "Not packages. Journeys shaped around the moments you want to remember."
+    },
+    "safari": {
+      "label": "OPEN PLAINS · WILDLIFE · PRIVATE GUIDES",
+      "title": "The Safari",
+      "intro": "Wake with the savannah and spend your days following the rhythm of the wild.",
+      "cta": "Discover the wild ↗"
+    },
+    "coast": {
+      "label": "INDIAN OCEAN · WHITE SAND · SLOW DAYS",
+      "title": "The Coast",
+      "intro": "Trade safari dust for warm water, swaying palms and unhurried days in Diani.",
+      "cta": "Escape to Diani ↗"
+    },
+    "safariSea": {
+      "label": "OUR SIGNATURE EXPERIENCE",
+      "title": "Safari + Sea",
+      "intro": "Two sides of Kenya, beautifully connected in one effortless journey.",
+      "cta": "See the journey ↗",
+      "tag": "SWATHONI SIGNATURE"
+    },
+    "breath": {
+      "eyebrow": "THE WILD HAS A WAY OF",
+      "title": "Making everything<br />else feel <em>far away.</em>"
+    },
+    "journey": {
+      "eyebrow": "THE SWATHONI SIGNATURE",
+      "title": "From savannah<br /><em>to sea.</em>",
+      "intro": "Start with early mornings and endless horizons. End with nowhere to be but the water. We take care of everything in between.",
+      "caption": "MAASAI MARA · THE WILD",
+      "captions": {
+        "wild": "MAASAI MARA · THE WILD",
+        "amboseli": "AMBOSELI · ELEPHANT COUNTRY",
+        "diani": "DIANI BEACH · INDIAN OCEAN"
+      },
+      "steps": [
+        {
+          "days": "DAYS 1—3",
+          "title": "Arrive in the wild",
+          "intro": "Private game drives, golden evenings and a camp chosen around your pace."
+        },
+        {
+          "days": "DAYS 4—6",
+          "title": "Go a little deeper",
+          "intro": "Wide skies, elephant country and time to simply be in the landscape."
+        },
+        {
+          "days": "DAYS 7—10",
+          "title": "Exhale in Diani",
+          "intro": "Warm ocean, beautiful food and barefoot days with nothing left to rush."
+        }
+      ],
+      "note": "10 DAYS · SWATHONI JOURNEY",
+      "noteIntro": "Every Swathoni journey is tailor-made. This is simply one way Kenya could unfold.",
+      "cta": "Create my journey"
+    },
+    "diani": {
+      "eyebrow": "THEN, THE OCEAN",
+      "title": "Leave your shoes<br />at the <em>door.</em>",
+      "intro": "Diani is where the journey softens. Swim. Sail. Eat slowly. Stay out for sunset. Let the Indian Ocean set the pace.",
+      "cta": "Take me to the coast",
+      "word": "DIANI"
+    },
+    "story": {
+      "label": "ROOTED IN KENYA",
+      "eyebrow": "OUR STORY",
+      "title": "Local knowledge.<br /><em>Personal journeys.</em>",
+      "lead": "Swathoni Travels is based in Diani Beach and built around a simple belief: the best way to experience Kenya is with people who know it, love it and understand how to make it feel effortless.",
+      "points": [
+        {
+          "number": "01",
+          "title": "Thoughtfully personal",
+          "intro": "We start with how you want to travel, then build around you."
+        },
+        {
+          "number": "02",
+          "title": "Kenya, connected",
+          "intro": "Safari and coast planned as one journey, not two separate holidays."
+        },
+        {
+          "number": "03",
+          "title": "Here when you need us",
+          "intro": "Local support from the first conversation until your last day in Kenya."
+        }
+      ],
+      "cta": "Discover our story →",
+      "purpose": {
+        "label": "OUR PURPOSE",
+        "intro": "To create thoughtful, personal journeys that connect Kenya's wildlife, people and coastline in one unforgettable experience."
+      }
+    },
+    "testimonial": {
+      "eyebrow": "TRAVELLER STORIES",
+      "quotes": [
+        {
+          "text": "We came for the safari, but it was the feeling of the whole journey that stayed with us.",
+          "guest": ["SOPHIE & MARK", "SAFARI + DIANI", "AMSTERDAM"]
+        },
+        {
+          "text": "Every detail felt considered, from the first game drive to the quiet coast days that followed.",
+          "guest": ["AMINA & JAMES", "WILD + COAST", "NAIROBI"]
+        },
+        {
+          "text": "Swathoni shaped the trip around how we wanted to feel, not just where we wanted to go.",
+          "guest": ["LENA FAMILY", "KENYA ESCAPE", "LONDON"]
+        }
+      ],
+      "footer": "Sample testimonial · replace with a real client review"
+    },
+    "moments": {
+      "eyebrow": "MOMENTS FROM KENYA",
+      "title": "A journey you can<br />almost <em>feel.</em>",
+      "captions": [
+        "AMBOSELI · MORNING",
+        "THE MARA · GOLDEN HOUR",
+        "DIANI · SLOW AFTERNOONS"
+      ]
+    },
+    "contactSection": {
+      "eyebrow": "YOUR KENYA STARTS HERE",
+      "title": "Ready for something<br /><em>unforgettable?</em>",
+      "intro": "Tell us what you are dreaming of. We will help shape the rest.",
+      "cta": "Start planning",
+      "whatsapp": "WhatsApp us <span>↗</span>"
+    },
+    "footer": {
+      "brand": "Safari. Coast. Kenya.<br />Beautifully connected.",
+      "explore": "EXPLORE",
+      "exploreExperiences": "Our Experiences",
+      "exploreSafariBeach": "Safari + Beach",
+      "exploreOurStory": "Our Story",
+      "contact": "CONTACT",
+      "contactPlan": "Plan a journey",
+      "contactWhatsapp": "WhatsApp",
+      "contactInstagram": "Instagram",
+      "copyright": "© 2026 SWATHONI TRAVELS · DIANI BEACH, KENYA",
+      "copyrightSpan": "PRIVACY · TERMS"
+    }
+  },
+  "experiences": {
+    "safariFixedCta": "Plan your journey <span>↗</span>",
+    "hero": {
+      "kicker": "KENYA, YOUR WAY",
+      "title": "Go where<br />you <em>feel</em><br />alive<span class=\"xp-period\">.</span>",
+      "intro": "Wild mornings. Ocean afternoons. A thousand moments in between. Find the journey that feels like yours.",
+      "cta": "DISCOVER YOUR JOURNEY <b>↗</b>",
+      "stamp": "WILD WONDERFUL KENYA",
+      "bottom": ["SAFARI / COAST / BEYOND", "SCROLL TO EXPLORE ↓"]
+    },
+    "stage": {
+      "top": ["EXPLORE THE EXPERIENCES", "KENYA"],
+      "counter": "01 / 03",
+      "bottom": ["THE SWATHONI COLLECTION", "KENYA"],
+      "progress": ["01", "03"],
+      "scenes": [
+        {
+          "overline": "01 / THE WILD",
+          "title": "Safari<br /><em>Adventures.</em>",
+          "intro": "Follow the first light across open plains. Discover the extraordinary wildlife, landscapes and quiet moments that make a safari unforgettable.",
+          "tags": ["GAME DRIVES", "WILDLIFE", "NATIONAL PARKS"],
+          "cta": "ENQUIRE ABOUT A SAFARI <span>↗</span>"
+        },
+        {
+          "overline": "02 / THE COAST",
+          "title": "Beach<br /><em>Escapes.</em>",
+          "intro": "Slow mornings, warm sea breezes and powder-soft sand. Let the beauty of Diani and the Kenyan coast set the pace.",
+          "tags": ["DIANI BEACH", "OCEAN DAYS", "RELAXATION"],
+          "cta": "ENQUIRE ABOUT THE COAST <span>↗</span>"
+        },
+        {
+          "overline": "03 / THE SIGNATURE",
+          "title": "Safari<br /><em>&amp; Sea.</em>",
+          "intro": "One journey, two beautiful worlds. Experience the excitement of Kenya's wilderness before unwinding beside the Indian Ocean.",
+          "tags": ["THE WILD", "THE COAST", "TAILORED TRAVEL"],
+          "cta": "PLAN A COMBINED JOURNEY <span>↗</span>"
+        }
+      ]
+    },
+    "why": {
+      "overline": "02 / THE SWATHONI DIFFERENCE",
+      "title": "Not just where you go.<br /><em>How you experience it.</em>",
+      "intro": "The best journeys leave room for surprise, comfort and the little details that make a place feel personal.",
+      "photoCaption": "MADE FOR THE MOMENTS THAT MATTER",
+      "items": [
+        {
+          "number": "01",
+          "title": "Local perspective.",
+          "intro": "Our connection to Kenya shapes the places, experiences and stories we love sharing."
+        },
+        {
+          "number": "02",
+          "title": "Made around you.",
+          "intro": "From adventurous mornings to unhurried afternoons, tell us the kind of journey you have in mind."
+        },
+        {
+          "number": "03",
+          "title": "Two worlds, one trip.",
+          "intro": "Discover the magic of the savannah and the ease of the coast without choosing between them."
+        },
+        {
+          "number": "04",
+          "title": "Warm, personal planning.",
+          "intro": "Begin with a conversation and explore a journey shaped around your travel wishes."
+        }
+      ]
+    },
+    "breath": {
+      "label": "AN INVITATION TO EXPLORE",
+      "title": "Take the road<br /><em>less ordinary.</em>",
+      "intro": "Let Kenya surprise you."
+    },
+    "portfolio": {
+      "overline": "03 / THE SWATHONI JOURNAL",
+      "title": "A glimpse of<br /><em>what's waiting.</em>",
+      "intro": "A visual journey through wildlife, wild landscapes, coastal moments and places to pause.",
+      "filters": [
+        "ALL MOMENTS <span>07</span>",
+        "THE WILD",
+        "THE COAST",
+        "CULTURE",
+        "PLACES TO STAY"
+      ],
+      "items": {
+        "wild": { "caption": "A moment in the wild", "label": "01 / THE WILD" },
+        "coast": {
+          "caption": "A little closer to paradise",
+          "label": "02 / THE COAST"
+        },
+        "plains": {
+          "caption": "The beauty of the open plains",
+          "label": "03 / OPEN PLAINS"
+        },
+        "moments": {
+          "caption": "A slower moment",
+          "label": "04 / QUIET MOMENTS"
+        },
+        "wildlife": {
+          "caption": "In the company of giants",
+          "label": "05 / WILDLIFE"
+        },
+        "culture": {
+          "caption": "Maasai culture and connection",
+          "label": "07 / MAASAI CULTURE"
+        }
+      }
+    },
+    "testimonial": {
+      "eyebrow": "TRAVELLER STORIES",
+      "quotes": [
+        {
+          "text": "We came for the safari, but it was the feeling of the whole journey that stayed with us.",
+          "guest": ["SOPHIE & MARK", "SAFARI + DIANI", "AMSTERDAM"]
+        },
+        {
+          "text": "Every turn brought a new view, a new moment, a new reason to fall in love with Kenya.",
+          "guest": ["AMINA & JAMES", "WILD + COAST", "NAIROBI"]
+        },
+        {
+          "text": "From the open plains to the ocean breeze, it felt like two beautiful holidays in one.",
+          "guest": ["LENA FAMILY", "SAFARI + SEA", "LONDON"]
+        }
+      ]
+    },
+    "booking": {
+      "overline": "05 / YOUR NEXT CHAPTER",
+      "title": "Let's plan<br /><em>something</em><br />extraordinary.",
+      "intro": "Tell us a little about the journey you're dreaming of. Every memorable trip begins with a conversation.",
+      "mark": "SWATHONI TRAVELS <span>✳</span> DIANI BEACH",
+      "form": {
+        "top": ["YOUR JOURNEY STARTS HERE", "ENQUIRY FORM · 01"],
+        "title": "Where shall we<br /><em>take you?</em>",
+        "legend": "WHAT WOULD YOU LOVE TO EXPERIENCE?",
+        "choices": [
+          "Safari<br />Adventure <b>↗</b>",
+          "Beach<br />Escape <b>↗</b>",
+          "Safari<br />&amp; Beach <b>↗</b>"
+        ],
+        "name": "Your name",
+        "namePlaceholder": "Full name",
+        "email": "Email address",
+        "emailPlaceholder": "you@example.com",
+        "date": "Preferred travel date",
+        "travellers": "Number of travellers",
+        "notes": "Tell us a little more",
+        "notesPlaceholder": "Dream destinations, a special occasion, or anything you'd love to experience...",
+        "submit": "PREPARE MY ENQUIRY <span>↗</span>"
+      }
+    },
+    "footer": {
+      "brand": "From the wild to the water.<br />Beautiful journeys begin here.",
+      "explore": "EXPLORE",
+      "exploreHome": "Home",
+      "exploreOurStory": "Our Story",
+      "exploreExperiences": "Our Experiences",
+      "journey": "YOUR JOURNEY",
+      "journeyPlan": "Plan a Journey",
+      "journeyPortfolio": "Our Portfolio",
+      "journeyWhy": "Why Swathoni",
+      "copyright": "© 2026 SWATHONI TRAVELS <span>CRAFTED FOR THE LOVE OF KENYA</span>"
+    },
+    "lightbox": {
+      "label": "Photo gallery",
+      "close": "Close gallery",
+      "prev": "Previous photo",
+      "next": "Next photo"
+    },
+    "aria": {
+      "filterGallery": "Filter gallery",
+      "prev": "Previous experience",
+      "next": "Next experience",
+      "prevStory": "Previous traveller story",
+      "nextStory": "Next traveller story",
+      "testimonialControls": "Traveller stories controls"
+    },
+    "messages": {
+      "enquiryCopied": "Enquiry copied! Paste it into your email or message to Swathoni. The official booking email has not been configured yet.",
+      "enquiryNotConfigured": "Booking email is not configured yet. Please ask the site owner to connect the form before launch.",
+      "enquiryManual": "Booking email is not configured. Please copy your details manually or ask the site owner to connect the form.",
+      "enquiryOpen": "Your email app will open with your enquiry. Please review it and send it to Swathoni once their official address is confirmed.",
+      "emailSubject": "Swathoni Travels — Journey enquiry",
+      "emailGreeting": "Hello Swathoni Travels,",
+      "emailIntro": "I would like to enquire about a journey.",
+      "emailClosing": "Thank you."
+    }
+  },
+  "about": {
+    "safariFixedCta": "Plan your journey <span>↗</span>",
+    "hero": {
+      "title": "Rooted in Kenya.<br /><em>Made for the journey.</em>",
+      "intro": "There's something special about discovering a place through the people who call it home.",
+      "cta": "DISCOVER OUR STORY <span aria-hidden=\"true\">↘</span>",
+      "bottom": "THE STORY BEHIND SWATHONI <span aria-hidden=\"true\">↓</span>"
+    },
+    "intro": {
+      "kicker": ["01", "AN INTRODUCTION"],
+      "title": "More than a<br /><em>place to visit.</em>",
+      "large": "There's a particular kind of magic to Kenya. You feel it before you can explain it.",
+      "p1": "In the stillness of an early game drive. In the warmth of a welcome. In the moment the Indian Ocean comes into view. Swathoni Travels is rooted in Diani Beach and inspired by the beauty of the country we call home.",
+      "p2": "We want every journey to feel personal, considered and full of moments worth keeping.",
+      "signature": "FROM DIANI, WITH WARMTH"
+    },
+    "collage": {
+      "captions": ["THE WILD / KENYA", "THE COAST / DIANI"],
+      "side": "A COUNTRY OF BEAUTIFUL CONTRASTS — 2026"
+    },
+    "chapters": {
+      "tiny": "A CLOSER LOOK",
+      "title": "What moves us <em>forward.</em>",
+      "intro": "Three things shape the way we see Kenya, and the way we want you to experience it.",
+      "philosophy": "OUR PHILOSOPHY",
+      "panels": [
+        {
+          "label": "01 — OUR ROOTS",
+          "title": "It begins<br /><em>at home.</em>",
+          "intro": "Our connection to Kenya is the starting point. We believe that local perspective can turn a beautiful trip into something much more meaningful."
+        },
+        {
+          "label": "02 — OUR PURPOSE",
+          "title": "Travel that<br /><em>feels personal.</em>",
+          "intro": "Not simply ticking off destinations. We want to help create journeys that make room for wonder, connection and your own way of exploring."
+        },
+        {
+          "label": "03 — OUR VISION",
+          "title": "Leave with<br /><em>more than memories.</em>",
+          "intro": "To help more people experience the many sides of Kenya, from the extraordinary wild to the warmth and stillness of the coast."
+        }
+      ],
+      "hint": "KEEP SCROLLING <span>↓</span>",
+      "count": "01 / 03"
+    },
+    "difference": {
+      "kicker": ["02", "THE SWATHONI WAY"],
+      "title": "Thoughtful by nature.<br /><em>Personal by design.</em>",
+      "intro": "The details that make a journey feel like yours.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Rooted in Kenya",
+          "intro": "Inspired by the places and experiences we know and love."
+        },
+        {
+          "number": "02",
+          "title": "Made for you",
+          "intro": "Space for your interests, your pace and your idea of adventure."
+        },
+        {
+          "number": "03",
+          "title": "Wild & wonderful",
+          "intro": "Unforgettable safari moments, without losing the joy of slowing down."
+        },
+        {
+          "number": "04",
+          "title": "Beautifully balanced",
+          "intro": "From the energy of the savannah to the ease of the ocean."
+        }
+      ],
+      "note": "EXPLORE EACH STORY ↗"
+    },
+    "transition": {
+      "label": "THE KENYA WE LOVE",
+      "title": "Two worlds.<br /><em>One beautiful journey.</em>",
+      "intro": "From wide open skies to the rhythm of the Indian Ocean.",
+      "bottom": ["THE COAST", "", "THE WILD"]
+    },
+    "human": {
+      "kicker": ["03", "A PERSONAL INVITATION"],
+      "title": "We know Kenya.<br /><em>We'd love to<br />show you.</em>",
+      "intro": "Every memorable journey begins with a conversation. Tell us what excites you, where you'd love to go and how you'd like to feel. Together, we can shape the experience around you.",
+      "cta": "LET'S PLAN SOMETHING BEAUTIFUL <span>↗</span>",
+      "caption": "WITH LOVE, FROM KENYA <span>↗</span>"
+    },
+    "ending": {
+      "label": "THE NEXT CHAPTER IS YOURS",
+      "title": "Come find your<br /><em>Kenya.</em>",
+      "cta": "Plan your journey <span>↗</span>"
+    },
+    "aria": {
+      "prev": "Previous experience",
+      "next": "Next experience"
+    },
+    "footer": {
+      "brand": "Safari. Coast. Kenya.<br />Beautifully connected.",
+      "explore": "EXPLORE",
+      "exploreExperiences": "Our Experiences",
+      "exploreSafariBeach": "Safari + Beach",
+      "exploreOurStory": "Our Story",
+      "contact": "CONTACT",
+      "contactPlan": "Plan a journey",
+      "contactNote": "Contact details to be added",
+      "copyright": "© 2026 SWATHONI TRAVELS · DIANI BEACH, KENYA",
+      "copyrightSpan": "CRAFTED FOR THE JOURNEY"
+    }
+  },
+  "contact": {
+    "navCta": "Let's talk <span>↗</span>",
+    "location": {
+      "title": "Every great journey<br />begins with <em>hello.</em>",
+      "intro": "A safari you've always dreamed of. A few slow days by the ocean. Or both. Tell us what you're imagining, and let's take it from there."
+    },
+    "form": {
+      "top": ["YOUR JOURNEY ENQUIRY", "01 — 04"],
+      "legend": "WHAT ARE YOU DREAMING OF?",
+      "choices": [
+        "Safari adventure <b>↗</b>",
+        "Beach escape <b>↗</b>",
+        "A little of both <b>↗</b>"
+      ],
+      "name": "YOUR NAME",
+      "namePlaceholder": "How should we call you?",
+      "email": "EMAIL ADDRESS",
+      "emailPlaceholder": "you@example.com",
+      "month": "WHEN WOULD YOU LIKE TO TRAVEL?",
+      "travellers": "HOW MANY TRAVELLERS?",
+      "options": {
+        "notSure": "Not sure yet",
+        "one": "1",
+        "two": "2",
+        "three": "3",
+        "four": "4",
+        "fivePlus": "5+"
+      },
+      "message": "ANYTHING ELSE WE SHOULD KNOW?",
+      "messagePlaceholder": "A special occasion, places on your wish list, or just a feeling you're chasing...",
+      "submit": "PREPARE MY ENQUIRY <span>↗</span>",
+      "messages": {
+        "copied": "Enquiry copied. Please paste it into your email to Swathoni Travels.",
+        "copyFailed": "Please copy your details and send them to Swathoni Travels once their contact email is confirmed.",
+        "fallback": "Your details are ready. Please copy them and email Swathoni Travels once the official address is confirmed."
+      }
+    },
+    "map": {
+      "title": "Map of Diani Beach, Kenya",
+      "base": "OUR BASE",
+      "place": "Diani Beach, Kenya",
+      "note": "Approximate area shown · Office address to be confirmed",
+      "open": "OPEN MAP ↗"
+    },
+    "lastWord": {
+      "label": "FROM THE WILD TO THE WATER",
+      "title": "We'll see you <em>in Kenya.</em>",
+      "cta": "EXPLORE OUR JOURNEYS ↗"
+    },
+    "footer": {
+      "brand": "Safari. Coast. Kenya.<br />Beautifully connected.",
+      "explore": "EXPLORE",
+      "exploreExperiences": "Our Experiences",
+      "exploreSafariBeach": "Safari + Beach",
+      "exploreOurStory": "Our Story",
+      "contact": "CONTACT",
+      "contactPlan": "Plan a journey",
+      "contactNote": "Contact details to be added",
+      "copyright": "© 2026 SWATHONI TRAVELS · DIANI BEACH, KENYA",
+      "copyrightSpan": "CRAFTED FOR THE JOURNEY"
+    }
+  },
+  "galleryCaptions": {
+    "wild": {
+      "A moment in the wild": "A moment in the wild",
+      "The king at rest": "The king at rest",
+      "Quiet on the savannah": "Quiet on the savannah",
+      "An unforgettable gaze": "An unforgettable gaze",
+      "A regal moment": "A regal moment",
+      "The wild, wide open": "The wild, wide open",
+      "A quiet trail through the wild": "A quiet trail through the wild",
+      "Watching over the plains": "Watching over the plains",
+      "Pattern and movement": "Pattern and movement",
+      "Life on the move": "Life on the move",
+      "The feeling of being here": "The feeling of being here",
+      "A pause worth keeping": "A pause worth keeping"
+    },
+    "coast": {
+      "A little closer to paradise": "A little closer to paradise",
+      "Soft mornings by the sea": "Soft mornings by the sea",
+      "A walk beside the ocean": "A walk beside the ocean",
+      "Barefoot days in Diani": "Barefoot days in Diani",
+      "Days by the shore": "Days by the shore",
+      "Finding your way along the coast": "Finding your way along the coast",
+      "Where the coast slows time": "Where the coast slows time",
+      "Room to breathe": "Room to breathe",
+      "A place in the shade": "A place in the shade",
+      "Small details by the sea": "Small details by the sea",
+      "Open water, endless blue": "Open water, endless blue",
+      "A view of paradise": "A view of paradise",
+      "Moonlight on the water": "Moonlight on the water",
+      "Space to wander": "Space to wander",
+      "Coastal paths and possibilities": "Coastal paths and possibilities",
+      "Golden light by the ocean": "Golden light by the ocean"
+    },
+    "plains": {
+      "The beauty of the open plains": "The beauty of the open plains",
+      "On the road through Kenya": "On the road through Kenya",
+      "The plains in green": "The plains in green",
+      "Beyond the open plains": "Beyond the open plains"
+    },
+    "moments": {
+      "Evenings made slow": "Evenings made slow",
+      "Human moments along the journey": "Human moments along the journey",
+      "A smile worth keeping": "A smile worth keeping",
+      "Stories from the road": "Stories from the road"
+    },
+    "wildlife": {
+      "A path through the wild": "A path through the wild",
+      "Face to face with a giant": "Face to face with a giant",
+      "In the company of giants": "In the company of giants",
+      "Shelter in the shade": "Shelter in the shade",
+      "The details of a giant": "The details of a giant",
+      "A closer look": "A closer look",
+      "Together at the water": "Together at the water",
+      "A gentle presence": "A gentle presence",
+      "Stillness among the trees": "Stillness among the trees",
+      "Lines across the landscape": "Lines across the landscape",
+      "A memorable encounter": "A memorable encounter",
+      "Stripes in the greenery": "Stripes in the greenery",
+      "Patterns of the wild": "Patterns of the wild",
+      "A pause in the shade": "A pause in the shade",
+      "Stillness above the ground": "Stillness above the ground",
+      "Resting in the treetops": "Resting in the treetops",
+      "A quiet lookout": "A quiet lookout",
+      "Spots and stillness": "Spots and stillness",
+      "An alert gaze": "An alert gaze",
+      "At ease in the wild": "At ease in the wild",
+      "Moving through the trees": "Moving through the trees",
+      "Hidden in plain sight": "Hidden in plain sight",
+      "Above the savannah": "Above the savannah",
+      "A gathering on the plains": "A gathering on the plains",
+      "A glimpse through the greenery": "A glimpse through the greenery",
+      "A different perspective": "A different perspective",
+      "Small encounters along the way": "Small encounters along the way",
+      "Life across the plains": "Life across the plains"
+    },
+    "culture": {
+      "Maasai culture and connection": "Maasai culture and connection",
+      "A portrait of Maasai culture": "A portrait of Maasai culture",
+      "Stories shared along the way": "Stories shared along the way",
+      "A warm welcome": "A warm welcome",
+      "Traditions brought together": "Traditions brought together",
+      "A moment of connection": "A moment of connection",
+      "Traditions shared with care": "Traditions shared with care",
+      "The people and stories of Kenya": "The people and stories of Kenya",
+      "A deeper sense of place": "A deeper sense of place",
+      "Connections along the journey": "Connections along the journey"
+    }
+  }
+}

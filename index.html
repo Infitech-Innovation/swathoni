@@ -1,462 +1,795 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title data-i18n-title="meta.index.title">Swathoni Travels</title>
+    <meta
+      name="description"
+      data-i18n-content="meta.index.description"
+      content="Discover Kenya with Swathoni Travels. Plan tailor-made safari adventures, Diani Beach escapes and journeys combining wildlife, coast and Maasai culture."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="footer.css" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Swathoni Travels</title>
-  <meta name="description"
-    content="Discover Kenya with Swathoni Travels. Plan tailor-made safari adventures, Diani Beach escapes and journeys combining wildlife, coast and Maasai culture." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="navigation.css" />
-  <link rel="stylesheet" href="footer.css" />
-  <script src="navigation.js" defer></script>
-  <link rel="canonical" href="https://swathoni.vercel.app/" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="theme-color" content="#12271e" />
-  <link rel="icon" type="image/svg+xml" href="images/Swathonitravelslogo.svg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Swathoni Travels" />
-  <meta property="og:locale" content="en_KE" />
-  <meta property="og:title" content="Swathoni Travels" />
-  <meta property="og:description"
-    content="Discover Kenya with Swathoni Travels. Plan tailor-made safari adventures, Diani Beach escapes and journeys combining wildlife, coast and Maasai culture." />
-  <meta property="og:url" content="https://swathoni.vercel.app/" />
-  <meta property="og:image" content="https://swathoni.vercel.app/images/beach.jpeg" />
-  <meta property="og:image:width" content="1600" />
-  <meta property="og:image:height" content="900" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:alt" content="Palm trees beside a sandy beach on the Kenyan coast" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Swathoni Travels" />
-  <meta name="twitter:description"
-    content="Discover Kenya with Swathoni Travels. Plan tailor-made safari adventures, Diani Beach escapes and journeys combining wildlife, coast and Maasai culture." />
-  <meta name="twitter:image" content="https://swathoni.vercel.app/images/beach.jpeg" />
-  <meta name="twitter:image:alt" content="Palm trees beside a sandy beach on the Kenyan coast" />
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://swathoni.vercel.app/#organization",
-      "name": "Swathoni Travels",
-      "url": "https://swathoni.vercel.app/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://swathoni.vercel.app/images/Swathonitravelslogo.png",
-        "width": 2645,
-        "height": 793
-      },
-      "description": "Kenya safari, Diani Beach and cultural travel journeys."
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://swathoni.vercel.app/#website",
-      "url": "https://swathoni.vercel.app/",
-      "name": "Swathoni Travels",
-      "inLanguage": "en",
-      "publisher": {
-        "@id": "https://swathoni.vercel.app/#organization"
+    <script src="translations.js"></script>
+    <script src="navigation.js" defer></script>
+
+    <link rel="canonical" href="https://swathoni.vercel.app/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#12271e" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="images/Swathonitravelslogo.svg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Swathoni Travels" />
+    <meta property="og:locale" content="en_KE" />
+    <meta
+      property="og:title"
+      data-i18n-content="meta.index.title"
+      content="Swathoni Travels"
+    />
+    <meta
+      property="og:description"
+      data-i18n-content="meta.index.description"
+      content="Discover Kenya with Swathoni Travels. Plan tailor-made safari adventures, Diani Beach escapes and journeys combining wildlife, coast and Maasai culture."
+    />
+    <meta property="og:url" content="https://swathoni.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://swathoni.vercel.app/images/beach.jpeg"
+    />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta
+      property="og:image:alt"
+      content="Palm trees beside a sandy beach on the Kenyan coast"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      data-i18n-content="meta.index.title"
+      content="Swathoni Travels"
+    />
+    <meta
+      name="twitter:description"
+      data-i18n-content="meta.index.description"
+      content="Discover Kenya with Swathoni Travels. Plan tailor-made safari adventures, Diani Beach escapes and journeys combining wildlife, coast and Maasai culture."
+    />
+    <meta
+      name="twitter:image"
+      content="https://swathoni.vercel.app/images/beach.jpeg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Palm trees beside a sandy beach on the Kenyan coast"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://swathoni.vercel.app/#organization",
+            "name": "Swathoni Travels",
+            "url": "https://swathoni.vercel.app/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://swathoni.vercel.app/images/Swathonitravelslogo.png",
+              "width": 2645,
+              "height": 793
+            },
+            "description": "Kenya safari, Diani Beach and cultural travel journeys."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://swathoni.vercel.app/#website",
+            "url": "https://swathoni.vercel.app/",
+            "name": "Swathoni Travels",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://swathoni.vercel.app/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://swathoni.vercel.app/#webpage",
+            "url": "https://swathoni.vercel.app/",
+            "name": "Swathoni Travels",
+            "description": "Discover Kenya with Swathoni Travels. Plan tailor-made safari adventures, Diani Beach escapes and journeys combining wildlife, coast and Maasai culture.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://swathoni.vercel.app/#website"
+            },
+            "about": {
+              "@id": "https://swathoni.vercel.app/#organization"
+            }
+          }
+        ]
       }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://swathoni.vercel.app/#webpage",
-      "url": "https://swathoni.vercel.app/",
-      "name": "Swathoni Travels",
-      "description": "Discover Kenya with Swathoni Travels. Plan tailor-made safari adventures, Diani Beach escapes and journeys combining wildlife, coast and Maasai culture.",
-      "inLanguage": "en",
-      "isPartOf": {
-        "@id": "https://swathoni.vercel.app/#website"
-      },
-      "about": {
-        "@id": "https://swathoni.vercel.app/#organization"
-      }
-    }
-  ]
-}
     </script>
-</head>
+  </head>
 
-<body>
-  <div class="grain" aria-hidden="true"></div>
-  <header class="nav" id="nav">
-    <a class="brand" href="#home">
-      <img src="images/Swathonitravelslogo.svg" alt="Swathoni Travels" width="2645" height="793" />
-    </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation"
-      aria-label="Open navigation menu">
-      <span></span><span></span><span></span>
-    </button>
-    <nav id="main-navigation" aria-label="Main navigation">
-      <a href="#home" aria-current="page">Home</a><a href="experiences.html">Our Experiences</a><a href="about.html">Our
-        Story</a><a href="contact.html">Contact</a>
-    </nav>
-    <a class="nav-cta" href="contact.html#contact-form">Plan your journey <span>↗</span></a>
-  </header>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="nav" id="nav">
+      <a class="brand" href="#home">
+        <img
+          src="images/Swathonitravelslogo.svg"
+          alt="Swathoni Travels"
+          width="2645"
+          height="793"
+        />
+      </a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+        aria-label="Open navigation menu"
+        data-i18n-aria-label="nav.toggleOpen"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-navigation" aria-label="Main navigation">
+        <a href="#home" data-i18n="nav.home" aria-current="page">Home</a
+        ><a href="experiences.html" data-i18n="nav.experiences"
+          >Our Experiences</a
+        ><a href="about.html" data-i18n="nav.about">Our Story</a
+        ><a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <button
+          class="lang-switch"
+          data-lang-btn="en"
+          aria-label="Switch language"
+         
+        ></button>
+         <!-- data-i18n-aria-label="lang.switch" -->
+      </nav>
+      <a class="nav-cta" href="contact.html#contact-form" data-i18n="nav.cta"
+        >Plan your journey <span>↗</span></a
+      >
+    </header>
 
-  <a class="safari-fixed-cta" href="experiences.html#booking">Plan my safari <span>↗</span></a>
+    <a
+      class="safari-fixed-cta"
+      href="experiences.html#booking"
+      data-i18n="index.safariCta"
+      >Plan my safari <span>↗</span></a
+    >
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-media parallax">
-        <img class="hero-slide active" src="images/maasai.jpeg" alt="Maasai people in traditional dress" width="1280"
-          height="960" decoding="async" fetchpriority="high" />
-        <img class="hero-slide" src="images/zebra1.jpeg" alt="Zebras seen up close" width="1440" height="1440"
-          decoding="async" />
-        <img class="hero-slide" src="images/van.jpeg" alt="Travellers inside a safari van" width="1536" height="2048"
-          decoding="async" />
-        <img class="hero-slide" src="images/beach.jpeg" alt="Palm trees beside a sandy beach" width="1600" height="900"
-          decoding="async" />
-      </div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow hero-reveal">PRIVATE JOURNEYS · KENYA</p>
-        <h1 class="hero-reveal delay-1">
-          Discover Kenya,<br /><em>beautifully.</em>
-        </h1>
-        <div class="hero-bottom hero-reveal delay-2">
-          <p>
-            From unforgettable days in the wild to barefoot mornings on Diani
-            Beach, we create journeys that let you experience the very best of
-            Kenya.
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-media parallax">
+          <img
+            class="hero-slide active"
+            src="images/maasai.jpeg"
+            alt="Maasai people in traditional dress"
+            width="1280"
+            height="960"
+            decoding="async"
+            fetchpriority="high"
+          />
+          <img
+            class="hero-slide"
+            src="images/zebra1.jpeg"
+            alt="Zebras seen up close"
+            width="1440"
+            height="1440"
+            decoding="async"
+          />
+          <img
+            class="hero-slide"
+            src="images/van.jpeg"
+            alt="Travellers inside a safari van"
+            width="1536"
+            height="2048"
+            decoding="async"
+          />
+          <img
+            class="hero-slide"
+            src="images/beach.jpeg"
+            alt="Palm trees beside a sandy beach"
+            width="1600"
+            height="900"
+            decoding="async"
+          />
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-reveal" data-i18n="index.hero.eyebrow">
+            PRIVATE JOURNEYS · KENYA
           </p>
-          <div class="hero-actions">
-            <a class="btn light" href="experiences.html">Explore journeys</a>
-          </div>
-        </div>
-      </div>
-      <div class="hero-location">DIANI BEACH · 04°17′S</div>
-      <a class="scroll" href="#welcome"><span></span>SCROLL TO EXPLORE</a>
-    </section>
-
-    <section class="welcome cream" id="welcome">
-      <div class="section-label reveal">
-        <span>WELCOME TO KENYA</span><i></i><span>01</span>
-      </div>
-      <div class="welcome-grid">
-        <div class="welcome-copy reveal">
-          <h2>Come for the wild.<br /><em>Stay for the feeling.</em></h2>
-          <p>
-            There is a side of Kenya you can only understand by being here.
-            The hush before sunrise. A herd crossing the plains. Lunch beneath
-            an acacia tree. Salt in the air when you finally reach the coast.
-          </p>
-          <a class="warm-link" href="#journey">Experience both worlds <span>→</span></a>
-        </div>
-        <figure class="photo tall reveal">
-          <img src="images/cheetah.jpeg" alt="Leopard walking through the greenery" width="1536" height="2048"
-            loading="lazy" decoding="async" />
-          <figcaption><span>THE SAVANNAH</span><span>KENYA</span></figcaption>
-        </figure>
-        <figure class="photo small reveal">
-          <img src="images/fmasai.jpeg" alt="Woman wearing traditional beaded jewellery" width="1536" height="2048"
-            loading="lazy" decoding="async" />
-          <figcaption><span>GOLDEN HOUR</span><span>18:24</span></figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="experiences" id="experiences">
-      <div class="section-head reveal">
-        <p class="eyebrow dark">EXPERIENCE KENYA</p>
-        <h2>How do you want<br />to <em>feel?</em></h2>
-        <p>
-          Not packages. Journeys shaped around the moments you want to
-          remember.
-        </p>
-      </div>
-      <div class="experience-stack">
-        <article class="experience-card reveal">
-          <img src="images/feel.jpeg" alt="Lion resting on a safari sign" width="1536" height="2048" loading="lazy"
-            decoding="async" />
-          <div class="card-shade"></div>
-          <span class="number">01</span>
-          <div class="card-copy">
-            <small>OPEN PLAINS · WILDLIFE · PRIVATE GUIDES</small>
-            <h3>The Safari</h3>
-            <p>
-              Wake with the savannah and spend your days following the rhythm
-              of the wild.
-            </p>
-            <a href="experiences.html#booking">Discover the wild ↗</a>
-          </div>
-        </article>
-        <article class="experience-card reveal">
-          <img src="images/diani.jpeg" alt="Boat on turquoise water in Diani" width="1170" height="1907" loading="lazy"
-            decoding="async" />
-          <div class="card-shade"></div>
-          <span class="number">02</span>
-          <div class="card-copy">
-            <small>INDIAN OCEAN · WHITE SAND · SLOW DAYS</small>
-            <h3>The Coast</h3>
-            <p>
-              Trade safari dust for warm water, swaying palms and unhurried
-              days in Diani.
-            </p>
-            <a href="experiences.html#booking">Escape to Diani ↗</a>
-          </div>
-        </article>
-        <article class="experience-card feature reveal">
-          <img src="images/map.jpeg" alt="Destination signs beside a coastal path" width="1536" height="2048"
-            loading="lazy" decoding="async" />
-          <div class="card-shade"></div>
-          <span class="number">03</span>
-          <div class="card-copy">
-            <small>OUR SIGNATURE EXPERIENCE</small>
-            <h3>Safari + Sea</h3>
-            <p>
-              Two sides of Kenya, beautifully connected in one effortless
-              journey.
-            </p>
-            <a href="#journey">See the journey ↗</a>
-          </div>
-          <b class="signature-tag">SWATHONI SIGNATURE</b>
-        </article>
-      </div>
-    </section>
-
-    <section class="breath">
-      <div class="breath-media parallax">
-        <img src="images/van.jpeg" alt="Travellers inside a safari van" width="1536" height="2048" loading="lazy"
-          decoding="async" />
-      </div>
-      <div class="breath-shade"></div>
-      <div class="breath-copy reveal">
-        <p>THE WILD HAS A WAY OF</p>
-        <h2>Making everything<br />else feel <em>far away.</em></h2>
-      </div>
-    </section>
-
-    <section class="journey cream" id="journey">
-      <div class="journey-intro reveal">
-        <p class="eyebrow dark">THE SWATHONI SIGNATURE</p>
-        <h2>From savannah<br /><em>to sea.</em></h2>
-        <p>
-          Start with early mornings and endless horizons. End with nowhere to
-          be but the water. We take care of everything in between.
-        </p>
-      </div>
-      <div class="journey-visual reveal">
-        <div class="journey-photo">
-          <img id="journeyImage" src="images/impala.jpeg" alt="Impala in the wild" width="2048" height="1450"
-            loading="lazy" decoding="async" /><span id="journeyCaption">MAASAI MARA · THE WILD</span>
-        </div>
-        <div class="journey-steps">
-          <button class="step active" data-image="images/thesafari.jpeg"
-            data-alt="Safari vehicle beneath an acacia tree" data-caption="MAASAI MARA · THE WILD">
-            <span>01</span>
-            <div>
-              <small>DAYS 1—3</small>
-              <h3>Arrive in the wild</h3>
-              <p>
-                Private game drives, golden evenings and a camp chosen around
-                your pace.
-              </p>
-            </div>
-          </button>
-          <button class="step" data-image="images/zebra4.jpeg" data-alt="Zebra in the wild"
-            data-caption="AMBOSELI · ELEPHANT COUNTRY">
-            <span>02</span>
-            <div>
-              <small>DAYS 4—6</small>
-              <h3>Go a little deeper</h3>
-              <p>
-                Wide skies, elephant country and time to simply be in the
-                landscape.
-              </p>
-            </div>
-          </button>
-          <button class="step" data-image="images/diani3.jpeg" data-alt="Kitesurfing at Diani beach"
-            data-caption="DIANI BEACH · INDIAN OCEAN">
-            <span>03</span>
-            <div>
-              <small>DAYS 7—10</small>
-              <h3>Exhale in Diani</h3>
-              <p>
-                Warm ocean, beautiful food and barefoot days with nothing left
-                to rush.
-              </p>
-            </div>
-          </button>
-        </div>
-      </div>
-      <div class="journey-note reveal">
-        <span>10 DAYS · SWATHONI JOURNEY</span>
-        <p>
-          Every Swathoni journey is tailor-made. This is simply one way Kenya
-          could unfold.
-        </p>
-        <a class="btn dark" href="experiences.html#booking">Create my journey</a>
-      </div>
-    </section>
-
-    <section class="diani">
-      <div class="diani-media parallax">
-        <img src="images/diani.jpeg" alt="Boat on turquoise water in Diani" width="1170" height="1907" loading="lazy"
-          decoding="async" />
-      </div>
-      <div class="diani-wash"></div>
-      <div class="diani-copy reveal">
-        <p class="eyebrow">THEN, THE OCEAN</p>
-        <h2>Leave your shoes<br />at the <em>door.</em></h2>
-        <p>
-          Diani is where the journey softens. Swim. Sail. Eat slowly. Stay out
-          for sunset. Let the Indian Ocean set the pace.
-        </p>
-        <a class="btn light" href="experiences.html#booking">Take me to the coast</a>
-      </div>
-      <div class="diani-word">DIANI</div>
-    </section>
-
-    <section class="story cream" id="story">
-      <div class="story-images reveal">
-        <figure class="story-main">
-          <img src="images/girrafe.jpeg" alt="Giraffes standing together" width="1066" height="1600" loading="lazy"
-            decoding="async" />
-        </figure>
-        <figure class="story-inset">
-          <img src="images/elephant3.jpeg" alt="Elephant in the grass" width="1200" height="1600" loading="lazy"
-            decoding="async" />
-        </figure>
-        <span>ROOTED IN KENYA</span>
-      </div>
-      <div class="story-copy reveal">
-        <p class="eyebrow dark">OUR STORY</p>
-        <h2>Local knowledge.<br /><em>Personal journeys.</em></h2>
-        <p class="lead">
-          Swathoni Travels is based in Diani Beach and built around a simple
-          belief: the best way to experience Kenya is with people who know it,
-          love it and understand how to make it feel effortless.
-        </p>
-        <div class="story-points">
-          <div>
-            <b>01</b>
-            <h4>Thoughtfully personal</h4>
-            <p>
-              We start with how you want to travel, then build around you.
-            </p>
-          </div>
-          <div>
-            <b>02</b>
-            <h4>Kenya, connected</h4>
-            <p>
-              Safari and coast planned as one journey, not two separate
-              holidays.
-            </p>
-          </div>
-          <div>
-            <b>03</b>
-            <h4>Here when you need us</h4>
-            <p>
-              Local support from the first conversation until your last day in
+          <h1 class="hero-reveal delay-1" data-i18n="index.hero.title">
+            Discover Kenya,<br /><em>beautifully.</em>
+          </h1>
+          <div class="hero-bottom hero-reveal delay-2">
+            <p data-i18n="index.hero.intro">
+              From unforgettable days in the wild to barefoot mornings on Diani
+              Beach, we create journeys that let you experience the very best of
               Kenya.
             </p>
+            <div class="hero-actions">
+              <a
+                class="btn light"
+                href="experiences.html"
+                data-i18n="index.hero.cta"
+                >Explore journeys</a
+              >
+            </div>
           </div>
         </div>
-        <a class="warm-link" href="about.html" style="display: inline-block; margin: 24px 0">Discover our story →</a>
-        <div class="mission">
-          <small>OUR PURPOSE</small>
-          <p>
-            To create thoughtful, personal journeys that connect Kenya's
-            wildlife, people and coastline in one unforgettable experience.
+        <div class="hero-location" data-i18n="index.hero.location">
+          DIANI BEACH · 04°17′S
+        </div>
+        <a class="scroll" href="#welcome" data-i18n="index.hero.scroll"
+          ><span></span>SCROLL TO EXPLORE</a
+        >
+      </section>
+
+      <section class="welcome cream" id="welcome">
+        <div class="section-label reveal">
+          <span data-i18n-text="index.welcome.label">WELCOME TO KENYA</span
+          ><i></i><span data-i18n-text="index.welcome.number">01</span>
+        </div>
+        <div class="welcome-grid">
+          <div class="welcome-copy reveal">
+            <h2 data-i18n="index.welcome.title">
+              Come for the wild.<br /><em>Stay for the feeling.</em>
+            </h2>
+            <p data-i18n="index.welcome.intro">
+              There is a side of Kenya you can only understand by being here.
+              The hush before sunrise. A herd crossing the plains. Lunch beneath
+              an acacia tree. Salt in the air when you finally reach the coast.
+            </p>
+            <a class="warm-link" href="#journey" data-i18n="index.welcome.cta"
+              >Experience both worlds <span>→</span></a
+            >
+          </div>
+          <figure class="photo tall reveal">
+            <img
+              src="images/cheetah.jpeg"
+              alt="Leopard walking through the greenery"
+              width="1536"
+              height="2048"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span data-i18n-text="index.welcomeCaptions.savannah.0"
+                >THE SAVANNAH</span
+              ><span data-i18n-text="index.welcomeCaptions.savannah.1"
+                >KENYA</span
+              >
+            </figcaption>
+          </figure>
+          <figure class="photo small reveal">
+            <img
+              src="images/fmasai.jpeg"
+              alt="Woman wearing traditional beaded jewellery"
+              width="1536"
+              height="2048"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span data-i18n-text="index.welcomeCaptions.goldenHour.0"
+                >GOLDEN HOUR</span
+              ><span data-i18n-text="index.welcomeCaptions.goldenHour.1"
+                >18:24</span
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="experiences" id="experiences">
+        <div class="section-head reveal">
+          <p class="eyebrow dark" data-i18n="index.experiences.eyebrow">
+            EXPERIENCE KENYA
+          </p>
+          <h2 data-i18n="index.experiences.title">
+            How do you want<br />to <em>feel?</em>
+          </h2>
+          <p data-i18n="index.experiences.intro">
+            Not packages. Journeys shaped around the moments you want to
+            remember.
           </p>
         </div>
-      </div>
-    </section>
-
-    <section class="testimonial">
-      <div class="testimonial-inner reveal">
-        <p class="eyebrow dark">TRAVELLER STORIES</p>
-        <div class="quote-mark">“</div>
-        <blockquote id="storyQuote">
-          We came for the safari, but it was the feeling of the whole journey
-          that stayed with us.
-        </blockquote>
-        <div class="guest" id="storyGuest">
-          <span>SOPHIE & MARK</span><i></i><span>SAFARI + DIANI</span><i></i><span>AMSTERDAM</span>
+        <div class="experience-stack">
+          <article class="experience-card reveal">
+            <img
+              src="images/feel.jpeg"
+              alt="Lion resting on a safari sign"
+              width="1536"
+              height="2048"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="card-shade"></div>
+            <span class="number">01</span>
+            <div class="card-copy">
+              <small data-i18n-text="index.safari.label"
+                >OPEN PLAINS · WILDLIFE · PRIVATE GUIDES</small
+              >
+              <h3 data-i18n="index.safari.title">The Safari</h3>
+              <p data-i18n="index.safari.intro">
+                Wake with the savannah and spend your days following the rhythm
+                of the wild.
+              </p>
+              <a href="experiences.html#booking" data-i18n="index.safari.cta"
+                >Discover the wild ↗</a
+              >
+            </div>
+          </article>
+          <article class="experience-card reveal">
+            <img
+              src="images/diani.jpeg"
+              alt="Boat on turquoise water in Diani"
+              width="1170"
+              height="1907"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="card-shade"></div>
+            <span class="number">02</span>
+            <div class="card-copy">
+              <small data-i18n-text="index.coast.label"
+                >INDIAN OCEAN · WHITE SAND · SLOW DAYS</small
+              >
+              <h3 data-i18n="index.coast.title">The Coast</h3>
+              <p data-i18n="index.coast.intro">
+                Trade safari dust for warm water, swaying palms and unhurried
+                days in Diani.
+              </p>
+              <a href="experiences.html#booking" data-i18n="index.coast.cta"
+                >Escape to Diani ↗</a
+              >
+            </div>
+          </article>
+          <article class="experience-card feature reveal">
+            <img
+              src="images/map.jpeg"
+              alt="Destination signs beside a coastal path"
+              width="1536"
+              height="2048"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="card-shade"></div>
+            <span class="number">03</span>
+            <div class="card-copy">
+              <small data-i18n-text="index.safariSea.label"
+                >OUR SIGNATURE EXPERIENCE</small
+              >
+              <h3 data-i18n="index.safariSea.title">Safari + Sea</h3>
+              <p data-i18n="index.safariSea.intro">
+                Two sides of Kenya, beautifully connected in one effortless
+                journey.
+              </p>
+              <a href="#journey" data-i18n="index.safariSea.cta"
+                >See the journey ↗</a
+              >
+            </div>
+            <b class="signature-tag" data-i18n-text="index.safariSea.tag"
+              >SWATHONI SIGNATURE</b
+            >
+          </article>
         </div>
-        <div class="testimonial-controls" aria-label="Traveller stories controls">
-          <button id="storyPrev" aria-label="Previous traveller story">
-            â†
-          </button>
-          <span id="storyCount">01 / 03</span>
-          <button id="storyNext" aria-label="Next traveller story">
-            â†’
-          </button>
+      </section>
+
+      <section class="breath">
+        <div class="breath-media parallax">
+          <img
+            src="images/van.jpeg"
+            alt="Travellers inside a safari van"
+            width="1536"
+            height="2048"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
-        <small>Sample testimonial · replace with a real client review</small>
-      </div>
-    </section>
-
-    <section class="moments cream">
-      <div class="moments-head reveal">
-        <p class="eyebrow dark">MOMENTS FROM KENYA</p>
-        <h2>A journey you can<br />almost <em>feel.</em></h2>
-      </div>
-      <div class="moment-grid">
-        <figure class="m1 reveal">
-          <img src="images/zebra.jpeg" alt="Zebras grazing together" width="1200" height="1600" loading="lazy"
-            decoding="async" />
-          <figcaption>AMBOSELI · MORNING</figcaption>
-        </figure>
-        <figure class="m2 reveal">
-          <img src="images/elephant3.jpeg" alt="Elephant in the grass" width="1200" height="1600" loading="lazy"
-            decoding="async" />
-          <figcaption>THE MARA · GOLDEN HOUR</figcaption>
-        </figure>
-        <figure class="m3 reveal">
-          <img src="images/diani2.jpeg" alt="Visitors walking along Diani beach" width="1152" height="2048"
-            loading="lazy" decoding="async" />
-          <figcaption>DIANI · SLOW AFTERNOONS</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="contact-media">
-        <img src="images/maasaiculture.jpeg" alt="Maasai cultural experience" width="640" height="410" loading="lazy"
-          decoding="async" />
-      </div>
-      <div class="contact-shade"></div>
-      <div class="contact-copy reveal">
-        <p class="eyebrow">YOUR KENYA STARTS HERE</p>
-        <h2>Ready for something<br /><em>unforgettable?</em></h2>
-        <p>Tell us what you are dreaming of. We will help shape the rest.</p>
-        <div>
-          <a class="btn light" href="mailto:hello@swathonitravels.com">Start planning</a><a class="text-link"
-            href="#">WhatsApp us <span>↗</span></a>
+        <div class="breath-shade"></div>
+        <div class="breath-copy reveal">
+          <p data-i18n-text="index.breath.eyebrow">THE WILD HAS A WAY OF</p>
+          <h2 data-i18n="index.breath.title">
+            Making everything<br />else feel <em>far away.</em>
+          </h2>
         </div>
+      </section>
+
+      <section class="journey cream" id="journey">
+        <div class="journey-intro reveal">
+          <p class="eyebrow dark" data-i18n="index.journey.eyebrow">
+            THE SWATHONI SIGNATURE
+          </p>
+          <h2 data-i18n="index.journey.title">
+            From savannah<br /><em>to sea.</em>
+          </h2>
+          <p data-i18n="index.journey.intro">
+            Start with early mornings and endless horizons. End with nowhere to
+            be but the water. We take care of everything in between.
+          </p>
+        </div>
+        <div class="journey-visual reveal">
+          <div class="journey-photo">
+            <img
+              id="journeyImage"
+              src="images/impala.jpeg"
+              alt="Impala in the wild"
+              width="2048"
+              height="1450"
+              loading="lazy"
+              decoding="async"
+            /><span id="journeyCaption" data-i18n-text="index.journey.caption"
+              >MAASAI MARA · THE WILD</span
+            >
+          </div>
+          <div class="journey-steps">
+            <button
+              class="step active"
+              data-image="images/thesafari.jpeg"
+              data-alt="Safari vehicle beneath an acacia tree"
+              data-caption="MAASAI MARA · THE WILD"
+              data-caption-key="index.journey.captions.wild"
+            >
+              <span>01</span>
+              <div>
+                <small data-i18n-text="index.journey.steps.0.days"
+                  >DAYS 1—3</small
+                >
+                <h3 data-i18n="index.journey.steps.0.title">
+                  Arrive in the wild
+                </h3>
+                <p data-i18n="index.journey.steps.0.intro">
+                  Private game drives, golden evenings and a camp chosen around
+                  your pace.
+                </p>
+              </div>
+            </button>
+            <button
+              class="step"
+              data-image="images/zebra4.jpeg"
+              data-alt="Zebra in the wild"
+              data-caption="AMBOSELI · ELEPHANT COUNTRY"
+              data-caption-key="index.journey.captions.amboseli"
+            >
+              <span>02</span>
+              <div>
+                <small data-i18n-text="index.journey.steps.1.days"
+                  >DAYS 4—6</small
+                >
+                <h3 data-i18n="index.journey.steps.1.title">
+                  Go a little deeper
+                </h3>
+                <p data-i18n="index.journey.steps.1.intro">
+                  Wide skies, elephant country and time to simply be in the
+                  landscape.
+                </p>
+              </div>
+            </button>
+            <button
+              class="step"
+              data-image="images/diani3.jpeg"
+              data-alt="Kitesurfing at Diani beach"
+              data-caption="DIANI BEACH · INDIAN OCEAN"
+              data-caption-key="index.journey.captions.diani"
+            >
+              <span>03</span>
+              <div>
+                <small data-i18n-text="index.journey.steps.2.days"
+                  >DAYS 7—10</small
+                >
+                <h3 data-i18n="index.journey.steps.2.title">Exhale in Diani</h3>
+                <p data-i18n="index.journey.steps.2.intro">
+                  Warm ocean, beautiful food and barefoot days with nothing left
+                  to rush.
+                </p>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="journey-note reveal">
+          <span data-i18n-text="index.journey.note"
+            >10 DAYS · SWATHONI JOURNEY</span
+          >
+          <p data-i18n="index.journey.noteIntro">
+            Every Swathoni journey is tailor-made. This is simply one way Kenya
+            could unfold.
+          </p>
+          <a
+            class="btn dark"
+            href="experiences.html#booking"
+            data-i18n="index.journey.cta"
+            >Create my journey</a
+          >
+        </div>
+      </section>
+
+      <section class="diani">
+        <div class="diani-media parallax">
+          <img
+            src="images/diani.jpeg"
+            alt="Boat on turquoise water in Diani"
+            width="1170"
+            height="1907"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="diani-wash"></div>
+        <div class="diani-copy reveal">
+          <p class="eyebrow" data-i18n="index.diani.eyebrow">THEN, THE OCEAN</p>
+          <h2 data-i18n="index.diani.title">
+            Leave your shoes<br />at the <em>door.</em>
+          </h2>
+          <p data-i18n="index.diani.intro">
+            Diani is where the journey softens. Swim. Sail. Eat slowly. Stay out
+            for sunset. Let the Indian Ocean set the pace.
+          </p>
+          <a
+            class="btn light"
+            href="experiences.html#booking"
+            data-i18n="index.diani.cta"
+            >Take me to the coast</a
+          >
+        </div>
+        <div class="diani-word" data-i18n-text="index.diani.word">DIANI</div>
+      </section>
+
+      <section class="story cream" id="story">
+        <div class="story-images reveal">
+          <figure class="story-main">
+            <img
+              src="images/girrafe.jpeg"
+              alt="Giraffes standing together"
+              width="1066"
+              height="1600"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <figure class="story-inset">
+            <img
+              src="images/elephant3.jpeg"
+              alt="Elephant in the grass"
+              width="1200"
+              height="1600"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <span data-i18n-text="index.story.label">ROOTED IN KENYA</span>
+        </div>
+        <div class="story-copy reveal">
+          <p class="eyebrow dark" data-i18n="index.story.eyebrow">OUR STORY</p>
+          <h2 data-i18n="index.story.title">
+            Local knowledge.<br /><em>Personal journeys.</em>
+          </h2>
+          <p class="lead" data-i18n="index.story.lead">
+            Swathoni Travels is based in Diani Beach and built around a simple
+            belief: the best way to experience Kenya is with people who know it,
+            love it and understand how to make it feel effortless.
+          </p>
+          <div class="story-points">
+            <div>
+              <b data-i18n-text="index.story.points.0.number">01</b>
+              <h4 data-i18n="index.story.points.0.title">
+                Thoughtfully personal
+              </h4>
+              <p data-i18n="index.story.points.0.intro">
+                We start with how you want to travel, then build around you.
+              </p>
+            </div>
+            <div>
+              <b data-i18n-text="index.story.points.1.number">02</b>
+              <h4 data-i18n="index.story.points.1.title">Kenya, connected</h4>
+              <p data-i18n="index.story.points.1.intro">
+                Safari and coast planned as one journey, not two separate
+                holidays.
+              </p>
+            </div>
+            <div>
+              <b data-i18n-text="index.story.points.2.number">03</b>
+              <h4 data-i18n="index.story.points.2.title">
+                Here when you need us
+              </h4>
+              <p data-i18n="index.story.points.2.intro">
+                Local support from the first conversation until your last day in
+                Kenya.
+              </p>
+            </div>
+          </div>
+          <a
+            class="warm-link"
+            href="about.html"
+            style="display: inline-block; margin: 24px 0"
+            data-i18n="index.story.cta"
+            >Discover our story →</a
+          >
+          <div class="mission">
+            <small data-i18n-text="index.story.purpose.label"
+              >OUR PURPOSE</small
+            >
+            <p data-i18n="index.story.purpose.intro">
+              To create thoughtful, personal journeys that connect Kenya's
+              wildlife, people and coastline in one unforgettable experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial">
+        <div class="testimonial-inner reveal">
+          <p class="eyebrow dark" data-i18n="index.testimonial.eyebrow">
+            TRAVELLER STORIES
+          </p>
+          <div class="quote-mark">“</div>
+          <blockquote id="storyQuote">
+            We came for the safari, but it was the feeling of the whole journey
+            that stayed with us.
+          </blockquote>
+          <div class="guest" id="storyGuest">
+            <span>SOPHIE & MARK</span><i></i><span>SAFARI + DIANI</span><i></i
+            ><span>AMSTERDAM</span>
+          </div>
+          <div
+            class="testimonial-controls"
+            aria-label="Traveller stories controls"
+          >
+            <button id="storyPrev" aria-label="Previous traveller story">
+              â†
+            </button>
+            <span id="storyCount">01 / 03</span>
+            <button id="storyNext" aria-label="Next traveller story">
+              â†’
+            </button>
+          </div>
+          <small data-i18n="index.testimonial.footer"
+            >Sample testimonial · replace with a real client review</small
+          >
+        </div>
+      </section>
+
+      <section class="moments cream">
+        <div class="moments-head reveal">
+          <p class="eyebrow dark" data-i18n="index.moments.eyebrow">
+            MOMENTS FROM KENYA
+          </p>
+          <h2 data-i18n="index.moments.title">
+            A journey you can<br />almost <em>feel.</em>
+          </h2>
+        </div>
+        <div class="moment-grid">
+          <figure class="m1 reveal">
+            <img
+              src="images/zebra.jpeg"
+              alt="Zebras grazing together"
+              width="1200"
+              height="1600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption data-i18n-text="index.moments.captions.0">
+              AMBOSELI · MORNING
+            </figcaption>
+          </figure>
+          <figure class="m2 reveal">
+            <img
+              src="images/elephant3.jpeg"
+              alt="Elephant in the grass"
+              width="1200"
+              height="1600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption data-i18n-text="index.moments.captions.1">
+              THE MARA · GOLDEN HOUR
+            </figcaption>
+          </figure>
+          <figure class="m3 reveal">
+            <img
+              src="images/diani2.jpeg"
+              alt="Visitors walking along Diani beach"
+              width="1152"
+              height="2048"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption data-i18n-text="index.moments.captions.2">
+              DIANI · SLOW AFTERNOONS
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-media">
+          <img
+            src="images/maasaiculture.jpeg"
+            alt="Maasai cultural experience"
+            width="640"
+            height="410"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="contact-shade"></div>
+        <div class="contact-copy reveal">
+          <p class="eyebrow" data-i18n="index.contactSection.eyebrow">
+            YOUR KENYA STARTS HERE
+          </p>
+          <h2 data-i18n="index.contactSection.title">
+            Ready for something<br /><em>unforgettable?</em>
+          </h2>
+          <p data-i18n="index.contactSection.intro">
+            Tell us what you are dreaming of. We will help shape the rest.
+          </p>
+          <div>
+            <a
+              class="btn light"
+              href="mailto:hello@swathonitravels.com"
+              data-i18n="index.contactSection.cta"
+              >Start planning</a
+            ><a
+              class="text-link"
+              href="#"
+              data-i18n="index.contactSection.whatsapp"
+              >WhatsApp us <span>↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand">
+        <img
+          src="images/Swathonitravelslogo.svg"
+          alt="Swathoni Travels"
+          width="2645"
+          height="793"
+        />
+        <p data-i18n="index.footer.brand">
+          Safari. Coast. Kenya.<br />Beautifully connected.
+        </p>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-brand">
-      <img src="images/Swathonitravelslogo.svg" alt="Swathoni Travels" width="2645" height="793" />
-      <p>Safari. Coast. Kenya.<br />Beautifully connected.</p>
-    </div>
-    <div>
-      <small>EXPLORE</small><a href="experiences.html">Our Experiences</a><a href="experiences.html#signature">Safari +
-        Beach</a><a href="about.html">Our Story</a>
-    </div>
-    <div>
-      <small>CONTACT</small><a href="experiences.html#booking">Plan a journey</a><a href="#">WhatsApp</a><a
-        href="#">Instagram</a>
-    </div>
-    <div class="copyright">
-      © 2026 SWATHONI TRAVELS · DIANI BEACH, KENYA
-      <span>PRIVACY · TERMS</span>
-    </div>
-    <!-- <a href="contact.html" class="contact-footer-link">Contact us ↗</a> -->
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+      <div>
+        <small data-i18n-text="index.footer.explore">EXPLORE</small
+        ><a href="experiences.html" data-i18n="index.footer.exploreExperiences"
+          >Our Experiences</a
+        ><a
+          href="experiences.html#signature"
+          data-i18n="index.footer.exploreSafariBeach"
+          >Safari + Beach</a
+        ><a href="about.html" data-i18n="index.footer.exploreOurStory"
+          >Our Story</a
+        >
+      </div>
+      <div>
+        <small data-i18n-text="index.footer.contact">CONTACT</small
+        ><a href="experiences.html#booking" data-i18n="index.footer.contactPlan"
+          >Plan a journey</a
+        ><a href="#" data-i18n="index.footer.contactWhatsapp">WhatsApp</a
+        ><a href="#" data-i18n="index.footer.contactInstagram">Instagram</a>
+      </div>
+      <div class="copyright">
+        <span data-i18n-text="index.footer.copyright"
+          >© 2026 SWATHONI TRAVELS · DIANI BEACH, KENYA</span
+        >
+        <span data-i18n-text="index.footer.copyrightSpan">PRIVACY · TERMS</span>
+      </div>
+      <!-- <a href="contact.html" class="contact-footer-link">Contact us ↗</a> -->
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -29,15 +29,20 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(
           () =>
             (feedback.textContent =
-              "Enquiry copied. Please paste it into your email to Swathoni Travels."),
+              window.i18n && window.i18n.t("contact.form.messages.copied")
+                ? window.i18n.t("contact.form.messages.copied")
+                : "Enquiry copied. Please paste it into your email to Swathoni Travels."),
         )
         .catch(
           () =>
             (feedback.textContent =
-              "Please copy your details and send them to Swathoni Travels once their contact email is confirmed."),
+              window.i18n && window.i18n.t("contact.form.messages.copyFailed")
+                ? window.i18n.t("contact.form.messages.copyFailed")
+                : "Please copy your details and send them to Swathoni Travels once their contact email is confirmed."),
         );
     } else {
       feedback.textContent =
+        (window.i18n && window.i18n.t("contact.form.messages.fallback")) ||
         "Your details are ready. Please copy them and email Swathoni Travels once the official address is confirmed.";
       const ta = document.createElement("textarea");
       ta.value = draft;

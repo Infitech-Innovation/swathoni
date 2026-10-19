@@ -1,0 +1,648 @@
+{
+  "lang": {
+    "switch": "Taal",
+    "en": "EN",
+    "nl": "NL",
+    "switchToDutch": "Verander de taal naar het Nederlands",
+    "switchToEnglish": "Verander de taal naar het Engels"
+  },
+  "nav": {
+    "home": "Home",
+    "experiences": "Onze ervaringen",
+    "about": "Ons verhaal",
+    "contact": "Contact",
+    "portfolio": "Portfolio",
+    "cta": "Plan je reis <span>↗</span>",
+    "ctaContact": "Laten we praten <span>↗</span>",
+    "toggleOpen": "Open navigatiemenu",
+    "toggleClose": "Sluit navigatiemenu"
+  },
+  "meta": {
+    "index": {
+      "title": "Swathoni Travels",
+      "description": "Ontdek Kenia met Swathoni Travels. Plan op maat gemaakte safari-avonturen, Diani Beach-uitstapjes en reizen die wildlife, de kust en Maasai-cultuur combineren."
+    },
+    "experiences": {
+      "title": "Ervaringen | Swathoni Travels",
+      "description": "Ontdek Kenia-safariavonturen, Diani Beach-uitstapjes en safari-naar-zee reizen met Swathoni Travels. Ontdek wildlife, kustlandschap en Maasai-cultuur."
+    },
+    "about": {
+      "title": "Over Swathoni Travels",
+      "description": "Leer Swathoni Travels kennen, een Keniaans reismerk geworteld in Diani Beach. Ontdek onze aanpak voor persoonlijke safari-avonturen, kustuitstapjes en culturele reizen."
+    },
+    "contact": {
+      "title": "Neem contact op met Swathoni Travels",
+      "description": "Neem contact op met Swathoni Travels om je Kenia-safari, Diani Beach-vakantie of safari-en-strandreis te plannen. Deel je reisdata, interesses en vraag."
+    }
+  },
+  "index": {
+    "safariCta": "Plan mijn safari <span>↗</span>",
+    "hero": {
+      "eyebrow": "PRIVATE REIZEN · KENIA",
+      "title": "Ontdek Kenia,<br /><em>prachtig.</em>",
+      "intro": "Van onvergetelijke dagen in de wildernis tot blote ochtenden aan Diani Beach, we creëren reizen waarmee je het beste van Kenia ervaart.",
+      "cta": "Ontdek reizen",
+      "location": "DIANI BEACH · 04°17′Z",
+      "scroll": "SCROL NAAR OM TE ONTDEKKEN"
+    },
+    "welcome": {
+      "label": "WELKOM IN KENIA",
+      "number": "01",
+      "title": "Kom voor de wildernis.<br /><em>Blijf voor het gevoel.</em>",
+      "intro": "Er is een kant van Kenia die je alleen begrijpt als je er zelf bent. De stilte voor zonsopkomst. Een kudde die over de vlakten trekt. Lunch onder een acaciaboom. Zout in de lucht wanneer je eindelijk de kust bereikt.",
+      "cta": "Ontdek beide werelden <span>→</span>"
+    },
+    "welcomeCaptions": {
+      "savannah": ["DE SAVANNE", "KENIA"],
+      "goldenHour": ["GOUDEN UUR", "18:24"]
+    },
+    "experiences": {
+      "eyebrow": "ERVAAR KENIA",
+      "title": "Hoe wil je je<br /><em>voelen?</em>",
+      "intro": "Geen pakketten. Reizen gevormd rond de momenten waar je aan wilt denken."
+    },
+    "safari": {
+      "label": "OPEN VLAKTEN · WILDLIFE · PRIVATE GIDSEN",
+      "title": "De Safari",
+      "intro": "Word wakker bij de savanne en breng je dagen door in het ritme van de wildernis.",
+      "cta": "Ontdek de wildernis ↗"
+    },
+    "coast": {
+      "label": "INDIAN OCEAN · WIT ZAND · LANZAME DAGEN",
+      "title": "De Kust",
+      "intro": "Ruil safaristof voor warm water, wiegende palmen en onhaasten dagen in Diani.",
+      "cta": "Ontsnap naar Diani ↗"
+    },
+    "safariSea": {
+      "label": "ONZE SIGNATUUR-ERVARING",
+      "title": "Safari + Zee",
+      "intro": "Twee kanten van Kenia, prachtig verbonden in één moeiteloze reis.",
+      "cta": "Bekijk de reis ↗",
+      "tag": "SWATHONI SIGNATUUR"
+    },
+    "breath": {
+      "eyebrow": "DE WILDERNIS HEBT EEN MANIER OM",
+      "title": "Alles<br />anders <em>ver weg</em> te laten voelen."
+    },
+    "journey": {
+      "eyebrow": "DE SWATHONI SIGNATUUR",
+      "title": "Van savanne<br /><em>naar zee.</em>",
+      "intro": "Begin met vroege ochtenden en eindeloze horizonnen. Eindig nergens anders dan bij het water. We zorgen voor alles ertussenin.",
+      "caption": "MAASAI MARA · DE WILDERNIS",
+      "captions": {
+        "wild": "MAASAI MARA · DE WILDERNIS",
+        "amboseli": "AMBOSELI · OLIFANTENLAND",
+        "diani": "DIANI BEACH · INDIAN OCEAN"
+      },
+      "steps": [
+        {
+          "days": "DAGEN 1—3",
+          "title": "Kom aan in de wildernis",
+          "intro": "Private game drives, gouden avonden en een kamp gekozen rond jouw tempo."
+        },
+        {
+          "days": "DAGEN 4—6",
+          "title": "Ga iets dieper",
+          "intro": "Wijde skies, olifantenland en tijd om simpelweg in het landschap te zijn."
+        },
+        {
+          "days": "DAGEN 7—10",
+          "title": "Adem uit in Diani",
+          "intro": "Warm oceaan, prachtig eten en blote dagen met niets om over te haasten."
+        }
+      ],
+      "note": "10 DAGEN · SWATHONI REIS",
+      "noteIntro": "Elke Swathoni-reis is op maat gemaakt. Dit is slechts een manier waarop Kenia zich zou kunnen ontvouwen.",
+      "cta": "Creëer mijn reis"
+    },
+    "diani": {
+      "eyebrow": "DAARNA, DE OCEAAN",
+      "title": "Laat je schoenen<br />aan de <em>deur.</em>",
+      "intro": "Diani is waar de reis verzacht. Zwem. Zeil. Eet langzaam. Blijf tot zonsopgang. Laat de Indische Oceaan het tempo bepalen.",
+      "cta": "Neem me naar de kust",
+      "word": "DIANI"
+    },
+    "story": {
+      "label": "GEWORTELD IN KENIA",
+      "eyebrow": "ONS VERHAAL",
+      "title": "Lokale kennis.<br /><em>Persoonlijke reizen.</em>",
+      "lead": "Swathoni Travels is gevestigd in Diani Beach en gebouwd rond een simpele overtuiging: de beste manier om Kenia te ervaren is met mensen die het kennen, liefhebben en begrijpen hoe het moeiteloos aanvoelt.",
+      "points": [
+        {
+          "number": "01",
+          "title": "Doordacht persoonlijk",
+          "intro": "We beginnen met hoe je wilt reizen, en bouwen dan om jou heen."
+        },
+        {
+          "number": "02",
+          "title": "Kenia, verbonden",
+          "intro": "Safari en kust gepland als één reis, niet als twee afzonderlijke vakanties."
+        },
+        {
+          "number": "03",
+          "title": "Lokaal support",
+          "intro": "Lokaal support vanaf het eerste gesprek tot je laatste dag in Kenia."
+        }
+      ],
+      "cta": "Ontdek ons verhaal →",
+      "purpose": {
+        "label": "ONS DOEL",
+        "intro": "Om doordachte, persoonlijke reizen te creëren die Kenia's wildlife, mensen en kustlijn verbinden in één onvergetelijke ervaring."
+      }
+    },
+    "testimonial": {
+      "eyebrow": "REIZIGERSVERHALEN",
+      "quotes": [
+        {
+          "text": "We kwamen voor de safari, maar het gevoel van de hele reis is bij ons gebleven.",
+          "guest": ["SOPHIE & MARK", "SAFARI + DIANI", "AMSTERDAM"]
+        },
+        {
+          "text": "Elk detail voelde doordacht, van de eerste gamedrive tot de rustige kustdagen die volgden.",
+          "guest": ["AMINA & JAMES", "WILD + COAST", "NAIROBI"]
+        },
+        {
+          "text": "Swathoni vormde de reis rond hoe we wilden voelen, niet alleen rond waar we wilden heen.",
+          "guest": ["LENA FAMILY", "KENYA ESCAPE", "LONDON"]
+        }
+      ],
+      "footer": "Voorbeeldgetuigenis · vervang door een echte klantreview"
+    },
+    "moments": {
+      "eyebrow": "MOMENTEN UIT KENIA",
+      "title": "Een reis die je bijna<br /><em>voelt.</em>",
+      "captions": [
+        "AMBOSELI · OCHTEND",
+        "DE MARA · GOUDEN UUR",
+        "DIANI · LANZAME MIDDAGEN"
+      ]
+    },
+    "contactSection": {
+      "eyebrow": "JOUW KENIA BEGINT HIER",
+      "title": "Klaar voor iets<br /><em>onvergetelijks?</em>",
+      "intro": "Vertel ons waar je van droomt. We helpen de rest vorm te geven.",
+      "cta": "Begin met plannen",
+      "whatsapp": "WhatsApp ons <span>↗</span>"
+    },
+    "footer": {
+      "brand": "Safari. Kust. Kenia.<br />Prachtig verbonden.",
+      "explore": "ONTDEKKEN",
+      "exploreExperiences": "Onze ervaringen",
+      "exploreSafariBeach": "Safari + Strand",
+      "exploreOurStory": "Ons verhaal",
+      "contact": "CONTACT",
+      "contactPlan": "Plan een reis",
+      "contactWhatsapp": "WhatsApp",
+      "contactInstagram": "Instagram",
+      "copyright": "© 2026 SWATHONI TRAVELS · DIANI BEACH, KENIA",
+      "copyrightSpan": "PRIVACY · ALGEMENE VOORWAARDEN"
+    }
+  },
+  "experiences": {
+    "safariFixedCta": "Plan je reis <span>↗</span>",
+    "hero": {
+      "kicker": "KENIA, NA JE WENS",
+      "title": "Ga waar<br />je <em>voelt</em><br />leeft<span class=\"xp-period\">.</span>",
+      "intro": "Wilde ochtenden. Oceaanmiddagen. Duizend momenten ertussen. Vind de reis die bij jou past.",
+      "cta": "ONTDEK JE REIS <b>↗</b>",
+      "stamp": "WIJLD, PRAACHTIG KENIA",
+      "bottom": ["SAFARI / KUST / VERDER", "SCROL NAAR OM TE ONTDEKKEN ↓"]
+    },
+    "stage": {
+      "top": ["ERVAAR DE ERVARINGEN", "KENIA"],
+      "counter": "01 / 03",
+      "bottom": ["DE SWATHONI COLLECTIE", "KENIA"],
+      "progress": ["01", "03"],
+      "scenes": [
+        {
+          "overline": "01 / DE WILDERNIS",
+          "title": "Safari<br /><em>Avonturen.</em>",
+          "intro": "Volg het eerste licht over de open vlakten. Ontdek het bijzondere wildlife, de landschappen en de rustige momenten die een safari onvergetelijk maken.",
+          "tags": ["GAME DRIVES", "WILDLIFE", "NATIONALE PARKEN"],
+          "cta": "VRAAG EEN SAFARI AAN <span>↗</span>"
+        },
+        {
+          "overline": "02 / DE KUST",
+          "title": "Strand<br /><em>Ontsnappingen.</em>",
+          "intro": "Lange ochtenden, warme zeebriesjes en poederzacht zand. Laat de schoonheid van Diani en de Keniaanse kust het tempo bepalen.",
+          "tags": ["DIANI BEACH", "OCEAANDAGEN", "ONTSPANNING"],
+          "cta": "VRAAG DE KUST AAN <span>↗</span>"
+        },
+        {
+          "overline": "03 / DE SIGNATUUR",
+          "title": "Safari<br /><em>&amp; Zee.</em>",
+          "intro": "Eén reis, twee prachtige werelden. Ervaar de spanning van de Keniaanse wildernis voordat je ontspant aan de Indische Oceaan.",
+          "tags": ["DE WILDERNIS", "DE KUST", "OP MAAT GEGEMAAKTE REIZEN"],
+          "cta": "PLAN EEN GECOMBINEERDE REIS <span>↗</span>"
+        }
+      ]
+    },
+    "why": {
+      "overline": "02 / HET SWATHONI VERSCHIL",
+      "title": "Niet alleen waar je heen gaat.<br /><em>Hoe je het ervaart.</em>",
+      "intro": "De beste reizen laten ruimte voor verrassing, comfort en de kleine details die een plek persoonlijk maken.",
+      "photoCaption": "GEGEVEN VOOR DE MOMENTEN DIE ERTOE DOEN",
+      "items": [
+        {
+          "number": "01",
+          "title": "Lokaal perspectief.",
+          "intro": "Onze verbinding met Kenia vormt de plaatsen, ervaringen en verhalen die we graag delen."
+        },
+        {
+          "number": "02",
+          "title": "Gemaakt rond jou.",
+          "intro": "Van avontuurlijke ochtenden tot onhaasten middagen, vertel ons welke reis je voor ogen hebt."
+        },
+        {
+          "number": "03",
+          "title": "Twee werelden, één reis.",
+          "intro": "Ontdek de magie van de savanne en het gemak van de kust zonder te hoeven kiezen."
+        },
+        {
+          "number": "04",
+          "title": "Warme, persoonlijke planning.",
+          "intro": "Begin met een gesprek en ontdek een reis die rond jouw reiswensen is gevormd."
+        }
+      ]
+    },
+    "breath": {
+      "label": "EEN UITNODIGING OM TE ONTDEKKEN",
+      "title": "Neem de weg<br /><em>minder gewoon.</em>",
+      "intro": "Laat Kenia je verrassen."
+    },
+    "portfolio": {
+      "overline": "03 / HET SWATHONI JOURNAAL",
+      "title": "Een glimp van<br /><em>wat er op je wacht.</em>",
+      "intro": "Een visuele reis door wildlife, wilde landschappen, kustmomenten en plekken om te pauzeren.",
+      "filters": [
+        "ALLE MOMENTEN <span>07</span>",
+        "DE WILDERNIS",
+        "DE KUST",
+        "CULTUUR",
+        "PLAATSEN OM TE BLIJVEN"
+      ],
+      "items": {
+        "wild": {
+          "caption": "Een moment in de wildernis",
+          "label": "01 / DE WILDERNIS"
+        },
+        "coast": {
+          "caption": "Een beetje dichter bij het paradijs",
+          "label": "02 / DE KUST"
+        },
+        "plains": {
+          "caption": "De schoonheid van de open vlakten",
+          "label": "03 / OPEN VLAKTEN"
+        },
+        "moments": {
+          "caption": "Een langzamer moment",
+          "label": "04 / STILLE MOMENTEN"
+        },
+        "wildlife": {
+          "caption": "In het gezelschap van reuzen",
+          "label": "05 / WILDLIFE"
+        },
+        "culture": {
+          "caption": "Maasai-cultuur en verbinding",
+          "label": "07 / MAASAI CULTUUR"
+        }
+      }
+    },
+    "testimonial": {
+      "eyebrow": "REIZIGERSVERHALEN",
+      "quotes": [
+        {
+          "text": "We kwamen voor de safari, maar het gevoel van de hele reis is bij ons gebleven.",
+          "guest": ["SOPHIE & MARK", "SAFARI + DIANI", "AMSTERDAM"]
+        },
+        {
+          "text": "Elke bocht bracht een nieuw uitzicht, een nieuw moment, een nieuwe reden om verliefd te worden op Kenia.",
+          "guest": ["AMINA & JAMES", "WILD + COAST", "NAIROBI"]
+        },
+        {
+          "text": "Van de open vlakten tot de oceaanbries, het voelde als twee prachtige vakanties in één.",
+          "guest": ["LENA FAMILY", "SAFARI + ZEE", "LONDON"]
+        }
+      ]
+    },
+    "booking": {
+      "overline": "05 / JOUW VOLGENDE HOOFDSTUK",
+      "title": "Laten we plannen<br /><em>iets</em><br />bijzonders.",
+      "intro": "Vertel ons een beetje over de reis waar je van droomt. Elke gedenkwaardige reis begint met een gesprek.",
+      "mark": "SWATHONI TRAVELS <span>✳</span> DIANI BEACH",
+      "form": {
+        "top": ["JOUW REISVRAAG BEGINT HIER", "VRAAGFORMULIER · 01"],
+        "title": "Waar brengen we je<br /><em>heen?</em>",
+        "legend": "WAT ZOU JE GRAAG WILLEN ERVAREN?",
+        "choices": [
+          "Safari<br />Avontuur <b>↗</b>",
+          "Beach<br />Ontsnapping <b>↗</b>",
+          "Safari<br />&amp; Strand <b>↗</b>"
+        ],
+        "name": "Je naam",
+        "namePlaceholder": "Volledige naam",
+        "email": "E-mailadres",
+        "emailPlaceholder": "jou@example.com",
+        "date": "Voorkeursreisdatum",
+        "travellers": "Aantal reizigers",
+        "notes": "Vertel ons iets meer",
+        "notesPlaceholder": "Droombestemmingen, een speciale gelegenheid, of iets waar je naar verlangt...",
+        "submit": "BEREID MIJN VRAAG VOOR <span>↗</span>"
+      }
+    },
+    "footer": {
+      "brand": "Van de wildernis naar het water.<br />Prachtige reizen beginnen hier.",
+      "explore": "ONTDEKKEN",
+      "exploreHome": "Home",
+      "exploreOurStory": "Ons verhaal",
+      "exploreExperiences": "Onze ervaringen",
+      "journey": "JOUW REIS",
+      "journeyPlan": "Plan een Reis",
+      "journeyPortfolio": "Onze portfolio",
+      "journeyWhy": "Waarom Swathoni",
+      "copyright": "© 2026 SWATHONI TRAVELS <span>GEMAAKT VOOR DE LIEFDE VOOR KENIA</span>"
+    },
+    "lightbox": {
+      "label": "Fotogalerij",
+      "close": "Sluit galerij",
+      "prev": "Vorige foto",
+      "next": "Volgende foto"
+    },
+    "aria": {
+      "filterGallery": "Galerij filteren",
+      "prev": "Vorige ervaring",
+      "next": "Volgende ervaring",
+      "prevStory": "Vorige reizigersverhaal",
+      "nextStory": "Volgend reizigersverhaal",
+      "testimonialControls": "Reizigersverhaal bediening"
+    },
+    "messages": {
+      "enquiryCopied": "Vraag gekopieerd! Plak het in je e-mail of bericht naar Swathoni. Het officiële e-mailadres is nog niet bevestigd.",
+      "enquiryNotConfigured": "Het boekings-e-mailadres is nog niet ingesteld. Vraag de site-eigenaar om het formulier te koppelen voordat je lanceert.",
+      "enquiryManual": "Het boekings-e-mailadres is niet ingesteld. Kopieer je gegevens handmatig of vraag de site-eigenaar om het formulier te koppelen.",
+      "enquiryOpen": "Je e-mailapp opent met je vraag. Controleer het en stuur het naar Swathoni zodra hun officiële adres is bevestigd.",
+      "emailSubject": "Swathoni Travels — Reisvraag",
+      "emailGreeting": "Hallo Swathoni Travels,",
+      "emailIntro": "Ik wil graag vragen naar een reis.",
+      "emailClosing": "Dank u wel."
+    }
+  },
+  "about": {
+    "safariFixedCta": "Plan je reis <span>↗</span>",
+    "hero": {
+      "title": "Geworteld in Kenia.<br /><em>Gemaakt voor de reis.</em>",
+      "intro": "Er is iets bijzonders aan een plek ontdekken via de mensen die het hun thuis noemen.",
+      "cta": "ONTDEK ONS VERHAAL <span aria-hidden=\"true\">↘</span>",
+      "bottom": "HET VERHAAL ACHTER SWATHONI <span aria-hidden=\"true\">↓</span>"
+    },
+    "intro": {
+      "kicker": ["01", "EEN INTRODUCTIE"],
+      "title": "Meer dan een<br /><em>plek om te bezoeken.</em>",
+      "large": "Er is een bijzondere magie aan Kenia. Je voelt het voordat je het kunt verklaren.",
+      "p1": "In de stilte van een vroege gamedrive. In de warmte van een welkom. In het moment dat de Indische Oceaan in zicht komt. Swathoni Travels is geworteld in Diani Beach en geïnspireerd door het land dat we thuis noemen.",
+      "p2": "We willen dat elke reis persoonlijk, doordacht en vol momenten aanvoelt die de moeite waard zijn om te bewaren.",
+      "signature": "VANUIT DIANI, MET WARMTE"
+    },
+    "collage": {
+      "captions": ["DE WILDERNIS / KENIA", "DE KUST / DIANI"],
+      "side": "EEN LAND VAN MOOI CONTRAST — 2026"
+    },
+    "chapters": {
+      "tiny": "EEN NADER BEKIJKEN",
+      "title": "Wat ons drijft<br /><em>vooruit.</em>",
+      "intro": "Drie dingen bepalen de manier waarop we naar Kenia kijken, en de manier waarop we willen dat jij het ervaart.",
+      "philosophy": "ONZE FILOSOFIE",
+      "panels": [
+        {
+          "label": "01 — ONZE WORTELS",
+          "title": "Het begint<br /><em>thuis.</em>",
+          "intro": "Onze verbinding met Kenia is het uitgangspunt. We geloven dat lokaal perspectief een mooie reis kan veranderen in iets veel waardevollers."
+        },
+        {
+          "label": "02 — ONS DOEL",
+          "title": "Reizen die<br /><em>persoonlijk aanvoelen.</em>",
+          "intro": "Niet simpelweg bestemmingen afstrepen. We willen helpen reizen te creëren die ruimte maken voor verwondering, verbinding en je eigen manier van ontdekken."
+        },
+        {
+          "label": "03 — ONZE VISIE",
+          "title": "Ga met meer weg dan<br /><em>alleen herinneringen.</em>",
+          "intro": "Om meer mensen te helpen de vele kanten van Kenia te ervaren, van de buitengewone wildernis tot de warmte en stilte van de kust."
+        }
+      ],
+      "hint": "BLEVEN SCROLLEN <span>↓</span>",
+      "count": "01 / 03"
+    },
+    "difference": {
+      "kicker": ["02", "DE SWATHONI MANIER"],
+      "title": "Doordacht van nature.<br /><em>Persoonlijk ontworpen.</em>",
+      "intro": "De details die een reis als de jouwe laten aanvoelen.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Geworteld in Kenia",
+          "intro": "Geïnspireerd door de plaatsen en ervaringen die we kennen en liefhebben."
+        },
+        {
+          "number": "02",
+          "title": "Gemaakt voor jou",
+          "intro": "Ruimte voor jouw interesses, jouw tempo en jouw idee van avontuur."
+        },
+        {
+          "number": "03",
+          "title": "Wild & prachtig",
+          "intro": "Onvergetelijke safari-momenten, zonder het plezier van vertragen te verliezen."
+        },
+        {
+          "number": "04",
+          "title": "Prachtig in balans",
+          "intro": "Van de energie van de savanne tot het gemak van de oceaan."
+        }
+      ],
+      "note": "ONTDEK ELK VERHAAL ↗"
+    },
+    "transition": {
+      "label": "HET KENIA DAT WE LIEF HEBBEN",
+      "title": "Twee werelden.<br /><em>Eén prachtige reis.</em>",
+      "intro": "Van wijde open skies tot de ritme van de Indische Oceaan.",
+      "bottom": ["DE KUST", "", "DE WILDERNIS"]
+    },
+    "human": {
+      "kicker": ["03", "EEN PERSOONLIJKE UITNODIGING"],
+      "title": "We kennen Kenia.<br /><em>We zouden je graag<br />laten zien.</em>",
+      "intro": "Elke gedenkwaardige reis begint met een gesprek. Vertel ons waar je van opwacht, waar je naartoe wilt en hoe je je wilt voelen. Samen kunnen we de ervaring rond jou vormen.",
+      "cta": "LATEN WE IETS MOOIS PLANNEN <span>↗</span>",
+      "caption": "MET LIEFDE, UIT KENIA <span>↗</span>"
+    },
+    "ending": {
+      "label": "HET VOLGENDE HOOFDSTUK IS AAN JOU",
+      "title": "Kom jouw<br /><em>Kenia</em> vinden.",
+      "cta": "Plan je reis <span>↗</span>"
+    },
+    "aria": {
+      "prev": "Vorige ervaring",
+      "next": "Volgende ervaring"
+    },
+    "footer": {
+      "brand": "Safari. Kust. Kenia.<br />Prachtig verbonden.",
+      "explore": "ONTDEKKEN",
+      "exploreExperiences": "Onze ervaringen",
+      "exploreSafariBeach": "Safari + Strand",
+      "exploreOurStory": "Ons verhaal",
+      "contact": "CONTACT",
+      "contactPlan": "Plan een reis",
+      "contactNote": "Contactgegevens worden later toegevoegd",
+      "copyright": "© 2026 SWATHONI TRAVELS · DIANI BEACH, KENIA",
+      "copyrightSpan": "GEMAAKT VOOR DE REIS"
+    }
+  },
+  "contact": {
+    "navCta": "Laten we praten <span>↗</span>",
+    "location": {
+      "title": "Elke geweldige reis<br />begint met <em>hallo.</em>",
+      "intro": "Een safari waar je altijd van hebt gedroomd. Een paar langzame dagen bij de oceaan. Of beide. Vertel ons wat je voor je ziet, en we nemen het van daar."
+    },
+    "form": {
+      "top": ["JOUW REISVRAAG", "01 — 04"],
+      "legend": "WAT DROOM JE OVER?",
+      "choices": [
+        "Safari-avontuur <b>↗</b>",
+        "Strandontsnapping <b>↗</b>",
+        "Een beetje van beide <b>↗</b>"
+      ],
+      "name": "JOUW NAAM",
+      "namePlaceholder": "Hoe mogen we je noemen?",
+      "email": "E-MAILADRES",
+      "emailPlaceholder": "jou@example.com",
+      "month": "WANNEER WIL JE REISSEN?",
+      "travellers": "HOVEEL REIZIGERS?",
+      "options": {
+        "notSure": "Niet zeker",
+        "one": "1",
+        "two": "2",
+        "three": "3",
+        "four": "4",
+        "fivePlus": "5+"
+      },
+      "message": "IS ER NOG IETS DAT WE MOETEN WETEN?",
+      "messagePlaceholder": "Een speciale gelegenheid, plaatsen op je verlanglijstje, of gewoon een gevoel dat je achtervolg...",
+      "submit": "BEREID MIJN VRAAG VOOR <span>↗</span>",
+      "messages": {
+        "copied": "Vraag gekopieerd. Plak het in je e-mail naar Swathoni Travels.",
+        "copyFailed": "Kopieer je gegevens en stuur ze naar Swathoni Travels zodra hun contact e-mail is bevestigd.",
+        "fallback": "Je gegevens staan klaar. Kopieer ze en e-mail Swathoni Travels zodra het officiële adres is bevestigd."
+      }
+    },
+    "map": {
+      "title": "Kaart van Diani Beach, Kenia",
+      "base": "ONZE BASIS",
+      "place": "Diani Beach, Kenia",
+      "note": "Bij benadering weergegeven gebied · Kantooradres nog te bevestigen",
+      "open": "KAART OPENEN ↗"
+    },
+    "lastWord": {
+      "label": "VAN DE WILDERNIS TOT HET WATER",
+      "title": "We zien je <em>in Kenia.</em>",
+      "cta": "ONTDEK ONS REIZEN ↗"
+    },
+    "footer": {
+      "brand": "Safari. Kust. Kenia.<br />Prachtig verbonden.",
+      "explore": "ONTDEKKEN",
+      "exploreExperiences": "Onze ervaringen",
+      "exploreSafariBeach": "Safari + Strand",
+      "exploreOurStory": "Ons verhaal",
+      "contact": "CONTACT",
+      "contactPlan": "Plan een reis",
+      "contactNote": "Contactgegevens worden later toegevoegd",
+      "copyright": "© 2026 SWATHONI TRAVELS · DIANI BEACH, KENIA",
+      "copyrightSpan": "GEMAAKT VOOR DE REIS"
+    }
+  },
+  "galleryCaptions": {
+    "wild": {
+      "A moment in the wild": "Een moment in de wildernis",
+      "The king at rest": "De koning rust",
+      "Quiet on the savannah": "Rust op de savanne",
+      "An unforgettable gaze": "Een onvergetelijke blik",
+      "A regal moment": "Een koninklijk moment",
+      "The wild, wide open": "De wildernis, wijd en open",
+      "A quiet trail through the wild": "Een stille route door de wildernis",
+      "Watching over the plains": "Toezicht over de vlakten",
+      "Pattern and movement": "Patroon en beweging",
+      "Life on the move": "Het leven onderweg",
+      "The feeling of being here": "Het gevoel er te zijn",
+      "A pause worth keeping": "Een pauze die de moeite waard is"
+    },
+    "coast": {
+      "A little closer to paradise": "Een beetje dichter bij het paradijs",
+      "Soft mornings by the sea": "Zachte ochtenden aan zee",
+      "A walk beside the ocean": "Een wandeling aan de oceaan",
+      "Barefoot days in Diani": "Blotevoetendagen in Diani",
+      "Days by the shore": "Dagen aan de oever",
+      "Finding your way along the coast": "Je weg vinden langs de kust",
+      "Where the coast slows time": "Waar de kust de tijd vertraagt",
+      "Room to breathe": "Ruimte om adem te halen",
+      "A place in the shade": "Een plek in de schaduw",
+      "Small details by the sea": "Kleine details aan zee",
+      "Open water, endless blue": "Open water, eindeloos blauw",
+      "A view of paradise": "Een uitzicht op paradijs",
+      "Moonlight on the water": "Maanschijn op het water",
+      "Space to wander": "Ruimte om te dwalen",
+      "Coastal paths and possibilities": "Kustpaden en mogelijkheden",
+      "Golden light by the ocean": "Gouden licht bij de oceaan"
+    },
+    "plains": {
+      "The beauty of the open plains": "De schoonheid van de open vlakten",
+      "On the road through Kenya": "Onderweg door Kenia",
+      "The plains in green": "De vlakten in het groen",
+      "Beyond the open plains": "Voorbij de open vlakten"
+    },
+    "moments": {
+      "Evenings made slow": "Avonden in het langzame ritme",
+      "Human moments along the journey": "Menselijke momenten onderweg",
+      "A smile worth keeping": "Een glimlach om te bewaren",
+      "Stories from the road": "Verhalen van onderweg"
+    },
+    "wildlife": {
+      "A path through the wild": "Een pad door de wildernis",
+      "Face to face with a giant": "Oog in oog met een reus",
+      "In the company of giants": "In het gezelschap van reuzen",
+      "Shelter in the shade": "Schuilplaats in de schaduw",
+      "The details of a giant": "De details van een reus",
+      "A closer look": "Een nader bekijk",
+      "Together at the water": "Samen bij het water",
+      "A gentle presence": "Een zachte aanwezigheid",
+      "Stillness among the trees": "Stilte tussen de bomen",
+      "Lines across the landscape": "Lijnen door het landschap",
+      "A memorable encounter": "Een gedenkwaardige ontmoeting",
+      "Stripes in the greenery": "Strepen in het groen",
+      "Patterns of the wild": "Patronen van de wildernis",
+      "A pause in the shade": "Een pauze in de schaduw",
+      "Stillness above the ground": "Stilte boven de grond",
+      "Resting in the treetops": "Rust in de boomtoppen",
+      "A quiet lookout": "Een stille uitkijkpost",
+      "Spots and stillness": "Vlekken en stilte",
+      "An alert gaze": "Een alert blik",
+      "At ease in the wild": "Op gemak in de wildernis",
+      "Moving through the trees": "Beweging door de bomen",
+      "Hidden in plain sight": "Gekamoufleerd",
+      "Above the savannah": "Boven de savanne",
+      "A gathering on the plains": "Een bijeenkomst op de vlakten",
+      "A glimpse through the greenery": "Een glimp door het groen",
+      "A different perspective": "Een ander perspectief",
+      "Small encounters along the way": "Kleine ontmoetingen onderweg",
+      "Life across the plains": "Het leven over de vlakten"
+    },
+    "culture": {
+      "Maasai culture and connection": "Maasai-cultuur en verbinding",
+      "A portrait of Maasai culture": "Een portret van Maasai-cultuur",
+      "Stories shared along the way": "Verhalen gedeeld onderweg",
+      "A warm welcome": "Een warme welkom",
+      "Traditions brought together": "Tradities samengebracht",
+      "A moment of connection": "Een moment van verbinding",
+      "Traditions shared with care": "Tradities gedeeld met zorg",
+      "The people and stories of Kenya": "De mensen en verhalen van Kenia",
+      "A deeper sense of place": "Een dieper gevoel van plaats",
+      "Connections along the journey": "Verbindingen onderweg"
+    }
+  }
+}

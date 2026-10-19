@@ -44,6 +44,12 @@ swathoni/
 
 Open `index.html` directly in a browser, or use VS Code Live Server for smoother local navigation between pages.
 
+> **Multilingual feature:** the translated text is loaded from JSON files
+> (`translations/en.json`, `translations/nl.json`) via `fetch`, so the language
+> switcher only works when served over HTTP (e.g. VS Code Live Server, `python
+> -m http.server`, or your production host). Opening HTML files directly with
+> `file://` will not load translations.
+
 Some features use external resources:
 
 - Google Fonts
@@ -51,6 +57,18 @@ Some features use external resources:
 - Remote imagery in a few sections
 
 An internet connection is recommended while previewing.
+
+## Multilingual support
+
+The site is available in English (`en`) and Dutch (`nl`).
+
+- Translation files: `translations/en.json` and `translations/nl.json`.
+- Shared translation engine: `translations.js` (vanilla JS, no dependencies).
+- A language selector (EN / NL) is integrated into the header navigation on every page.
+- The chosen language is saved in `localStorage` and restored when navigating between pages or returning to the site; the `<html lang>` attribute updates accordingly.
+- Translation keys are shared between both languages and fall back safely to English when a key is missing.
+
+Because translations are fetched as JSON, preview the site over HTTP (Live Server or `python -m http.server`) so the language switcher works.
 
 ## Notes Before Publishing
 

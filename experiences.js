@@ -544,17 +544,21 @@
     gallery = galleryItems;
   let galleryIndex = 0,
     activePhotos = [],
-    lastFocus = null;
+    lastFocus = null,
+    currentGalleryKey = null;
   function showPhoto(n) {
     if (!activePhotos.length) return;
     galleryIndex = (n + activePhotos.length) % activePhotos.length;
     const photo = activePhotos[galleryIndex];
     $("#lightboxImage").src = photo.src;
     $("#lightboxImage").alt = photo.alt;
-    $("#lightboxCaption").textContent = photo.caption;
+    const translatedCaption =
+      window.i18n && window.i18n.t("galleryCaptions." + photo.caption);
+    $("#lightboxCaption").textContent = translatedCaption || photo.caption;
   }
   function openPhoto(item) {
     activePhotos = getGalleryPhotos(item);
+    currentGalleryKey = item.dataset.galleryKey;
     if (!activePhotos.length) return;
     lastFocus = document.activeElement;
     showPhoto(0);
@@ -623,7 +627,11 @@
     const quoteCount = $("#xpStoryCount");
     if (!quoteText || !quoteGuest || !quoteCount) return;
     quoteIndex = (n + quotes.length) % quotes.length;
-    const q = quotes[quoteIndex];
+    const translated = window.i18n
+      ? window.i18n.t("experiences.testimonial.quotes")
+      : null;
+    const quoteList = Array.isArray(translated) ? translated : quotes;
+    const q = quoteList[quoteIndex];
     quoteText.textContent = q.text;
     quoteGuest.innerHTML = q.guest
       .map((item) => `<span>${item}</span>`)
@@ -632,19 +640,44 @@
   }
   $("#xpStoryPrev")?.addEventListener("click", () => setQuote(quoteIndex - 1));
   $("#xpStoryNext")?.addEventListener("click", () => setQuote(quoteIndex + 1));
-  setQuote(quoteIndex);
+
+  window.i18n.ready.then(() => {
+    setQuote(quoteIndex);
+    window.i18n.onLangChange(() => {
+      setQuote(quoteIndex);
+    });
+  });
   const form = $("#travelForm");
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     if (!form.reportValidity()) return;
     const d = new FormData(form);
     const details = `Name: ${d.get("name")}\nEmail: ${d.get("email")}\nExperience: ${d.get("trip")}\nPreferred date: ${d.get("date") || "Flexible"}\nTravellers: ${d.get("travellers")}\nAdditional details: ${d.get("notes") || "None provided"}`;
-    const subject = encodeURIComponent("Swathoni Travels — Journey enquiry");
-    const body = encodeURIComponent(
-      `Hello Swathoni Travels,\n\nI would like to enquire about a journey.\n\n${details}\n\nThank you.`,
+    const subject = encodeURIComponent(
+      window.i18n
+        ? window.i18n.t("experiences.messages.emailSubject")
+        : "Swathoni Travels — Journey enquiry",
     );
-    $("#formNotice").textContent =
-      "Your email app will open with your enquiry. Please review it and send it to Swathoni once their official address is confirmed.";
+    const body = encodeURIComponent(
+      [
+        window.i18n
+          ? window.i18n.t("experiences.messages.emailGreeting")
+          : "Hello Swathoni Travels,",
+        "",
+        window.i18n
+          ? window.i18n.t("experiences.messages.emailIntro")
+          : "I would like to enquire about a journey.",
+        "",
+        details,
+        "",
+        window.i18n
+          ? window.i18n.t("experiences.messages.emailClosing")
+          : "Thank you.",
+      ].join("\n"),
+    );
+    $("#formNotice").textContent = window.i18n
+      ? window.i18n.t("experiences.messages.enquiryOpen")
+      : "Your email app will open with your enquiry. Please review it and send it to Swathoni once their official address is confirmed.";
     const email = "";
     if (email) {
       location.href = `mailto:${email}?subject=${subject}&body=${body}`;
@@ -654,16 +687,19 @@
         navigator.clipboard
           .writeText(fallback)
           .then(() => {
-            $("#formNotice").textContent =
-              "Enquiry copied! Paste it into your email or message to Swathoni. The official booking email has not been configured yet.";
+            $("#formNotice").textContent = window.i18n
+              ? window.i18n.t("experiences.messages.enquiryCopied")
+              : "Enquiry copied! Paste it into your email or message to Swathoni. The official booking email has not been configured yet.";
           })
           .catch(() => {
-            $("#formNotice").textContent =
-              "Booking email is not configured. Please copy your details manually or ask the site owner to connect the form.";
+            $("#formNotice").textContent = window.i18n
+              ? window.i18n.t("experiences.messages.enquiryManual")
+              : "Booking email is not configured. Please copy your details manually or ask the site owner to connect the form.";
           });
       } else {
-        $("#formNotice").textContent =
-          "Booking email is not configured yet. Please ask the site owner to connect the form before launch.";
+        $("#formNotice").textContent = window.i18n
+          ? window.i18n.t("experiences.messages.enquiryNotConfigured")
+          : "Booking email is not configured yet. Please ask the site owner to connect the form before launch.";
       }
     }
   });

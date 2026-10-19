@@ -73,7 +73,8 @@ document.querySelectorAll(".step").forEach((step) =>
       journeyImage.alt = step.dataset.alt || journeyImage.alt;
       journeyImage.width = preload.naturalWidth;
       journeyImage.height = preload.naturalHeight;
-      journeyCaption.textContent = cap;
+      journeyCaption.textContent =
+        (i18n && i18n.t(step.dataset.captionKey)) || step.dataset.caption;
       setTimeout(() => journeyPhoto.classList.remove("changing"), 70);
     };
     preload.complete
@@ -107,7 +108,9 @@ if (storyNext) storyNext.textContent = "\u2192";
 function setStory(n) {
   if (!storyQuote || !storyGuest || !storyCount) return;
   storyIndex = (n + storyQuotes.length) % storyQuotes.length;
-  const story = storyQuotes[storyIndex];
+  const quotes = i18n && i18n.t("index.testimonial.quotes");
+  const quoteList = Array.isArray(quotes) ? quotes : storyQuotes;
+  const story = quoteList[storyIndex];
   storyQuote.textContent = story.text;
   storyGuest.innerHTML = story.guest
     .map((item) => `<span>${item}</span>`)
@@ -116,4 +119,15 @@ function setStory(n) {
 }
 storyPrev?.addEventListener("click", () => setStory(storyIndex - 1));
 storyNext?.addEventListener("click", () => setStory(storyIndex + 1));
-setStory(storyIndex);
+
+i18n.ready.then(() => {
+  setStory(storyIndex);
+  i18n.onLangChange(() => {
+    setStory(storyIndex);
+    const active = document.querySelector(".step.active");
+    if (active && journeyCaption) {
+      journeyCaption.textContent =
+        i18n.t(active.dataset.captionKey) || active.dataset.caption;
+    }
+  });
+});
