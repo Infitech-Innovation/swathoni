@@ -275,7 +275,7 @@
       "title": "A glimpse of<br /><em>what's waiting.</em>",
       "intro": "A visual journey through wildlife, wild landscapes, coastal moments and places to pause.",
       "filters": [
-        "ALL MOMENTS <span>07</span>",
+        "ALL MOMENTS",
         "THE WILD",
         "THE COAST",
         "CULTURE",
@@ -357,7 +357,8 @@
       "journeyPlan": "Plan a Journey",
       "journeyPortfolio": "Our Portfolio",
       "journeyWhy": "Why Swathoni",
-      "copyright": "© 2026 SWATHONI TRAVELS <span>CRAFTED FOR THE LOVE OF KENYA</span>"
+      "copyright": "© 2026 SWATHONI TRAVELS",
+      "credit": "CRAFTED FOR THE LOVE OF KENYA"
     },
     "lightbox": {
       "label": "Photo gallery",
