@@ -88,7 +88,7 @@ if ($host === '' || strlen($host) > 253 || !preg_match('/^[a-zA-Z0-9.:-]+$/D', $
     respond(503, false, 'error');
 }
 
-$autoload = __DIR__ . '/vendor/autoload.php';
+$autoload = dirname(__DIR__) . '/vendor/autoload.php';
 if (!is_file($autoload)) {
     error_log('Swathoni enquiry: PHPMailer is missing. Run composer install.');
     respond(503, false, 'error');

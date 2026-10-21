@@ -1,5 +1,8 @@
 {
     "require": {
         "phpmailer/phpmailer": "~7.1.1"
+    },
+    "scripts": {
+        "vercel": "@php scripts/check-mailer.php"
     }
 }

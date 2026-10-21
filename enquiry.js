@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
     sending: "Sending your enquiry…",
     success: "Your enquiry has been submitted. We'll be in touch soon.",
     invalid: "Please check your details and try again.",
-    error: "We couldn't send your enquiry. Please try again or email johsafe2001@gmail.com.",
+    error: "We couldn't send your enquiry. Please try again or email swafric.wildfotografie@gmail.com.",
   };
   const message = (key) => {
     const value = window.i18n?.t(`enquiry.${key}`);
     return value && value !== `enquiry.${key}` ? value : fallback[key];
   };
 
-  document.querySelectorAll('form[action="send-mail.php"]').forEach((form) => {
+  document.querySelectorAll('form[action="api/send-mail.php"]').forEach((form) => {
     const feedback = form.querySelector('[role="status"]');
     const button = form.querySelector('[type="submit"]');
     let sending = false;

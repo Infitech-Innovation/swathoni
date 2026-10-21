@@ -1,0 +1,6 @@
+# Composer recreates vendor/ during the PHP runtime build.
+/vendor/
+/tests/
+/.git/
+/.env
+/.env.*

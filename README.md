@@ -19,7 +19,7 @@ Swathoni Travels is a static multi-page travel website for a Kenya safari and Di
 - Traveller story carousels on homepage and experiences page.
 - Interactive journey image switcher on the homepage.
 - About page layered SVG wave hero using local imagery.
-- Enquiry forms that POST to `send-mail.php`, which sends journey details to johsafe2001@gmail.com through SMTP. Both forms show submission status without opening an email app.
+- Enquiry forms that POST to `api/send-mail.php`, which sends journey details to johsafe2001@gmail.com through SMTP. Both forms show submission status without opening an email app.
 
 ## Project Structure
 
@@ -42,7 +42,7 @@ swathoni/
 
 ## Running Locally
 
-Run `php -S 127.0.0.1:8000 router.php` from the project directory and open `http://127.0.0.1:8000`. A static server or opening HTML files directly cannot execute `send-mail.php`.
+Run `php -S 127.0.0.1:8000 api/router.php` from the project directory and open `http://127.0.0.1:8000`. A static server or opening HTML files directly cannot execute `api/send-mail.php`.
 
 > **Multilingual feature:** the translated text is loaded from JSON files
 > (`translations/en.json`, `translations/nl.json`) via `fetch`, so the language
@@ -102,7 +102,7 @@ and are not guaranteed by metadata alone.
 
 ## PHP enquiry delivery
 
-Both forms POST to `send-mail.php`. The server validates entries, then sends through authenticated SMTP using [PHPMailer](https://github.com/PHPMailer/PHPMailer). The recipient defaults to `johsafe2001@gmail.com`. As requested, the form email is used in the From and Reply-To headers. The SMTP login is separate; the provider may enforce its own allowed sender addresses. SMTP acceptance does not guarantee inbox delivery.
+Both forms POST to `api/send-mail.php`. The server validates entries, then sends through authenticated SMTP using [PHPMailer](https://github.com/PHPMailer/PHPMailer). The recipient defaults to `johsafe2001@gmail.com`. As requested, the form email is used in the From and Reply-To headers. The SMTP login is separate; the provider may enforce its own allowed sender addresses. SMTP acceptance does not guarantee inbox delivery.
 
 Deploy on PHP 8.1+ hosting with OpenSSL, outbound SMTP access, and Composer dependencies installed with `composer install --no-dev --optimize-autoloader`. Upload `vendor/` if Composer is unavailable on the host. Static hosting cannot execute this endpoint.
 
@@ -124,6 +124,16 @@ Use an [app password](https://support.google.com/mail/answer/185833) for the Gma
 
 For a local test relay only, use `SWATHONI_SMTP_AUTH=false` and `SWATHONI_SMTP_ENCRYPTION=none` with its host and port. Credentials are required when authentication is enabled. The endpoint reports errors when configuration is incomplete or the SMTP server rejects sending, preserving the form contents. Diagnostic details appear in the PHP server log; passwords and SMTP transcripts are not printed.
 
-Use `php -S 127.0.0.1:8000 router.php` for local preview. A plain PHP development server does not provide a mail relay: the old `localhost:25` setting needs a separately running SMTP server. The router blocks HTTP access to `.env` files. On Apache 2.4, upload `.htaccess` with overrides enabled; other servers need an equivalent environment-file deny rule.
+Use `php -S 127.0.0.1:8000 api/router.php` for local preview. A plain PHP development server does not provide a mail relay: the old `localhost:25` setting needs a separately running SMTP server. The router blocks HTTP access to `.env` files. On Apache 2.4, upload `.htaccess` with overrides enabled; other servers need an equivalent environment-file deny rule.
 
 Run `python tests/test_smtp.py` to test the PHP endpoint against a local SMTP sink. These tests send no external emails and override the local credentials.
+
+For the configured Vercel PHP runtime, add the SMTP variables from `.env` in the project environment settings and redeploy. The local `.env` is ignored by Git and will not be available to a deployment built from the repository. `api/mail-config.php` reads the project-root `.env` locally, and `api/send-mail.php` loads the project-root Composer autoloader.
+
+### Vercel deployment and PHPMailer
+
+Set Vercel's Root Directory to the folder containing `vercel.json`, `composer.json`, `composer.lock`, `api/`, and `scripts/`. Use the Other framework preset and leave Install Command, Build Command, and Output Directory overrides unset. Do not set the Root Directory to `api/`. Commit both Composer files and `scripts/check-mailer.php`.
+
+The [vercel-php runtime](https://github.com/vercel-community/php#%EF%B8%8F-faq) installs Composer production dependencies automatically, then runs the Composer `vercel` hook. Our hook verifies that PHPMailer can be loaded before the function is packaged. Look for `Installing Composer dependencies` and `PHPMailer verified for deployment.` in the build logs. `api/send-mail.php` loads `vendor/autoload.php` from the project root; the Vercel function exclusions keep vendor files in the bundle. No separate global PHPMailer installation is needed.
+
+`.vercelignore` excludes local vendor files and environment files from CLI uploads. Composer rebuilds `vendor/` on Vercel; configure the SMTP values in Vercel's Environment Variables for the deployment environment. Redeploy with the existing build cache disabled after applying these changes. Do not add `vendor/**` to `functions.excludeFiles`, which would remove the generated library from the function.

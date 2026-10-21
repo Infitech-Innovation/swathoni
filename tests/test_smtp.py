@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 import socketserver
 import subprocess
+import tempfile
 import threading
 import unittest
 
@@ -73,7 +74,7 @@ class SMTPTests(unittest.TestCase):
         } | (config or {})
         code = ('$_SERVER["REQUEST_METHOD"]="POST"; '
                 '$_POST=json_decode(stream_get_contents(STDIN),true); '
-                'require "send-mail.php";')
+                'require "api/send-mail.php";')
         result = subprocess.run(
             ["php", "-r", code], cwd=ROOT,
             input=json.dumps(self.payload | (changes or {})),
@@ -90,6 +91,23 @@ class SMTPTests(unittest.TestCase):
         self.assertIn(b"From: Swathoni Travels <visitor@example.com>", message)
         self.assertIn(b"Reply-To: Test Visitor <visitor@example.com>", message)
         self.assertIn(b"Enquiry test", message)
+
+    def test_config_reads_env_from_project_root(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / "api").mkdir()
+            (root / "api" / "mail-config.php").write_bytes(
+                (ROOT / "api" / "mail-config.php").read_bytes()
+            )
+            (root / ".env").write_text("SWATHONI_SMTP_HOST=project-root.example\n")
+            environment = os.environ.copy()
+            environment.pop("SWATHONI_SMTP_HOST", None)
+            result = subprocess.run(
+                ["php", "-r", '$c=require $argv[1]; echo $c["SWATHONI_SMTP_HOST"];',
+                 str(root / "api" / "mail-config.php")],
+                env=environment, capture_output=True, text=True, check=True,
+            )
+            self.assertEqual(result.stdout, "project-root.example")
 
     def test_experiences_delivery(self):
         response, _ = self.submit({

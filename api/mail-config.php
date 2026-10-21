@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 // Read simple KEY=value lines; never execute configuration as PHP or shell code.
 $values = [];
-$path = __DIR__ . '/.env';
+$path = dirname(__DIR__) . '/.env';
 if (is_readable($path)) {
     foreach (file($path, FILE_IGNORE_NEW_LINES) ?: [] as $line) {
         $line = trim($line);
