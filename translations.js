@@ -165,63 +165,128 @@
     }
   }
 
-  // function updateSelectorUI() {
-  //   document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
-  //     const code = btn.getAttribute("data-lang-btn");
-  //     btn.textContent = code.toUpperCase();
-  //     btn.setAttribute("aria-pressed", code === currentLang);
-  //     btn.classList.toggle("active", code === currentLang);
-  //   });
-  // }
-
   function updateSelectorUI() {
     document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
-      // Display the language the visitor can switch to.
-      const nextLang = currentLang === "en" ? "nl" : "en";
-
-      btn.textContent = nextLang.toUpperCase();
-
-      const labelKey =
-        nextLang === "nl" ? "lang.switchToDutch" : "lang.switchToEnglish";
-
-      btn.setAttribute("aria-label", t(labelKey));
-      btn.setAttribute("aria-pressed", "false");
-
-      btn.classList.toggle("active", currentLang === "nl");
+      btn.textContent = currentLang.toUpperCase();
+      btn.setAttribute("aria-label", t("lang.switch"));
+      btn.removeAttribute("aria-pressed");
+    });
+    document.querySelectorAll("[data-lang-option]").forEach((option) => {
+      const code = option.dataset.langOption;
+      option.setAttribute("aria-pressed", String(code === currentLang));
+      option.setAttribute(
+        "aria-label",
+        t(code === "nl" ? "lang.switchToDutch" : "lang.switchToEnglish"),
+      );
     });
   }
 
   function setupSelector() {
-    document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
-      // Prevent duplicate click listeners if setupSelector runs again.
+    document.querySelectorAll("[data-lang-btn]").forEach((btn, index) => {
       if (btn.dataset.langListenerAttached === "true") return;
       btn.dataset.langListenerAttached = "true";
+      btn.type = "button";
 
-      btn.addEventListener("click", async () => {
-        // Always switch from the currently active language.
-        const target = currentLang === "en" ? "nl" : "en";
+      const picker = document.createElement("div");
+      picker.className = "lang-picker";
+      btn.before(picker);
+      picker.append(btn);
 
-        try {
-          await setLang(target, true);
-        } catch (error) {
-          console.error("Could not switch language:", error);
+      const options = document.createElement("div");
+      options.className = "lang-options";
+      options.id = `language-options-${index}`;
+      options.hidden = true;
+      options.setAttribute("role", "group");
+      options.setAttribute("data-i18n-aria-label", "lang.switch");
+      options.setAttribute("aria-label", t("lang.switch"));
+      picker.append(options);
+      btn.setAttribute("aria-controls", options.id);
+      btn.setAttribute("aria-expanded", "false");
+
+      const close = () => {
+        options.hidden = true;
+        picker.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+      };
+
+      // Keep one selector: beside the mobile menu, inside desktop navigation.
+      const desktopPosition = document.createComment("Language selector");
+      picker.before(desktopPosition);
+      const header = btn.closest(".nav");
+      const menuToggle = header?.querySelector(".nav-toggle");
+      const mobile = window.matchMedia("(max-width: 900px)");
+      const positionPicker = () => {
+        close();
+        if (mobile.matches && menuToggle) {
+          menuToggle.before(picker);
+        } else {
+          desktopPosition.after(picker);
         }
+      };
+      positionPicker();
+      mobile.addEventListener("change", positionPicker);
 
-        // Close the mobile navigation menu if it is open.
-        const header = document.getElementById("nav");
+      const open = () => {
+        options.hidden = false;
+        picker.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+      };
 
-        if (header?.classList.contains("menu-open")) {
-          header.classList.remove("menu-open");
+      picker.addEventListener("pointerenter", (event) => {
+        if (event.pointerType === "mouse" || event.pointerType === "pen") open();
+      });
+      picker.addEventListener("pointerleave", () => {
+        if (!options.contains(document.activeElement)) close();
+      });
 
-          const toggle = header.querySelector(".nav-toggle");
+      SUPPORTED.forEach((code) => {
+        const option = document.createElement("button");
+        option.type = "button";
+        option.className = "lang-option";
+        option.dataset.langOption = code;
+        option.textContent = code.toUpperCase();
+        options.append(option);
+        option.addEventListener("click", async () => {
+          try {
+            await setLang(code, true);
+            close();
+            btn.focus();
 
-          if (toggle) {
-            toggle.setAttribute("aria-expanded", "false");
-            toggle.setAttribute("aria-label", t("nav.toggleOpen"));
+            const header = document.getElementById("nav");
+            if (header?.classList.contains("menu-open")) {
+              header.classList.remove("menu-open");
+              const toggle = header.querySelector(".nav-toggle");
+              if (toggle) {
+                toggle.setAttribute("aria-expanded", "false");
+                toggle.setAttribute("aria-label", t("nav.toggleOpen"));
+                toggle.focus();
+              }
+            }
+          } catch (error) {
+            console.error("Could not switch language:", error);
           }
+        });
+      });
+
+      btn.addEventListener("click", () => {
+        open();
+        options.querySelector("button").focus();
+      });
+      picker.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !options.hidden) {
+          event.stopPropagation();
+          close();
+          btn.focus();
         }
       });
+      picker.addEventListener("focusout", (event) => {
+        if (!picker.contains(event.relatedTarget)) close();
+      });
+      document.addEventListener("click", (event) => {
+        if (!picker.contains(event.target)) close();
+      });
     });
+    updateSelectorUI();
   }
 
   async function setLang(lang, persist = true) {
