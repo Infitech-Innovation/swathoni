@@ -18,8 +18,8 @@
     "about": "Our Story",
     "contact": "Contact",
     "portfolio": "Portfolio",
-    "cta": "Plan your journey <span>↗</span>",
-    "ctaContact": "Let's talk <span>↗</span>",
+    "cta": "Plan your journey <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>",
+    "ctaContact": "Let's talk <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>",
     "toggleOpen": "Open navigation menu",
     "toggleClose": "Close navigation menu"
   },
@@ -42,7 +42,7 @@
     }
   },
   "index": {
-    "safariCta": "Plan my safari <span>↗</span>",
+    "safariCta": "Plan my safari <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>",
     "hero": {
       "eyebrow": "PRIVATE JOURNEYS · KENYA",
       "title": "Discover Kenya,<br /><em>beautifully.</em>",
@@ -71,19 +71,19 @@
       "label": "OPEN PLAINS · WILDLIFE · PRIVATE GUIDES",
       "title": "The Safari",
       "intro": "Wake with the savannah and spend your days following the rhythm of the wild.",
-      "cta": "Discover the wild ↗"
+      "cta": "Discover the wild <svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg>"
     },
     "coast": {
       "label": "INDIAN OCEAN · WHITE SAND · SLOW DAYS",
       "title": "The Coast",
       "intro": "Trade safari dust for warm water, swaying palms and unhurried days in Diani.",
-      "cta": "Escape to Diani ↗"
+      "cta": "Escape to Diani <svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg>"
     },
     "safariSea": {
       "label": "OUR SIGNATURE EXPERIENCE",
       "title": "Safari + Sea",
       "intro": "Two sides of Kenya, beautifully connected in one effortless journey.",
-      "cta": "See the journey ↗",
+      "cta": "See the journey <svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg>",
       "tag": "SWATHONI SIGNATURE"
     },
     "breath": {
@@ -188,7 +188,7 @@
       "title": "Ready for something<br /><em>unforgettable?</em>",
       "intro": "Tell us what you are dreaming of. We will help shape the rest.",
       "cta": "Start planning",
-      "whatsapp": "WhatsApp us <span>↗</span>"
+      "whatsapp": "WhatsApp us <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>"
     },
     "footer": {
       "brand": "Safari. Coast. Kenya.<br />Beautifully connected.",
@@ -205,12 +205,12 @@
     }
   },
   "experiences": {
-    "safariFixedCta": "Plan your journey <span>↗</span>",
+    "safariFixedCta": "Plan your journey <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>",
     "hero": {
       "kicker": "KENYA, YOUR WAY",
       "title": "Go where<br />you <em>feel</em><br />alive<span class=\"xp-period\">.</span>",
       "intro": "Wild mornings. Ocean afternoons. A thousand moments in between. Find the journey that feels like yours.",
-      "cta": "DISCOVER YOUR JOURNEY <b>↗</b>",
+      "cta": "DISCOVER YOUR JOURNEY <b><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></b>",
       "stamp": "WILD WONDERFUL KENYA",
       "bottom": ["SAFARI / COAST / BEYOND", "SCROLL TO EXPLORE ↓"]
     },
@@ -225,21 +225,21 @@
           "title": "Safari<br /><em>Adventures.</em>",
           "intro": "Follow the first light across open plains. Discover the extraordinary wildlife, landscapes and quiet moments that make a safari unforgettable.",
           "tags": ["GAME DRIVES", "WILDLIFE", "NATIONAL PARKS"],
-          "cta": "ENQUIRE ABOUT A SAFARI <span>↗</span>"
+          "cta": "ENQUIRE ABOUT A SAFARI <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>"
         },
         {
           "overline": "02 / THE COAST",
           "title": "Beach<br /><em>Escapes.</em>",
           "intro": "Slow mornings, warm sea breezes and powder-soft sand. Let the beauty of Diani and the Kenyan coast set the pace.",
           "tags": ["DIANI BEACH", "OCEAN DAYS", "RELAXATION"],
-          "cta": "ENQUIRE ABOUT THE COAST <span>↗</span>"
+          "cta": "ENQUIRE ABOUT THE COAST <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>"
         },
         {
           "overline": "03 / THE SIGNATURE",
           "title": "Safari<br /><em>&amp; Sea.</em>",
           "intro": "One journey, two beautiful worlds. Experience the excitement of Kenya's wilderness before unwinding beside the Indian Ocean.",
           "tags": ["THE WILD", "THE COAST", "TAILORED TRAVEL"],
-          "cta": "PLAN A COMBINED JOURNEY <span>↗</span>"
+          "cta": "PLAN A COMBINED JOURNEY <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>"
         }
       ]
     },
@@ -338,9 +338,9 @@
         "title": "Where shall we<br /><em>take you?</em>",
         "legend": "WHAT WOULD YOU LOVE TO EXPERIENCE?",
         "choices": [
-          "Safari<br />Adventure <b>↗</b>",
-          "Beach<br />Escape <b>↗</b>",
-          "Safari<br />&amp; Beach <b>↗</b>"
+          "Safari<br />Adventure <b><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></b>",
+          "Beach<br />Escape <b><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></b>",
+          "Safari<br />&amp; Beach <b><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></b>"
         ],
         "name": "Your name",
         "namePlaceholder": "Full name",
@@ -350,7 +350,7 @@
         "travellers": "Number of travellers",
         "notes": "Tell us a little more",
         "notesPlaceholder": "Dream destinations, a special occasion, or anything you'd love to experience...",
-        "submit": "SEND MY ENQUIRY <span>↗</span>"
+        "submit": "SEND MY ENQUIRY <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>"
       }
     },
     "footer": {
@@ -392,7 +392,7 @@
     }
   },
   "about": {
-    "safariFixedCta": "Plan your journey <span>↗</span>",
+    "safariFixedCta": "Plan your journey <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>",
     "hero": {
       "title": "Rooted in Kenya.<br /><em>Made for the journey.</em>",
       "intro": "There's something special about discovering a place through the people who call it home.",
@@ -462,7 +462,7 @@
           "intro": "From the energy of the savannah to the ease of the ocean."
         }
       ],
-      "note": "EXPLORE EACH STORY ↗"
+      "note": "EXPLORE EACH STORY <svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg>"
     },
     "transition": {
       "label": "THE KENYA WE LOVE",
@@ -474,13 +474,13 @@
       "kicker": ["03", "A PERSONAL INVITATION"],
       "title": "We know Kenya.<br /><em>We'd love to<br />show you.</em>",
       "intro": "Every memorable journey begins with a conversation. Tell us what excites you, where you'd love to go and how you'd like to feel. Together, we can shape the experience around you.",
-      "cta": "LET'S PLAN SOMETHING BEAUTIFUL <span>↗</span>",
-      "caption": "WITH LOVE, FROM KENYA <span>↗</span>"
+      "cta": "LET'S PLAN SOMETHING BEAUTIFUL <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>",
+      "caption": "WITH LOVE, FROM KENYA <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>"
     },
     "ending": {
       "label": "THE NEXT CHAPTER IS YOURS",
       "title": "Come find your<br /><em>Kenya.</em>",
-      "cta": "Plan your journey <span>↗</span>"
+      "cta": "Plan your journey <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>"
     },
     "aria": {
       "prev": "Previous experience",
@@ -500,7 +500,7 @@
     }
   },
   "contact": {
-    "navCta": "Let's talk <span>↗</span>",
+    "navCta": "Let's talk <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>",
     "location": {
       "title": "Every great journey<br />begins with <em>hello.</em>",
       "intro": "A safari you've always dreamed of. A few slow days by the ocean. Or both. Tell us what you're imagining, and let's take it from there."
@@ -509,9 +509,9 @@
       "top": ["YOUR JOURNEY ENQUIRY", "01 — 04"],
       "legend": "WHAT ARE YOU DREAMING OF?",
       "choices": [
-        "Safari adventure <b>↗</b>",
-        "Beach escape <b>↗</b>",
-        "A little of both <b>↗</b>"
+        "Safari adventure <b><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></b>",
+        "Beach escape <b><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></b>",
+        "A little of both <b><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></b>"
       ],
       "name": "YOUR NAME",
       "namePlaceholder": "How should we call you?",
@@ -529,7 +529,7 @@
       },
       "message": "ANYTHING ELSE WE SHOULD KNOW?",
       "messagePlaceholder": "A special occasion, places on your wish list, or just a feeling you're chasing...",
-      "submit": "SEND MY ENQUIRY <span>↗</span>",
+      "submit": "SEND MY ENQUIRY <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>",
       "messages": {
         "emailOpen": "Your email app will open with your enquiry to johsafe2001@gmail.com. Please review it and send it.",
         "copied": "Enquiry copied. Please paste it into your email to Swathoni Travels.",
@@ -542,12 +542,12 @@
       "base": "OUR BASE",
       "place": "Diani Beach, Kenya",
       "note": "Approximate area shown · Office address to be confirmed",
-      "open": "OPEN MAP ↗"
+      "open": "OPEN MAP <svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg>"
     },
     "lastWord": {
       "label": "FROM THE WILD TO THE WATER",
       "title": "We'll see you <em>in Kenya.</em>",
-      "cta": "EXPLORE OUR JOURNEYS ↗"
+      "cta": "EXPLORE OUR JOURNEYS <svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg>"
     },
     "footer": {
       "brand": "Safari. Coast. Kenya.<br />Beautifully connected.",

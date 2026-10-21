@@ -1386,7 +1386,7 @@
 .landscape-bottom-label {
   position: absolute;
   z-index: 6;
-  bottom: 20px;
+  bottom: 8px;
   left: 40vw;
   color: #5b624b;
   letter-spacing: 0.18em;
@@ -1469,7 +1469,12 @@
   }
   .landscape-bottom-label {
     font-size: 8px;
-    bottom: 16px;
+    left: 7vw;
+    right: 7vw;
+    justify-content: center;
+    align-items: center;
+    /* Lower the absolute label to increase the space above it. */
+    bottom: 8px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
