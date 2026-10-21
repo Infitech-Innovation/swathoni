@@ -929,7 +929,7 @@ figcaption {
 .contact-copy {
   position: absolute;
   left: 5.5vw;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
 }
 .contact-copy h2 {

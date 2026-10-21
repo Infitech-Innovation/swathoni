@@ -11,7 +11,7 @@ body footer {
   background: var(--blue-dark);
   color: #fff;
   padding: 0 5.5vw 25px;
-  margin-top: 130px; /* Space for the wave */
+  margin-top: 40px; /* Space for the wave */
 }
 
 /* 2. Wavy top edge */
