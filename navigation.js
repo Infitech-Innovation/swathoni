@@ -59,7 +59,11 @@
     }
   });
 
-  mobile.addEventListener("change", () => setOpen(false));
+  if (mobile.addEventListener) {
+    mobile.addEventListener("change", () => setOpen(false));
+  } else {
+    mobile.addListener(() => setOpen(false));
+  }
 
   // Subscribe when the translation engine is ready.
   const setupLanguageListener = () => {

@@ -112,10 +112,6 @@
     margin: 0;
   }
 
-  .nav > .lang-picker .lang-switch {
-    visibility: visible;
-  }
-
   .nav > .lang-picker .lang-options {
     top: calc(100% + 8px);
     right: 0;
@@ -140,10 +136,10 @@
   .lang-picker.is-open {
     width: 100px;
   }
-}
 
-.lang-picker.is-open .lang-switch {
-  visibility: hidden;
+  .lang-picker.is-open .lang-switch {
+    visibility: hidden;
+  }
 }
 
 .lang-switch,
@@ -164,6 +160,9 @@
   line-height: 1;
   color: #fff;
   cursor: pointer;
+  touch-action: manipulation;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .lang-switch {

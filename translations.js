@@ -28,6 +28,7 @@
 
   let currentLang = DEFAULT_LANG;
   const cache = {}; // lang -> parsed object
+  const loading = {}; // share requests between initialization and a language tap
   const changeListeners = [];
 
   // Resolve the translation URL relative to the page location. All pages live
@@ -60,11 +61,18 @@
 
   async function loadLang(lang) {
     if (cache[lang]) return;
-    const response = await fetch(translationUrl(lang), { cache: "no-cache" });
-    if (!response.ok) {
-      throw new Error(`Translation file not found: ${translationUrl(lang)}`);
+    if (!loading[lang]) {
+      loading[lang] = (async () => {
+        const response = await fetch(translationUrl(lang), { cache: "no-cache" });
+        if (!response.ok) {
+          throw new Error(`Translation file not found: ${translationUrl(lang)}`);
+        }
+        cache[lang] = await response.json();
+      })().finally(() => {
+        delete loading[lang];
+      });
     }
-    cache[lang] = await response.json();
+    await loading[lang];
   }
 
   async function init() {
@@ -168,15 +176,18 @@
   function updateSelectorUI() {
     document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
       btn.textContent = currentLang.toUpperCase();
-      btn.setAttribute("aria-label", t("lang.switch"));
+      const label = t("lang.switch");
+      btn.setAttribute("aria-label", label === "lang.switch" ? "Language" : label);
       btn.removeAttribute("aria-pressed");
     });
     document.querySelectorAll("[data-lang-option]").forEach((option) => {
       const code = option.dataset.langOption;
+      const labelKey = code === "nl" ? "lang.switchToDutch" : "lang.switchToEnglish";
+      const label = t(labelKey);
       option.setAttribute("aria-pressed", String(code === currentLang));
       option.setAttribute(
         "aria-label",
-        t(code === "nl" ? "lang.switchToDutch" : "lang.switchToEnglish"),
+        label === labelKey ? (code === "nl" ? "Switch to Dutch" : "Switch to English") : label,
       );
     });
   }
@@ -198,7 +209,7 @@
       options.hidden = true;
       options.setAttribute("role", "group");
       options.setAttribute("data-i18n-aria-label", "lang.switch");
-      options.setAttribute("aria-label", t("lang.switch"));
+      options.setAttribute("aria-label", btn.getAttribute("aria-label") || "Language");
       picker.append(options);
       btn.setAttribute("aria-controls", options.id);
       btn.setAttribute("aria-expanded", "false");
@@ -215,6 +226,7 @@
       const header = btn.closest(".nav");
       const menuToggle = header?.querySelector(".nav-toggle");
       const mobile = window.matchMedia("(max-width: 900px)");
+      const hover = window.matchMedia("(hover: hover) and (pointer: fine)");
       const positionPicker = () => {
         close();
         if (mobile.matches && menuToggle) {
@@ -224,7 +236,11 @@
         }
       };
       positionPicker();
-      mobile.addEventListener("change", positionPicker);
+      if (mobile.addEventListener) {
+        mobile.addEventListener("change", positionPicker);
+      } else {
+        mobile.addListener(positionPicker);
+      }
 
       const open = () => {
         options.hidden = false;
@@ -233,12 +249,14 @@
       };
 
       picker.addEventListener("pointerenter", (event) => {
-        if (event.pointerType === "mouse" || event.pointerType === "pen") open();
+        if (hover.matches && event.pointerType === "mouse") open();
       });
-      picker.addEventListener("pointerleave", () => {
-        if (!options.contains(document.activeElement)) close();
+      picker.addEventListener("pointerleave", (event) => {
+        if (hover.matches && event.pointerType === "mouse"
+            && !options.contains(document.activeElement)) close();
       });
 
+      let switching = false;
       SUPPORTED.forEach((code) => {
         const option = document.createElement("button");
         option.type = "button";
@@ -247,6 +265,10 @@
         option.textContent = code.toUpperCase();
         options.append(option);
         option.addEventListener("click", async () => {
+          if (switching) return;
+          switching = true;
+          options.setAttribute("aria-busy", "true");
+          options.querySelectorAll("button").forEach((choice) => { choice.disabled = true; });
           try {
             await setLang(code, true);
             close();
@@ -264,13 +286,22 @@
             }
           } catch (error) {
             console.error("Could not switch language:", error);
+          } finally {
+            switching = false;
+            options.removeAttribute("aria-busy");
+            options.querySelectorAll("button").forEach((choice) => { choice.disabled = false; });
           }
         });
       });
 
-      btn.addEventListener("click", () => {
+      btn.addEventListener("click", (event) => {
+        if (mobile.matches && !options.hidden) {
+          close();
+          return;
+        }
         open();
-        options.querySelector("button").focus();
+        // Keep touch focus alone; moving it can cancel Safari's next tap.
+        if (event.detail === 0) options.querySelector("button").focus();
       });
       picker.addEventListener("keydown", (event) => {
         if (event.key === "Escape" && !options.hidden) {
@@ -280,7 +311,12 @@
         }
       });
       picker.addEventListener("focusout", (event) => {
-        if (!picker.contains(event.relatedTarget)) close();
+        // Safari can blur a button with no new focused element during a tap.
+        // Outside clicks handle that case after the selection has activated.
+        if (event.relatedTarget && !picker.contains(event.relatedTarget)) close();
+      });
+      document.addEventListener("pointerdown", (event) => {
+        if (!picker.contains(event.target)) close();
       });
       document.addEventListener("click", (event) => {
         if (!picker.contains(event.target)) close();
@@ -295,6 +331,9 @@
       updateSelectorUI();
       return;
     }
+    // A failed download must not change the active language or saved choice.
+    await loadLang(DEFAULT_LANG);
+    await loadLang(lang);
     currentLang = lang;
     document.documentElement.lang = lang;
     if (persist) {
@@ -304,7 +343,6 @@
         // localStorage unavailable; continue without persisting.
       }
     }
-    await loadLang(lang);
     applyTranslations();
     updateSelectorUI();
     changeListeners.forEach((fn) => {
@@ -322,7 +360,12 @@
   // Determine language and set the HTML lang attribute synchronously so there
   // is no flash of the wrong language attribute. Actual translation loading
   // happens once the DOM is ready.
-  const stored = localStorage.getItem(STORAGE_KEY);
+  let stored = null;
+  try {
+    stored = localStorage.getItem(STORAGE_KEY);
+  } catch (e) {
+    // Storage restrictions must not prevent the selector from initializing.
+  }
   currentLang = normalize(stored || DEFAULT_LANG);
   document.documentElement.lang = currentLang;
 
@@ -333,8 +376,8 @@
 
   document.addEventListener("DOMContentLoaded", async () => {
     try {
-      await init();
       setupSelector();
+      await init();
     } finally {
       readyResolve();
       document.dispatchEvent(new Event("swathoni:i18nready"));
