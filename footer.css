@@ -1,32 +1,68 @@
-/* Shared footer layout, based on the Experiences page. */
+:root {
+  --blue: #106776;
+  --blue-light: #39a3ab;
+  --blue-dark: #188798;
+}
+
+/* 1. Reset the footer tag so it is NOT a grid anymore */
 body footer {
-  background: #12271e;
+  position: relative;
+  display: block; /* Forces it to block layout to fix the broken grid */
+  background: var(--blue-dark);
   color: #fff;
-  padding: 80px 5.5vw 25px;
+  padding: 0 5.5vw 25px;
+  margin-top: 130px; /* Space for the wave */
+}
+
+/* 2. Wavy top edge */
+body footer .footer-wave {
+  position: absolute;
+  top: -129px;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  display: block;
+  pointer-events: none;
+}
+
+body footer .footer-wave svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+body footer .footer-wave .wave-layer-1 { fill: var(--blue); }
+body footer .footer-wave .wave-layer-2 { fill: var(--blue-light); }
+body footer .footer-wave .wave-layer-3 { fill: var(--blue-dark); }
+
+/* 3. The actual grid container */
+body footer .footer-inner {
   display: grid;
   grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr));
   gap: 50px;
+  padding-top: 20px;
 }
 
-body footer > div {
+body footer .footer-inner > div {
   min-width: 0;
   overflow-wrap: anywhere;
 }
 
-body footer > div:first-child {
+/* 4. First column (Brand) */
+body footer .footer-inner > div:first-child {
   display: flex;
   flex-direction: column;
   grid-column: auto;
   gap: 0;
 }
 
-body footer > div:first-child img {
+body footer .footer-inner > div:first-child img {
   width: min(210px, 100%);
   height: auto;
   object-fit: contain;
 }
 
-body footer > div:first-child p {
+body footer .footer-inner > div:first-child p {
   font-family: "DM Serif Display", serif;
   font-size: 22px;
   line-height: 1.3;
@@ -34,7 +70,8 @@ body footer > div:first-child p {
   color: #d2c6ae;
 }
 
-body footer > div:not(:first-child):not(.copyright) {
+/* 5. Link columns */
+body footer .footer-inner > div:not(:first-child):not(.copyright) {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -45,12 +82,12 @@ body footer a {
   color: #fff;
 }
 
-body footer > div > a:not(.xp-footer-brand) {
+body footer .footer-inner > div > a:not(.xp-footer-brand) {
   font-size: 12px;
 }
 
-body footer > div > small,
-body footer > div > span:not(.footer-note) {
+body footer .footer-inner > div > small,
+body footer .footer-inner > div > span:not(.footer-note) {
   font-size: 9px;
   letter-spacing: 0.16em;
   color: #b8b9a6;
@@ -63,6 +100,46 @@ body footer .footer-note {
   color: #b8b9a6;
 }
 
+/* 6. Social icons */
+body footer .footer-social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+body footer .footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #ffffff40;
+  color: #fff;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+body footer .footer-social a:hover,
+body footer .footer-social a:focus-visible {
+  background: var(--blue-light);
+  border-color: var(--blue-light);
+  color: var(--blue-dark);
+  transform: translateY(-2px);
+}
+
+body footer .footer-social a:focus-visible {
+  outline: 2px solid var(--blue-light);
+  outline-offset: 2px;
+}
+
+body footer .footer-social svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+/* 7. Copyright row */
 body footer .copyright {
   grid-column: 1 / -1;
   border-top: 1px solid #ffffff30;
@@ -81,13 +158,23 @@ body footer .copyright span {
   display: inline;
 }
 
+/* 8. Mobile Responsiveness */
 @media (max-width: 720px) {
   body footer {
+    margin-top: 90px;
+  }
+
+  body footer .footer-wave {
+    top: -89px;
+    height: 90px;
+  }
+
+  body footer .footer-inner {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 35px;
   }
 
-  body footer > div:first-child {
+  body footer .footer-inner > div:first-child {
     grid-column: 1 / -1;
   }
 }
@@ -101,5 +188,15 @@ body footer .copyright span {
   body footer .copyright span {
     display: block;
     margin-top: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body footer .footer-social a {
+    transition: none;
+  }
+  body footer .footer-social a:hover,
+  body footer .footer-social a:focus-visible {
+    transform: none;
   }
 }

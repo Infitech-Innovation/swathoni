@@ -8,6 +8,9 @@
   --sea: #527d75;
   --white: #fffdf8;
   --line: rgba(27, 28, 22, 0.16);
+  --blue: #106776;
+  --blue-light: #39a3ab;
+  --blue-dark: #188798;
 }
 * {
   box-sizing: border-box;
@@ -949,14 +952,14 @@ figcaption {
   gap: 25px;
   align-items: center;
 }
-footer {
-  background: #12251e;
+/* footer {
+  background: var(--blue-light);
   color: white;
   padding: 75px 5.5vw 28px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 60px;
-}
+} */
 .footer-brand {
   display: flex;
   flex-direction: column;
@@ -982,12 +985,12 @@ footer {
   font-size: 18px;
   color: #d9cfbd;
 }
-footer > div:not(.footer-brand):not(.copyright) {
+/* footer > div:not(.footer-brand):not(.copyright) {
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 11px;
-}
+} */
 footer small {
   font-size: 8px;
   letter-spacing: 0.17em;

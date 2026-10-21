@@ -293,7 +293,7 @@ body.contact-page {
 .last-word {
   text-align: center;
   padding: 100px 20px 115px;
-  background: #e6dac7;
+  background: #f5efe4;
 }
 .last-word > span {
   font-size: 10px;
@@ -312,14 +312,6 @@ body.contact-page {
   font-size: 11px;
   letter-spacing: 0.16em;
 }
-.contact-footer {
-  background: #20382f;
-  color: #eee6d7;
-  padding: 65px 8vw 25px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
 .footer-logo {
   color: inherit;
   text-decoration: none;
@@ -333,17 +325,6 @@ body.contact-page {
   letter-spacing: 0.2em;
   font-weight: 400;
   margin-top: 8px;
-}
-.contact-footer > div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: end;
-}
-.contact-footer > div a {
-  color: #eee6d7;
-  text-decoration: none;
-  font-size: 12px;
 }
 .contact-footer p {
   grid-column: 1/-1;

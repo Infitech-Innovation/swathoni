@@ -1039,14 +1039,14 @@ body.xp-page .nav.scrolled {
   color: #687467;
   margin: 14px 0 0;
 }
-.xp-footer {
+/* .xp-footer {
   background: #12271e;
   color: #fff;
   padding: 80px 5.5vw 25px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 50px;
-}
+} */
 .xp-footer > div:nth-child(2),
 .xp-footer > div:nth-child(3) {
   display: flex;
