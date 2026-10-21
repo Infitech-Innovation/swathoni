@@ -1,4 +1,10 @@
 {
+  "enquiry": {
+    "sending": "Sending your enquiry…",
+    "success": "Your enquiry has been submitted. We'll be in touch soon.",
+    "invalid": "Please check your details and try again.",
+    "error": "We couldn't send your enquiry. Please try again or email johsafe2001@gmail.com."
+  },
   "lang": {
     "switch": "Language",
     "en": "EN",
@@ -344,7 +350,7 @@
         "travellers": "Number of travellers",
         "notes": "Tell us a little more",
         "notesPlaceholder": "Dream destinations, a special occasion, or anything you'd love to experience...",
-        "submit": "PREPARE MY ENQUIRY <span>↗</span>"
+        "submit": "SEND MY ENQUIRY <span>↗</span>"
       }
     },
     "footer": {
@@ -378,7 +384,7 @@
       "enquiryCopied": "Enquiry copied! Paste it into your email or message to Swathoni. The official booking email has not been configured yet.",
       "enquiryNotConfigured": "Booking email is not configured yet. Please ask the site owner to connect the form before launch.",
       "enquiryManual": "Booking email is not configured. Please copy your details manually or ask the site owner to connect the form.",
-      "enquiryOpen": "Your email app will open with your enquiry. Please review it and send it to Swathoni once their official address is confirmed.",
+      "enquiryOpen": "Your email app will open with your enquiry to johsafe2001@gmail.com. Please review it and send it.",
       "emailSubject": "Swathoni Travels — Journey enquiry",
       "emailGreeting": "Hello Swathoni Travels,",
       "emailIntro": "I would like to enquire about a journey.",
@@ -523,8 +529,9 @@
       },
       "message": "ANYTHING ELSE WE SHOULD KNOW?",
       "messagePlaceholder": "A special occasion, places on your wish list, or just a feeling you're chasing...",
-      "submit": "PREPARE MY ENQUIRY <span>↗</span>",
+      "submit": "SEND MY ENQUIRY <span>↗</span>",
       "messages": {
+        "emailOpen": "Your email app will open with your enquiry to johsafe2001@gmail.com. Please review it and send it.",
         "copied": "Enquiry copied. Please paste it into your email to Swathoni Travels.",
         "copyFailed": "Please copy your details and send them to Swathoni Travels once their contact email is confirmed.",
         "fallback": "Your details are ready. Please copy them and email Swathoni Travels once the official address is confirmed."

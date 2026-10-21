@@ -7,7 +7,7 @@ Swathoni Travels is a static multi-page travel website for a Kenya safari and Di
 - `index.html` - Homepage with hero image carousel, signature journey section, destination highlights, traveller stories, and a fixed "Plan my safari" CTA.
 - `experiences.html` - Experiences page with animated scene switching, filterable gallery, per-card lightbox image collections, traveller story carousel, and enquiry form.
 - `about.html` - Brand story page with layered landscape hero, Swathoni Way gallery controls, culture/travel narrative sections, and visual transitions.
-- `contact.html` - Contact and enquiry page with a demo contact form and location-focused content.
+- `contact.html` - Contact and enquiry page with an email enquiry form and location-focused content.
 
 ## Key Features
 
@@ -19,7 +19,7 @@ Swathoni Travels is a static multi-page travel website for a Kenya safari and Di
 - Traveller story carousels on homepage and experiences page.
 - Interactive journey image switcher on the homepage.
 - About page layered SVG wave hero using local imagery.
-- Demo enquiry forms that prepare/copy enquiry details rather than submitting to a backend.
+- Enquiry forms that POST to `send-mail.php`, which sends journey details to johsafe2001@gmail.com through SMTP. Both forms show submission status without opening an email app.
 
 ## Project Structure
 
@@ -42,7 +42,7 @@ swathoni/
 
 ## Running Locally
 
-Open `index.html` directly in a browser, or use VS Code Live Server for smoother local navigation between pages.
+Run `php -S 127.0.0.1:8000 router.php` from the project directory and open `http://127.0.0.1:8000`. A static server or opening HTML files directly cannot execute `send-mail.php`.
 
 > **Multilingual feature:** the translated text is loaded from JSON files
 > (`translations/en.json`, `translations/nl.json`) via `fetch`, so the language
@@ -74,7 +74,7 @@ Because translations are fetched as JSON, preview the site over HTTP (Live Serve
 
 - Replace placeholder/sample traveller stories with real approved testimonials.
 - Confirm all photography has usage rights.
-- Connect enquiry forms to a verified email service or backend before launch.
+- Configure and verify SMTP credentials before launch (see below).
 - Verify contact details, map/location references, and booking email copy.
 - Review image sizes for production performance.
 
@@ -99,3 +99,31 @@ old host to the new one through the hosting provider.
 Structured data intentionally excludes unverified contact details and sample
 reviews. Search engine indexing and search appearance require a deployed site
 and are not guaranteed by metadata alone.
+
+## PHP enquiry delivery
+
+Both forms POST to `send-mail.php`. The server validates entries, then sends through authenticated SMTP using [PHPMailer](https://github.com/PHPMailer/PHPMailer). The recipient defaults to `johsafe2001@gmail.com`. As requested, the form email is used in the From and Reply-To headers. The SMTP login is separate; the provider may enforce its own allowed sender addresses. SMTP acceptance does not guarantee inbox delivery.
+
+Deploy on PHP 8.1+ hosting with OpenSSL, outbound SMTP access, and Composer dependencies installed with `composer install --no-dev --optimize-autoloader`. Upload `vendor/` if Composer is unavailable on the host. Static hosting cannot execute this endpoint.
+
+### Environment configuration
+
+The local `.env` is ignored by Git. Copy `.env.example` for a fresh checkout. Hosting environment variables override file values. The file supports plain or quoted `KEY=value` entries and full-line `#` comments; it does not expand variables or backslash escapes.
+
+Gmail defaults are configured:
+
+- `SWATHONI_MAIL_TO=johsafe2001@gmail.com`
+- `SWATHONI_SMTP_HOST=smtp.gmail.com`
+- `SWATHONI_SMTP_PORT=587`
+- `SWATHONI_SMTP_ENCRYPTION=tls`
+- `SWATHONI_SMTP_AUTH=true`
+- `SWATHONI_SMTP_USERNAME=johsafe2001@gmail.com`
+- `SWATHONI_SMTP_PASSWORD=` (fill this in locally)
+
+Use an [app password](https://support.google.com/mail/answer/185833) for the Gmail account, with 2-Step Verification enabled, rather than the regular account password. Save it in `SWATHONI_SMTP_PASSWORD`. Google's [SMTP settings](https://support.google.com/mail/answer/7104828?hl=en) require authentication and STARTTLS on port 587. For another provider, replace the SMTP settings with that provider's values; encryption can be `tls` or `ssl`.
+
+For a local test relay only, use `SWATHONI_SMTP_AUTH=false` and `SWATHONI_SMTP_ENCRYPTION=none` with its host and port. Credentials are required when authentication is enabled. The endpoint reports errors when configuration is incomplete or the SMTP server rejects sending, preserving the form contents. Diagnostic details appear in the PHP server log; passwords and SMTP transcripts are not printed.
+
+Use `php -S 127.0.0.1:8000 router.php` for local preview. A plain PHP development server does not provide a mail relay: the old `localhost:25` setting needs a separately running SMTP server. The router blocks HTTP access to `.env` files. On Apache 2.4, upload `.htaccess` with overrides enabled; other servers need an equivalent environment-file deny rule.
+
+Run `python tests/test_smtp.py` to test the PHP endpoint against a local SMTP sink. These tests send no external emails and override the local credentials.

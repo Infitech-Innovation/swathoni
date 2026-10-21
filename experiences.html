@@ -152,6 +152,7 @@
         ]
       }
     </script>
+    <script src="enquiry.js" defer></script>
   </head>
 
   <body class="xp-page">
@@ -794,7 +795,9 @@
               SWATHONI TRAVELS <span>✳</span> DIANI BEACH
             </div>
           </div>
-          <form class="xp-booking-form xp-booking-form-new" id="travelForm">
+          <form class="xp-booking-form xp-booking-form-new" id="travelForm" action="send-mail.php" method="post">
+              <input type="hidden" name="enquiry_type" value="experiences" />
+              <div hidden aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off" /></label></div>
             <div class="xp-form-top">
               <span data-i18n-text="experiences.booking.form.top.0"
                 >YOUR JOURNEY STARTS HERE</span
@@ -891,8 +894,9 @@
               type="submit"
               data-i18n="experiences.booking.form.submit"
             >
-              PREPARE MY ENQUIRY <span>↗</span>
+              SEND MY ENQUIRY <span>↗</span>
             </button>
+            <p id="formNotice" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>

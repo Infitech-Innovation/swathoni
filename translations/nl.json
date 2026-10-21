@@ -1,4 +1,10 @@
 {
+  "enquiry": {
+    "sending": "Je aanvraag wordt verzonden…",
+    "success": "Je aanvraag is ingediend. We nemen binnenkort contact met je op.",
+    "invalid": "Controleer je gegevens en probeer het opnieuw.",
+    "error": "Je aanvraag kon niet worden verzonden. Probeer het opnieuw of stuur een e-mail naar johsafe2001@gmail.com."
+  },
   "lang": {
     "switch": "Taal",
     "en": "EN",
@@ -347,7 +353,7 @@
         "travellers": "Aantal reizigers",
         "notes": "Vertel ons iets meer",
         "notesPlaceholder": "Droombestemmingen, een speciale gelegenheid, of iets waar je naar verlangt...",
-        "submit": "BEREID MIJN VRAAG VOOR <span>↗</span>"
+        "submit": "VERSTUUR MIJN AANVRAAG <span>↗</span>"
       }
     },
     "footer": {
@@ -381,7 +387,7 @@
       "enquiryCopied": "Vraag gekopieerd! Plak het in je e-mail of bericht naar Swathoni. Het officiële e-mailadres is nog niet bevestigd.",
       "enquiryNotConfigured": "Het boekings-e-mailadres is nog niet ingesteld. Vraag de site-eigenaar om het formulier te koppelen voordat je lanceert.",
       "enquiryManual": "Het boekings-e-mailadres is niet ingesteld. Kopieer je gegevens handmatig of vraag de site-eigenaar om het formulier te koppelen.",
-      "enquiryOpen": "Je e-mailapp opent met je vraag. Controleer het en stuur het naar Swathoni zodra hun officiële adres is bevestigd.",
+      "enquiryOpen": "Je e-mailapp opent met je aanvraag aan johsafe2001@gmail.com. Controleer de gegevens en verstuur de e-mail.",
       "emailSubject": "Swathoni Travels — Reisvraag",
       "emailGreeting": "Hallo Swathoni Travels,",
       "emailIntro": "Ik wil graag vragen naar een reis.",
@@ -526,8 +532,9 @@
       },
       "message": "IS ER NOG IETS DAT WE MOETEN WETEN?",
       "messagePlaceholder": "Een speciale gelegenheid, plaatsen op je verlanglijstje, of gewoon een gevoel dat je achtervolg...",
-      "submit": "BEREID MIJN VRAAG VOOR <span>↗</span>",
+      "submit": "VERSTUUR MIJN AANVRAAG <span>↗</span>",
       "messages": {
+        "emailOpen": "Je e-mailapp opent met je aanvraag aan johsafe2001@gmail.com. Controleer de gegevens en verstuur de e-mail.",
         "copied": "Vraag gekopieerd. Plak het in je e-mail naar Swathoni Travels.",
         "copyFailed": "Kopieer je gegevens en stuur ze naar Swathoni Travels zodra hun contact e-mail is bevestigd.",
         "fallback": "Je gegevens staan klaar. Kopieer ze en e-mail Swathoni Travels zodra het officiële adres is bevestigd."
