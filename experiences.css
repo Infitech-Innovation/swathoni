@@ -23,7 +23,8 @@ body.xp-page button {
 }
 body.xp-page .nav {
   z-index: 80;
-  color: #253c31 !important;
+  background: var(--forest);
+  color: #fff !important;
   box-shadow: 0 1px 0 #263d3020;
 }
 body.xp-page .nav.scrolled {

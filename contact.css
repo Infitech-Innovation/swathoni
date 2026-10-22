@@ -24,8 +24,8 @@ body.contact-page {
   color: #ae8251;
 }
 .contact-page .nav {
-  background: #f5efe4 !important;
-  color: #253c31 !important;
+  background: var(--forest) !important;
+  color: #fff !important;
   box-shadow: 0 1px 0 #263d3020;
 }
 
