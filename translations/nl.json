@@ -278,7 +278,7 @@
     },
     "portfolio": {
       "overline": "03 / HET SWATHONI JOURNAAL",
-      "title": "Een glimp van<br /><em>wat er op je wacht.</em>",
+      "title": "Een glimp van <br/><em>wat er op je wacht.</em>",
       "intro": "Een visuele reis door wildlife, wilde landschappen, kustmomenten en plekken om te pauzeren.",
       "filters": [
         "ALLE MOMENTEN",
@@ -427,7 +427,7 @@
         },
         {
           "label": "02 — ONS DOEL",
-          "title": "Reizen die<br /><em>persoonlijk aanvoelen.</em>",
+          "title": "Reizen die persoonlijk<br /><em>aanvoelen.</em>",
           "intro": "Niet simpelweg bestemmingen afstrepen. We willen helpen reizen te creëren die ruimte maken voor verwondering, verbinding en je eigen manier van ontdekken."
         },
         {
@@ -436,7 +436,7 @@
           "intro": "Om meer mensen te helpen de vele kanten van Kenia te ervaren, van de buitengewone wildernis tot de warmte en stilte van de kust."
         }
       ],
-      "hint": "BLEVEN SCROLLEN <span>↓</span>",
+      "hint": "BLIJVEN SCROLLEN <span>↓</span>",
       "count": "01 / 03"
     },
     "difference": {
@@ -475,7 +475,7 @@
     },
     "human": {
       "kicker": ["03", "EEN PERSOONLIJKE UITNODIGING"],
-      "title": "We kennen Kenia.<br /><em>We zouden je graag<br />laten zien.</em>",
+      "title": "We kennen Kenia. We zouden <br /><em> je graag laten zien.</em>",
       "intro": "Elke onvergetelijke reis begint met een gesprek. Met meer dan zes jaar ervaring in het organiseren van bijzondere safari’s in Kenia, brengen we het beste van twee culturen samen dankzij onze Belgisch-Keniaanse achtergrond en onze gedeelde passie voor authentieke reiservaringen.Vanuit Kenia organiseren we volledig privéreizen in comfortabele safari-jeeps, zorgvuldig afgestemd op jouw wensen. Omdat onze eigenaars persoonlijk betrokken zijn en altijd dichtbij blijven, geniet je van authentieke lokale kennis, persoonlijke begeleiding en de gemoedsrust die je krijgt wanneer je in vertrouwde handen bent.Vertel ons waar je enthousiast van wordt, welke plekken je graag wilt ontdekken en welk gevoel je tijdens je reis wilt ervaren. Samen creëren we een reis die helemaal bij jou past.",
       "cta": "LATEN WE IETS MOOIS PLANNEN <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>",
       "caption": "MET LIEFDE, UIT KENIA <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>"
