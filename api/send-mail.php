@@ -69,7 +69,7 @@ $message = field($type === 'contact' ? 'message' : 'notes', 5000);
 // The form email has already been validated and checked for header injection.
 $config = require __DIR__ . '/mail-config.php';
 $from = $email;
-$recipient = $config['SWATHONI_MAIL_TO'] ?: 'johsafe2001@gmail.com';
+$recipient = $config['SWATHONI_MAIL_TO'] ?: 'swafric.wildfotografie@gmail.com';
 if (preg_match('/[\r\n]/', $recipient) || !filter_var($recipient, FILTER_VALIDATE_EMAIL)) {
     error_log('Swathoni enquiry: configure a valid recipient.');
     respond(503, false, 'error');

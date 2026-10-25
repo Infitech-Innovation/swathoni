@@ -19,7 +19,7 @@ Swathoni Travels is a static multi-page travel website for a Kenya safari and Di
 - Traveller story carousels on homepage and experiences page.
 - Interactive journey image switcher on the homepage.
 - About page layered SVG wave hero using local imagery.
-- Enquiry forms that POST to `api/send-mail.php`, which sends journey details to johsafe2001@gmail.com through SMTP. Both forms show submission status without opening an email app.
+- Enquiry forms that POST to `api/send-mail.php`, which sends journey details to swafric.wildfotografie@gmail.com through SMTP. Both forms show submission status without opening an email app.
 
 ## Project Structure
 
@@ -102,7 +102,7 @@ and are not guaranteed by metadata alone.
 
 ## PHP enquiry delivery
 
-Both forms POST to `api/send-mail.php`. The server validates entries, then sends through authenticated SMTP using [PHPMailer](https://github.com/PHPMailer/PHPMailer). The recipient defaults to `johsafe2001@gmail.com`. As requested, the form email is used in the From and Reply-To headers. The SMTP login is separate; the provider may enforce its own allowed sender addresses. SMTP acceptance does not guarantee inbox delivery.
+Both forms POST to `api/send-mail.php`. The server validates entries, then sends through authenticated SMTP using [PHPMailer](https://github.com/PHPMailer/PHPMailer). The recipient defaults to `swafric.wildfotografie@gmail.com`. As requested, the form email is used in the From and Reply-To headers. The SMTP login is separate; the provider may enforce its own allowed sender addresses. SMTP acceptance does not guarantee inbox delivery.
 
 Deploy on PHP 8.1+ hosting with OpenSSL, outbound SMTP access, and Composer dependencies installed with `composer install --no-dev --optimize-autoloader`. Upload `vendor/` if Composer is unavailable on the host. Static hosting cannot execute this endpoint.
 
@@ -112,15 +112,17 @@ The local `.env` is ignored by Git. Copy `.env.example` for a fresh checkout. Ho
 
 Gmail defaults are configured:
 
-- `SWATHONI_MAIL_TO=johsafe2001@gmail.com`
+- `SWATHONI_MAIL_TO=swafric.wildfotografie@gmail.com`
 - `SWATHONI_SMTP_HOST=smtp.gmail.com`
 - `SWATHONI_SMTP_PORT=587`
 - `SWATHONI_SMTP_ENCRYPTION=tls`
 - `SWATHONI_SMTP_AUTH=true`
-- `SWATHONI_SMTP_USERNAME=johsafe2001@gmail.com`
+- `SWATHONI_SMTP_USERNAME=swafric.wildfotografie@gmail.com`
 - `SWATHONI_SMTP_PASSWORD=` (fill this in locally)
 
-Use an [app password](https://support.google.com/mail/answer/185833) for the Gmail account, with 2-Step Verification enabled, rather than the regular account password. Save it in `SWATHONI_SMTP_PASSWORD`. Google's [SMTP settings](https://support.google.com/mail/answer/7104828?hl=en) require authentication and STARTTLS on port 587. For another provider, replace the SMTP settings with that provider's values; encryption can be `tls` or `ssl`.
+Use an [app password](https://support.google.com/mail/answer/185833) for the Gmail account, with 2-Step Verification enabled, rather than the regular account password. Replace the `your_app_password_here` placeholder from `.env.example` with that account's app password in the ignored `.env` file. Enter the 16 characters without grouping spaces. Google's [SMTP settings](https://support.google.com/mail/answer/7104828?hl=en) require authentication and STARTTLS on port 587. For another provider, replace the SMTP settings with that provider's values; encryption can be `tls` or `ssl`.
+
+If a form submission returns HTTP 503 and the PHP log says `SMTP Error: Could not authenticate`, check that `SWATHONI_SMTP_USERNAME` is the account that issued `SWATHONI_SMTP_PASSWORD`, and that the password is a current app password rather than the account password or the example placeholder. Check hosting environment variables too: they override `.env`. The accompanying `QUIT command failed` message is a consequence of the failed SMTP session, not a separate form error. Retry the form after correcting the credentials; the local SMTP sink tests below do not verify a live Gmail login.
 
 For a local test relay only, use `SWATHONI_SMTP_AUTH=false` and `SWATHONI_SMTP_ENCRYPTION=none` with its host and port. Credentials are required when authentication is enabled. The endpoint reports errors when configuration is incomplete or the SMTP server rejects sending, preserving the form contents. Diagnostic details appear in the PHP server log; passwords and SMTP transcripts are not printed.
 

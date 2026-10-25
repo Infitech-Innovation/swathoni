@@ -3,7 +3,7 @@
     "sending": "Je aanvraag wordt verzonden…",
     "success": "Je aanvraag is ingediend. We nemen binnenkort contact met je op.",
     "invalid": "Controleer je gegevens en probeer het opnieuw.",
-    "error": "Je aanvraag kon niet worden verzonden. Probeer het opnieuw of stuur een e-mail naar johsafe2001@gmail.com."
+    "error": "Je aanvraag kon niet worden verzonden. Probeer het opnieuw of stuur een e-mail naar swafric.wildfotografie@gmail.com."
   },
   "lang": {
     "switch": "Taal",
@@ -387,7 +387,7 @@
       "enquiryCopied": "Vraag gekopieerd! Plak het in je e-mail of bericht naar Swathoni. Het officiële e-mailadres is nog niet bevestigd.",
       "enquiryNotConfigured": "Het boekings-e-mailadres is nog niet ingesteld. Vraag de site-eigenaar om het formulier te koppelen voordat je lanceert.",
       "enquiryManual": "Het boekings-e-mailadres is niet ingesteld. Kopieer je gegevens handmatig of vraag de site-eigenaar om het formulier te koppelen.",
-      "enquiryOpen": "Je e-mailapp opent met je aanvraag aan johsafe2001@gmail.com. Controleer de gegevens en verstuur de e-mail.",
+      "enquiryOpen": "Je e-mailapp opent met je aanvraag aan swafric.wildfotografie@gmail.com. Controleer de gegevens en verstuur de e-mail.",
       "emailSubject": "Swathoni Travels — Reisvraag",
       "emailGreeting": "Hallo Swathoni Travels,",
       "emailIntro": "Ik wil graag vragen naar een reis.",
@@ -534,7 +534,7 @@
       "messagePlaceholder": "Een speciale gelegenheid, plaatsen op je verlanglijstje, of gewoon een gevoel dat je achtervolg...",
       "submit": "VERSTUUR MIJN AANVRAAG <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>",
       "messages": {
-        "emailOpen": "Je e-mailapp opent met je aanvraag aan johsafe2001@gmail.com. Controleer de gegevens en verstuur de e-mail.",
+        "emailOpen": "Je e-mailapp opent met je aanvraag aan swafric.wildfotografie@gmail.com. Controleer de gegevens en verstuur de e-mail.",
         "copied": "Vraag gekopieerd. Plak het in je e-mail naar Swathoni Travels.",
         "copyFailed": "Kopieer je gegevens en stuur ze naar Swathoni Travels zodra hun contact e-mail is bevestigd.",
         "fallback": "Je gegevens staan klaar. Kopieer ze en e-mail Swathoni Travels zodra het officiële adres is bevestigd."

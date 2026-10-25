@@ -64,7 +64,7 @@ class SMTPTests(unittest.TestCase):
 
     def submit(self, changes=None, config=None):
         environment = os.environ | {
-            "SWATHONI_MAIL_TO": "johsafe2001@gmail.com",
+            "SWATHONI_MAIL_TO": "swafric.wildfotografie@gmail.com",
             "SWATHONI_SMTP_HOST": "127.0.0.1",
             "SWATHONI_SMTP_PORT": str(self.relay.server_address[1]),
             "SWATHONI_SMTP_AUTH": "false",
@@ -87,7 +87,7 @@ class SMTPTests(unittest.TestCase):
         self.assertTrue(response["ok"])
         self.assertEqual(len(self.relay.messages), 1)
         message = self.relay.messages[0]
-        self.assertIn(b"To: johsafe2001@gmail.com", message)
+        self.assertIn(b"To: swafric.wildfotografie@gmail.com", message)
         self.assertIn(b"From: Swathoni Travels <visitor@example.com>", message)
         self.assertIn(b"Reply-To: Test Visitor <visitor@example.com>", message)
         self.assertIn(b"Enquiry test", message)

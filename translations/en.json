@@ -3,7 +3,7 @@
     "sending": "Sending your enquiry…",
     "success": "Your enquiry has been submitted. We'll be in touch soon.",
     "invalid": "Please check your details and try again.",
-    "error": "We couldn't send your enquiry. Please try again or email johsafe2001@gmail.com."
+    "error": "We couldn't send your enquiry. Please try again or email swafric.wildfotografie@gmail.com."
   },
   "lang": {
     "switch": "Language",
@@ -384,7 +384,7 @@
       "enquiryCopied": "Enquiry copied! Paste it into your email or message to Swathoni. The official booking email has not been configured yet.",
       "enquiryNotConfigured": "Booking email is not configured yet. Please ask the site owner to connect the form before launch.",
       "enquiryManual": "Booking email is not configured. Please copy your details manually or ask the site owner to connect the form.",
-      "enquiryOpen": "Your email app will open with your enquiry to johsafe2001@gmail.com. Please review it and send it.",
+      "enquiryOpen": "Your email app will open with your enquiry to swafric.wildfotografie@gmail.com. Please review it and send it.",
       "emailSubject": "Swathoni Travels — Journey enquiry",
       "emailGreeting": "Hello Swathoni Travels,",
       "emailIntro": "I would like to enquire about a journey.",
@@ -530,7 +530,7 @@
       "messagePlaceholder": "A special occasion, places on your wish list, or just a feeling you're chasing...",
       "submit": "SEND MY ENQUIRY <span><svg class=\"icon-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M7 17 17 7M7 7h10v10\" /></svg></span>",
       "messages": {
-        "emailOpen": "Your email app will open with your enquiry to johsafe2001@gmail.com. Please review it and send it.",
+        "emailOpen": "Your email app will open with your enquiry to swafric.wildfotografie@gmail.com. Please review it and send it.",
         "copied": "Enquiry copied. Please paste it into your email to Swathoni Travels.",
         "copyFailed": "Please copy your details and send them to Swathoni Travels once their contact email is confirmed.",
         "fallback": "Your details are ready. Please copy them and email Swathoni Travels once the official address is confirmed."
