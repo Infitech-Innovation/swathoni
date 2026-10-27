@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://swathoni.vercel.app/sitemap.xml
+Sitemap: https://swathoni.infi-saas.com/sitemap.xml

@@ -80,7 +80,7 @@ Because translations are fetched as JSON, preview the site over HTTP (Live Serve
 
 ## SEO and production URL
 
-The site currently uses `https://swathoni.vercel.app/` as its public base URL.
+The site currently uses sandbox `https://swathoni.vercel.app/` & live `https://swathoni.infi-saas.com/` as its public base URL.
 Each page has a unique search title and description, a canonical URL, Open Graph
 and Twitter sharing metadata, and JSON-LD describing the organization, website
 and page. Secondary pages include breadcrumb structured data. Social previews
@@ -91,7 +91,7 @@ canonical page URLs. Upload these files at the deployment root with the HTML.
 After deployment, verify that the canonical pages, sitemap and social preview
 image return successfully, then submit the sitemap in Google Search Console.
 
-When moving to a custom domain, replace `https://swathoni.vercel.app/` in all four
+The custom domain `https://swathoni.infi-saas.com/` in all four
 HTML files, `robots.txt` and `sitemap.xml` with the final HTTPS URL. Keep canonical
 URLs, structured data, social URLs and the sitemap consistent, and redirect the
 old host to the new one through the hosting provider.
