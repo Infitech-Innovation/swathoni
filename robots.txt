@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://swathoni.infi-saas.com/sitemap.xml
+Sitemap: https://swathonitravels.com/sitemap.xml
+
+
