@@ -447,6 +447,21 @@
     ],
     culture: [
       {
+        src: "images/maa0.jpeg",
+        alt: "Maasai people in traditional dress",
+        caption: "Diani Maasai culture and connection",
+      },
+      {
+        src: "images/maa1.jpeg",
+        alt: "Maasai people in traditional dress",
+        caption: "Diani Maasai culture and connection",
+      },
+      {
+        src: "images/maa2.jpeg",
+        alt: "Maasai people in traditional dress",
+        caption: "Diani Maasai culture and connection",
+      },
+      {
         src: "images/maasai.jpeg",
         alt: "Maasai people in traditional dress",
         caption: "Maasai culture and connection",
@@ -482,6 +497,21 @@
         caption: "Traditions shared with care",
       },
       {
+        src: "images/maa3.jpeg",
+        alt: "Maasai people in traditional dress",
+        caption: "Diani Maasai culture and connection",
+      },
+      {
+        src: "images/maa4.jpeg",
+        alt: "Maasai people in traditional dress",
+        caption: "Diani Maasai culture and connection",
+      },
+      {
+        src: "images/maa5.jpeg",
+        alt: "Maasai people in traditional dress",
+        caption: "Diani Maasai culture and connection",
+      },
+      {
         src: "images/maaworias.jpeg",
         alt: "Maasai people in traditional dress",
         caption: "The people and stories of Kenya",
@@ -495,6 +525,16 @@
         src: "images/park.jpeg",
         alt: "Visitors gathered outdoors",
         caption: "Connections along the journey",
+      },
+      {
+        src: "images/maa6.jpeg",
+        alt: "Maasai people in traditional dress",
+        caption: "Diani Maasai culture and connection",
+      },
+      {
+        src: "images/maa7.jpeg",
+        alt: "Maasai people in traditional dress",
+        caption: "Diani Maasai culture and connection",
       },
     ],
   };

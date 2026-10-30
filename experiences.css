@@ -1676,8 +1676,6 @@ body.xp-page .nav.scrolled {
 }
 .xp-booking-intro-new h2 {
   font-size: clamp(52px, 6.2vw, 100px) !important;
-  line-height: 1 !important;
-  margin: 20px 0 !important;
 }
 .xp-booking-intro-new h2 br {
   display: none;
@@ -1799,13 +1797,31 @@ body.xp-page .nav.scrolled {
   .xp-booking-form-new .xp-fields {
     grid-template-columns: 1fr;
   }
+  
+  /* FIX: Restore the line breaks and stop word-chopping */
   .xp-booking-intro-new h2 {
-    font-size: 55px !important;
+    font-size: clamp(46px, 12vw, 60px) !important; /* Slightly larger since we have 3 lines now */
+    line-height: 1.1 !important;
+    margin: 20px 0 !important;
+    
+    /* Force the browser to respect the <br> tags */
+    white-space: normal !important; 
+    
+    /* Prevent words from breaking in half */
+    overflow-wrap: normal !important; 
+    word-break: keep-all !important;
   }
+
+  /* Make sure the <br> tags are visible on mobile */
+  .xp-booking-intro-new h2 br {
+    display: inline !important; 
+  }
+
   .xp-booking-form-new {
     padding: 25px !important;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .xp-hero-art-back img,
   .xp-hero-art-front {
